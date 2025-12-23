@@ -1,0 +1,440 @@
+<!-- Indemnización Calculator Wizard -->
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Calculadora de Indemnización - InfoAccidentes</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+    <style>
+        .prose a {
+            color: #0000FF;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .prose strong {
+            color: #0d141b;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-text-dark antialiased selection:bg-primary/20 selection:text-primary">
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 w-full bg-white shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html">
+                        <img alt="InfoAccidentes" class="h-10 w-auto"
+                            src="https://infoaccidentes.com/wp-content/uploads/2021/02/infoaccidentes_marca-300x111.webp" />
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
+                        href="abogados.html">Abogados</a>
+                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
+                        href="clinicas.html">Clínicas</a>
+                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
+                        href="calculadora.html">Calculadora</a>
+                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
+                        href="lesiones.html">Lesiones</a>
+                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
+                        href="accidentes.html">Accidentes</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="hidden md:flex items-center">
+                    <a class="bg-cta-orange hover:bg-cta-orange-hover text-white px-6 py-2.5 rounded-lg font-bold transition-colors shadow-sm flex items-center gap-2"
+                        href="https://api.whatsapp.com/send/?phone=34635243155&text=Hola%2CNecesito+hacer+una+consulta&app_absent=0">
+                        <span class="material-symbols-outlined text-[20px]">chat</span>
+                        WhatsApp 24h
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center md:hidden">
+                    <button class="text-text-muted hover:text-primary p-2" onclick="toggleMobileMenu()" type="button">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-lg"
+            id="mobile-menu">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
+                    href="abogados.html">Abogados</a>
+                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
+                    href="clinicas.html">Clínicas</a>
+                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
+                    href="calculadora.html">Calculadora</a>
+                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
+                    href="lesiones.html">Lesiones</a>
+                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
+                    href="accidentes.html">Accidentes</a>
+                <div class="pt-4 mt-4 border-t border-gray-100">
+                    <a class="flex items-center justify-center gap-2 w-full bg-cta-orange text-white py-3 rounded-lg font-bold"
+                        href="https://api.whatsapp.com/send/?phone=34635243155&text=Hola%2CNecesito+hacer+una+consulta&app_absent=0">
+                        <span class="material-symbols-outlined">chat</span>
+                        WhatsApp 24h
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="flex-grow flex flex-col items-center justify-start pt-8 pb-16 px-4 sm:px-6">
+        <!-- Hero Content -->
+        <div class="text-center max-w-3xl mx-auto mb-10">
+            <h1
+                class="text-3xl sm:text-4xl md:text-5xl font-black text-text-dark dark:text-white leading-tight tracking-tight mb-4">
+                Calcula tu Indemnización <br class="hidden sm:block" /> por Accidente de Tráfico
+            </h1>
+            <p class="text-lg text-text-muted dark:text-slate-400 max-w-2xl mx-auto">
+                Descubre cuánto dinero te corresponde según el <span class="font-semibold text-primary">Baremo
+                    2026</span>. <br />Es rápido, fácil y 100% gratuito.
+            </p>
+        </div>
+        <!-- Wizard Container -->
+        <div
+            class="w-full max-w-3xl bg-white dark:bg-[#1a2634] rounded-2xl shadow-card border border-slate-100 dark:border-slate-800 overflow-hidden relative">
+            <!-- Progress Bar -->
+            <div class="bg-slate-100 dark:bg-slate-800 h-2 w-full">
+                <!-- Change width per step: 25%, 50%, 75%, 100% -->
+                <div class="bg-primary h-2 transition-all duration-500 ease-out" style="width: 25%"></div>
+            </div>
+            <!-- Step Indicator Text -->
+            <div
+                class="px-6 pt-6 pb-2 flex justify-between items-center text-sm font-medium text-text-muted dark:text-slate-400">
+                <span>Paso 1 de 4</span>
+                <span class="text-primary font-semibold">Datos del Accidente</span>
+            </div>
+            <!-- WIZARD STEP 1: TYPE OF ACCIDENT (ACTIVE) -->
+            <div class="p-6 sm:p-8 animate-fade-in" id="step-1">
+                <h2 class="text-2xl font-bold text-text-dark dark:text-white mb-6 text-center">¿Qué tipo de accidente
+                    has tenido?</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8">
+                    <!-- Option: Coche -->
+                    <label class="cursor-pointer group">
+                        <input class="peer sr-only" name="accident_type" type="radio" />
+                        <div
+                            class="selection-card h-full flex flex-col items-center justify-center p-6 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 peer-checked:border-primary peer-checked:bg-blue-50 dark:peer-checked:bg-primary/10 transition-all">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-100 dark:bg-slate-700 flex items-center justify-center text-primary mb-3 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-3xl">directions_car</span>
+                            </div>
+                            <span class="font-bold text-slate-700 dark:text-slate-200">Coche</span>
+                        </div>
+                    </label>
+                    <!-- Option: Moto -->
+                    <label class="cursor-pointer group">
+                        <input class="peer sr-only" name="accident_type" type="radio" />
+                        <div
+                            class="selection-card h-full flex flex-col items-center justify-center p-6 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 peer-checked:border-primary peer-checked:bg-blue-50 dark:peer-checked:bg-primary/10 transition-all">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-100 dark:bg-slate-700 flex items-center justify-center text-primary mb-3 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-3xl">two_wheeler</span>
+                            </div>
+                            <span class="font-bold text-slate-700 dark:text-slate-200">Moto</span>
+                        </div>
+                    </label>
+                    <!-- Option: Atropello -->
+                    <label class="cursor-pointer group">
+                        <input class="peer sr-only" name="accident_type" type="radio" />
+                        <div
+                            class="selection-card h-full flex flex-col items-center justify-center p-6 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 peer-checked:border-primary peer-checked:bg-blue-50 dark:peer-checked:bg-primary/10 transition-all">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-100 dark:bg-slate-700 flex items-center justify-center text-primary mb-3 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-3xl">directions_walk</span>
+                            </div>
+                            <span class="font-bold text-slate-700 dark:text-slate-200">Atropello</span>
+                        </div>
+                    </label>
+                    <!-- Option: Patinete -->
+                    <label class="cursor-pointer group">
+                        <input class="peer sr-only" name="accident_type" type="radio" />
+                        <div
+                            class="selection-card h-full flex flex-col items-center justify-center p-6 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 peer-checked:border-primary peer-checked:bg-blue-50 dark:peer-checked:bg-primary/10 transition-all">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-100 dark:bg-slate-700 flex items-center justify-center text-primary mb-3 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-3xl">electric_scooter</span>
+                            </div>
+                            <span class="font-bold text-slate-700 dark:text-slate-200">Patinete</span>
+                        </div>
+                    </label>
+                    <!-- Option: Transporte Público -->
+                    <label class="cursor-pointer group">
+                        <input class="peer sr-only" name="accident_type" type="radio" />
+                        <div
+                            class="selection-card h-full flex flex-col items-center justify-center p-6 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 peer-checked:border-primary peer-checked:bg-blue-50 dark:peer-checked:bg-primary/10 transition-all">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-100 dark:bg-slate-700 flex items-center justify-center text-primary mb-3 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-3xl">directions_bus</span>
+                            </div>
+                            <span class="font-bold text-slate-700 dark:text-slate-200 text-center">Transporte
+                                Público</span>
+                        </div>
+                    </label>
+                    <!-- Option: Otros -->
+                    <label class="cursor-pointer group">
+                        <input class="peer sr-only" name="accident_type" type="radio" />
+                        <div
+                            class="selection-card h-full flex flex-col items-center justify-center p-6 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 peer-checked:border-primary peer-checked:bg-blue-50 dark:peer-checked:bg-primary/10 transition-all">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-100 dark:bg-slate-700 flex items-center justify-center text-primary mb-3 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-3xl">help_outline</span>
+                            </div>
+                            <span class="font-bold text-slate-700 dark:text-slate-200">Otros</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="flex justify-end pt-4 border-t border-slate-100 dark:border-slate-800">
+                    <button
+                        class="flex items-center justify-center px-8 py-4 bg-cta-orange hover:bg-cta-orange-hover text-white text-base font-bold rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 uppercase tracking-wide gap-2 w-full sm:w-auto">
+                        Siguiente
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Trust Section -->
+        <div class="w-full max-w-3xl mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-white/50 dark:bg-slate-800/50">
+                <span class="material-symbols-outlined text-primary text-4xl">gavel</span>
+                <h3 class="font-bold text-text-dark dark:text-white">Baremo 2026</h3>
+                <p class="text-sm text-text-muted dark:text-slate-400">Cálculos actualizados a la ley vigente</p>
+            </div>
+            <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-white/50 dark:bg-slate-800/50">
+                <span class="material-symbols-outlined text-primary text-4xl">verified_user</span>
+                <h3 class="font-bold text-text-dark dark:text-white">Abogados Expertos</h3>
+                <p class="text-sm text-text-muted dark:text-slate-400">Revisado por especialistas en tráfico</p>
+            </div>
+            <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-white/50 dark:bg-slate-800/50">
+                <span class="material-symbols-outlined text-primary text-4xl">lock</span>
+                <h3 class="font-bold text-text-dark dark:text-white">100% Gratuito</h3>
+                <p class="text-sm text-text-muted dark:text-slate-400">Sin costes ni compromisos ocultos</p>
+            </div>
+        </div>
+        <!-- DEMONSTRATION ONLY: PREVIEWS OF OTHER STEPS -->
+        <!-- In a real app, these would be hidden and toggled via JS -->
+        <div class="w-full max-w-3xl mt-24 pt-12 border-t-2 border-dashed border-slate-300">
+            <h3 class="text-center text-slate-400 font-mono text-sm uppercase tracking-widest mb-8">Design System:
+                Subsequent Wizard Steps</h3>
+            <!-- PREVIEW: STEP 2 -->
+            <div
+                class="relative w-full bg-white dark:bg-[#1a2634] rounded-2xl shadow-card border border-slate-100 dark:border-slate-800 mb-12 opacity-90 hover:opacity-100 transition-opacity">
+                <!-- Progress Bar Visual -->
+                <div class="bg-slate-100 dark:bg-slate-800 h-2 w-full rounded-t-2xl overflow-hidden">
+                    <div class="bg-primary h-2" style="width: 50%"></div>
+                </div>
+                <div
+                    class="px-6 pt-6 pb-2 flex justify-between items-center text-sm font-medium text-text-muted dark:text-slate-400">
+                    <span>Paso 2 de 4</span><span class="text-primary font-semibold">Tipo de Lesión</span>
+                </div>
+                <div class="p-6 sm:p-8">
+                    <h2 class="text-2xl font-bold text-text-dark dark:text-white mb-6 text-center">¿Qué lesiones has
+                        sufrido?</h2>
+                    <p class="text-center text-text-muted mb-6 text-sm">Selecciona todas las que apliquen</p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <label class="cursor-pointer group relative">
+                            <input checked="" class="peer sr-only" name="injury" type="checkbox" />
+                            <div
+                                class="h-full flex flex-row items-center p-4 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 peer-checked:border-primary peer-checked:bg-blue-50 dark:peer-checked:bg-primary/10 transition-all gap-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-blue-100 flex-shrink-0 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined">sick</span>
+                                </div>
+                                <span class="font-bold text-slate-700 dark:text-slate-200 text-sm">Latigazo
+                                    Cervical</span>
+                                <div class="absolute top-4 right-4 text-primary opacity-0 peer-checked:opacity-100">
+                                    <span class="material-symbols-outlined">check_circle</span>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="cursor-pointer group relative">
+                            <input class="peer sr-only" name="injury" type="checkbox" />
+                            <div
+                                class="h-full flex flex-row items-center p-4 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 peer-checked:border-primary peer-checked:bg-blue-50 dark:peer-checked:bg-primary/10 transition-all gap-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-blue-100 flex-shrink-0 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined">medical_services</span>
+                                </div>
+                                <span class="font-bold text-slate-700 dark:text-slate-200 text-sm">Fracturas</span>
+                            </div>
+                        </label>
+                        <!-- ... More options ... -->
+                    </div>
+                    <div class="flex justify-between pt-4 border-t border-slate-100 dark:border-slate-800">
+                        <button class="px-6 py-3 text-text-muted hover:text-slate-700 font-medium">Anterior</button>
+                        <button
+                            class="flex items-center justify-center px-8 py-3 bg-cta-orange hover:bg-cta-orange-hover text-white text-base font-bold rounded-lg shadow-md uppercase tracking-wide gap-2">Siguiente
+                            <span class="material-symbols-outlined">arrow_forward</span></button>
+                    </div>
+                </div>
+            </div>
+            <!-- PREVIEW: STEP 3 -->
+            <div
+                class="relative w-full bg-white dark:bg-[#1a2634] rounded-2xl shadow-card border border-slate-100 dark:border-slate-800 mb-12 opacity-90 hover:opacity-100 transition-opacity">
+                <!-- Progress Bar Visual -->
+                <div class="bg-slate-100 dark:bg-slate-800 h-2 w-full rounded-t-2xl overflow-hidden">
+                    <div class="bg-primary h-2" style="width: 75%"></div>
+                </div>
+                <div
+                    class="px-6 pt-6 pb-2 flex justify-between items-center text-sm font-medium text-text-muted dark:text-slate-400">
+                    <span>Paso 3 de 4</span><span class="text-primary font-semibold">Tratamiento</span>
+                </div>
+                <div class="p-6 sm:p-8">
+                    <h2 class="text-2xl font-bold text-text-dark dark:text-white mb-6 text-center">¿Has recibido
+                        tratamiento médico?</h2>
+                    <div class="flex flex-col gap-4 mb-8 max-w-md mx-auto">
+                        <div class="flex gap-4">
+                            <label class="flex-1 cursor-pointer">
+                                <input checked="" class="peer sr-only" name="treatment" type="radio" />
+                                <div
+                                    class="text-center py-4 rounded-lg border-2 border-slate-200 peer-checked:border-primary peer-checked:bg-blue-50 peer-checked:text-primary font-bold">
+                                    Sí</div>
+                            </label>
+                            <label class="flex-1 cursor-pointer">
+                                <input class="peer sr-only" name="treatment" type="radio" />
+                                <div
+                                    class="text-center py-4 rounded-lg border-2 border-slate-200 peer-checked:border-primary peer-checked:bg-blue-50 peer-checked:text-primary font-bold">
+                                    No</div>
+                            </label>
+                        </div>
+                        <!-- Conditional input animation simulation -->
+                        <div
+                            class="mt-4 p-4 bg-slate-50 dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-slate-700">
+                            <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Duración
+                                aproximada (días)</label>
+                            <input
+                                class="w-full rounded-md border-slate-300 dark:border-slate-600 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 dark:bg-slate-800 dark:text-white"
+                                placeholder="Ej: 30" type="number" />
+                        </div>
+                    </div>
+                    <div class="flex justify-between pt-4 border-t border-slate-100 dark:border-slate-800">
+                        <button class="px-6 py-3 text-text-muted hover:text-slate-700 font-medium">Anterior</button>
+                        <button
+                            class="flex items-center justify-center px-8 py-3 bg-cta-orange hover:bg-cta-orange-hover text-white text-base font-bold rounded-lg shadow-md uppercase tracking-wide gap-2">Siguiente
+                            <span class="material-symbols-outlined">arrow_forward</span></button>
+                    </div>
+                </div>
+            </div>
+            <!-- PREVIEW: STEP 4 (FINAL) -->
+            <div
+                class="relative w-full bg-white dark:bg-[#1a2634] rounded-2xl shadow-card border border-slate-100 dark:border-slate-800 opacity-90 hover:opacity-100 transition-opacity">
+                <!-- Progress Bar Visual -->
+                <div class="bg-slate-100 dark:bg-slate-800 h-2 w-full rounded-t-2xl overflow-hidden">
+                    <div class="bg-primary h-2" style="width: 100%"></div>
+                </div>
+                <div class="p-6 sm:p-10 text-center">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="material-symbols-outlined text-green-600 text-5xl">check_circle</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-black text-text-dark dark:text-white mb-4 leading-tight">Obtén
+                        tu Estimación Personalizada y Asesoramiento Gratuito</h2>
+                    <p class="text-text-muted dark:text-slate-300 mb-8 leading-relaxed max-w-lg mx-auto">
+                        Has indicado que sufriste un accidente de <strong>Coche</strong> con lesiones de
+                        <strong>Latigazo Cervical</strong>. <br /><br />
+                        Para recibir una estimación precisa y una consulta gratuita con nuestros abogados, finaliza el
+                        proceso en WhatsApp.
+                    </p>
+                    <div
+                        class="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 rounded-lg p-4 mb-8 max-w-lg mx-auto">
+                        <p class="text-sm text-primary dark:text-blue-300 font-semibold">
+                            <span class="material-symbols-outlined align-middle mr-1 text-base">verified</span>
+                            Tu caso será analizado por un especialista hoy mismo.
+                        </p>
+                    </div>
+                    <a href="https://api.whatsapp.com/send/?phone=34635243155&text=Hola%2CNecesito+hacer+una+consulta&app_absent=0"
+                        class="w-full sm:w-auto flex items-center justify-center px-8 py-5 bg-cta-orange hover:bg-cta-orange-hover text-white text-lg font-black rounded-xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 uppercase tracking-wide gap-3 mx-auto">
+                        <span class="material-symbols-outlined text-3xl">chat</span>
+                        <span>Enviar y Contactar por WhatsApp</span>
+                    </a>
+                    <p class="mt-4 text-xs text-slate-400">Al hacer clic aceptas nuestra política de privacidad.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-background-dark text-white border-t border-white/10 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Col 1: Brand -->
+                <div class="flex flex-col gap-6">
+                    <a class="block" href="index.html">
+                        <img alt="InfoAccidentes"
+                            class="h-10 w-auto brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
+                            src="https://infoaccidentes.com/wp-content/uploads/2021/02/infoaccidentes_marca-300x111.webp" />
+                    </a>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        Plataforma líder en la defensa de víctimas de tráfico. Conectamos personas con soluciones
+                        legales y médicas de primer nivel.
+                    </p>
+                </div>
+                <!-- Col 2: Servicios -->
+                <div>
+                    <h4 class="font-bold text-lg mb-6 text-white">Servicios</h4>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li><a class="hover:text-cta-orange transition-colors" href="abogados.html">Abogados
+                                Especialistas</a></li>
+                        <li><a class="hover:text-cta-orange transition-colors" href="clinicas.html">Clínicas
+                                Rehabilitación</a></li>
+                        <li><a class="hover:text-cta-orange transition-colors" href="calculadora.html">Calculadora
+                                Indemnización</a></li>
+                    </ul>
+                </div>
+                <!-- Col 3: Información -->
+                <div>
+                    <h4 class="font-bold text-lg mb-6 text-white">Información</h4>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li><a class="hover:text-cta-orange transition-colors" href="lesiones.html">Indemnizaciones y
+                                Lesiones</a></li>
+                        <li><a class="hover:text-cta-orange transition-colors" href="accidentes.html">Tipos de
+                                Accidentes</a></li>
+                        <li><a class="hover:text-cta-orange transition-colors" href="#">Guías de Reclamación</a></li>
+                    </ul>
+                </div>
+                <!-- Col 4: Contacto -->
+                <div>
+                    <h4 class="font-bold text-lg mb-6 text-white">Contacto</h4>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-cta-orange">mail</span>
+                            <a class="hover:text-white transition-colors"
+                                href="mailto:info@infoaccidentes.com">info@infoaccidentes.com</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-cta-orange">chat</span>
+                            <a class="hover:text-white transition-colors"
+                                href="https://api.whatsapp.com/send/?phone=34635243155&text=Hola%2CNecesito+hacer+una+consulta&app_absent=0">WhatsApp
+                                24h</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Subfooter -->
+            <div
+                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-text-muted">
+                <div>&copy; 2024 InfoAccidentes. Todos los derechos reservados.</div>
+                <div class="flex gap-6">
+                    <a class="hover:text-white transition-colors" href="#">Aviso Legal</a>
+                    <a class="hover:text-white transition-colors" href="#">Política de Privacidad</a>
+                    <a class="hover:text-white transition-colors" href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
