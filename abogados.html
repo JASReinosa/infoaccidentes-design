@@ -1,629 +1,793 @@
 <!-- Abogados Main Category Landing Page -->
 <!DOCTYPE html>
 <html class="light" lang="es">
-
-<head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>InfoAccidentes - Abogados Especialistas en Accidentes de Tráfico</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script src="js/theme.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/main.js"></script>
-</head>
-
-<body class="bg-white text-text-dark antialiased selection:bg-cta-orange/20 selection:text-text-dark">
-    <!-- Premium Header -->
-    <header class="sticky top-0 z-50 w-full bg-white shadow-sm border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html">
-                        <img alt="InfoAccidentes" class="h-10 w-auto"
-                            src="https://infoaccidentes.com/wp-content/uploads/2021/02/infoaccidentes_marca-300x111.webp" />
-                    </a>
-                </div>
-
-                <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-8">
-                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
-                        href="abogados.html">Abogados</a>
-                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
-                        href="clinicas.html">Clínicas</a>
-                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
-                        href="calculadora.html">Calculadora</a>
-                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
-                        href="lesiones.html">Lesiones</a>
-                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
-                        href="accidentes.html">Accidentes</a>
-                </nav>
-
-                <!-- CTA Button -->
-                <div class="hidden md:flex items-center">
-                    <a class="bg-cta-orange hover:bg-cta-orange-hover text-white px-6 py-2.5 rounded-lg font-bold transition-colors shadow-sm flex items-center gap-2"
-                        href="https://api.whatsapp.com/send/?phone=34635243155&text=Hola%2CNecesito+hacer+una+consulta&app_absent=0">
-                        <span class="material-symbols-outlined text-[20px]">chat</span>
-                        WhatsApp 24h
-                    </a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <div class="flex items-center md:hidden">
-                    <button class="text-text-muted hover:text-primary p-2" onclick="toggleMobileMenu()" type="button">
-                        <span class="material-symbols-outlined text-3xl">menu</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-lg"
-            id="mobile-menu">
-            <div class="px-4 pt-2 pb-6 space-y-2">
-                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
-                    href="abogados.html">Abogados</a>
-                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
-                    href="clinicas.html">Clínicas</a>
-                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
-                    href="calculadora.html">Calculadora</a>
-                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
-                    href="lesiones.html">Lesiones</a>
-                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
-                    href="accidentes.html">Accidentes</a>
-                <div class="pt-4 mt-4 border-t border-gray-100">
-                    <a class="flex items-center justify-center gap-2 w-full bg-cta-orange text-white py-3 rounded-lg font-bold"
-                        href="https://api.whatsapp.com/send/?phone=34635243155&text=Hola%2CNecesito+hacer+una+consulta&app_absent=0">
-                        <span class="material-symbols-outlined">chat</span>
-                        WhatsApp 24h
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="flex flex-col">
-        <section class="relative flex min-h-[600px] w-full items-center justify-center bg-slate-900 py-20 lg:py-32">
-            <div class="absolute inset-0 z-0 h-full w-full overflow-hidden">
-                <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/80 to-slate-900/40 z-10">
-                </div>
-                <img alt="Legal documents and glasses on a desk representing law office"
-                    class="h-full w-full object-cover opacity-50"
-                    data-alt="Abstract view of a law office desk with documents and glasses, muted tones"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKHh898KcCo6tz5iRdnnivjy_0Bn_XtQNC1p0Hjd7U9Oq51fWhtsltJUjeUS0tKTCuTRs_9GbASCjL7ps75FSLx2cuWnmTTDPdf83RKUnxoLVi4qn0TBwRUPGJerarlgqtkUBN3c_Dbj_KJqfRxmUwPdULx3OZBv-SuZxqjVS08R16D0CpFA-gk1ZlGeZIXtULvduk0gHFGsGzrNbE6lTJaoRU-_ouX35RNT1Qz_Hj50-9WDWYeUTgnf0SBIsKbQlKNK5e2i1vQjk" />
-            </div>
-            <div class="relative z-10 mx-auto flex w-full max-w-7xl flex-col px-6 lg:px-8">
-                <div class="max-w-3xl">
-                    <h1
-                        class="font-display text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl mb-6 drop-shadow-sm">
-                        Abogados Especialistas en <span class="text-[#0000FF]">Accidentes de Tráfico</span>
-                    </h1>
-                    <h2 class="mb-10 max-w-2xl text-lg font-normal leading-relaxed text-slate-200 sm:text-xl">
-                        Tu indemnización máxima y rehabilitación gratuita. Sin adelantar dinero. Cobertura en toda
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   InfoAccidentes - Abogados Especialistas en Accidentes de Tráfico
+  </title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography">
+  </script>
+  <script src="js/theme.js">
+  </script>
+  <link href="css/styles.css" rel="stylesheet"/>
+  <script src="js/main.js">
+  </script>
+ </head>
+ <body class="bg-white text-text-dark antialiased selection:bg-cta-orange/20 selection:text-text-dark">
+  <!-- Premium Header -->
+  <header class="sticky top-0 z-50 w-full bg-white shadow-sm border-b border-gray-100">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+     <!-- Logo -->
+     <div class="flex-shrink-0 flex items-center">
+      <a href="index.html">
+       <img alt="InfoAccidentes" class="h-10 w-auto" src="https://infoaccidentes.com/wp-content/uploads/2021/02/infoaccidentes_marca-300x111.webp"/>
+      </a>
+     </div>
+     <!-- Desktop Menu -->
+     <nav class="hidden md:flex space-x-8">
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="abogados-trafico/index.html">
+       Abogados
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="clinicas-accidentes-trafico/index.html">
+       Clínicas
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="calculadora-indemnizacion/index.html">
+       Calculadora
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="indemnizacion/index.html">
+       Lesiones
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="reclamar-accidente/index.html">
+       Accidentes
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="guia/index.html">
+       Guías
+      </a>
+     </nav>
+     <!-- CTA Button -->
+     <div class="hidden md:flex items-center">
+      <a class="bg-cta-orange hover:bg-cta-orange-hover text-white px-6 py-2.5 rounded-lg font-bold transition-colors shadow-sm flex items-center gap-2" href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+       <span class="material-symbols-outlined text-[20px]">
+        chat
+       </span>
+       WhatsApp 24h
+      </a>
+     </div>
+     <!-- Mobile Menu Button -->
+     <div class="flex items-center md:hidden">
+      <button class="text-text-muted hover:text-primary p-2" onclick="toggleMobileMenu()" type="button">
+       <span class="material-symbols-outlined text-3xl">
+        menu
+       </span>
+      </button>
+     </div>
+    </div>
+   </div>
+   <!-- Mobile Menu -->
+   <div class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-lg" id="mobile-menu">
+    <div class="px-4 pt-2 pb-6 space-y-2">
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="abogados-trafico/index.html">
+      Abogados
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="clinicas-accidentes-trafico/index.html">
+      Clínicas
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="calculadora-indemnizacion/index.html">
+      Calculadora
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="indemnizacion/index.html">
+      Lesiones
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="reclamar-accidente/index.html">
+      Accidentes
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="guia/index.html">
+      Guías
+     </a>
+     <div class="pt-4 mt-4 border-t border-gray-100">
+      <a class="flex items-center justify-center gap-2 w-full bg-cta-orange text-white py-3 rounded-lg font-bold" href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+       <span class="material-symbols-outlined">
+        chat
+       </span>
+       WhatsApp 24h
+      </a>
+     </div>
+    </div>
+   </div>
+  </header>
+  <main class="flex flex-col">
+   <section class="relative flex min-h-[600px] w-full items-center justify-center bg-slate-900 py-20 lg:py-32">
+    <div class="absolute inset-0 z-0 h-full w-full overflow-hidden">
+     <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/80 to-slate-900/40 z-10">
+     </div>
+     <img alt="Legal documents and glasses on a desk representing law office" class="h-full w-full object-cover opacity-50" data-alt="Abstract view of a law office desk with documents and glasses, muted tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKHh898KcCo6tz5iRdnnivjy_0Bn_XtQNC1p0Hjd7U9Oq51fWhtsltJUjeUS0tKTCuTRs_9GbASCjL7ps75FSLx2cuWnmTTDPdf83RKUnxoLVi4qn0TBwRUPGJerarlgqtkUBN3c_Dbj_KJqfRxmUwPdULx3OZBv-SuZxqjVS08R16D0CpFA-gk1ZlGeZIXtULvduk0gHFGsGzrNbE6lTJaoRU-_ouX35RNT1Qz_Hj50-9WDWYeUTgnf0SBIsKbQlKNK5e2i1vQjk"/>
+    </div>
+    <div class="relative z-10 mx-auto flex w-full max-w-7xl flex-col px-6 lg:px-8">
+     <div class="max-w-3xl">
+      <h1 class="font-display text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl mb-6 drop-shadow-sm">
+       Abogados Especialistas en
+       <span class="text-[#0000FF]">
+        Accidentes de Tráfico
+       </span>
+      </h1>
+      <h2 class="mb-10 max-w-2xl text-lg font-normal leading-relaxed text-slate-200 sm:text-xl">
+       Tu indemnización máxima y rehabilitación gratuita. Sin adelantar dinero. Cobertura en toda
                         España.
-                    </h2>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="https://api.whatsapp.com/send/?phone=34635243155&text=Hola%2CNecesito+hacer+una+consulta&app_absent=0"
-                            class="flex h-14 w-full sm:w-auto min-w-[240px] cursor-pointer items-center justify-center rounded-lg bg-cta-orange px-8 text-base font-bold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:bg-cta-orange-hover hover:shadow-orange-500/30">
-                            CALCULAR MI INDEMNIZACIÓN
-                        </a>
-                        <p class="mt-4 sm:mt-0 flex items-center gap-2 text-sm text-slate-300 sm:hidden">
-                            <span class="material-symbols-outlined text-[#0000FF] text-lg">check_circle</span> Consulta
+      </h2>
+      <div class="flex flex-col sm:flex-row gap-4">
+       <a class="flex h-14 w-full sm:w-auto min-w-[240px] cursor-pointer items-center justify-center rounded-lg bg-cta-orange px-8 text-base font-bold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:bg-cta-orange-hover hover:shadow-orange-500/30" href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+        CALCULAR MI INDEMNIZACIÓN
+       </a>
+       <p class="mt-4 sm:mt-0 flex items-center gap-2 text-sm text-slate-300 sm:hidden">
+        <span class="material-symbols-outlined text-[#0000FF] text-lg">
+         check_circle
+        </span>
+        Consulta
                             gratuita inmediata
-                        </p>
-                    </div>
-                    <p class="mt-6 hidden items-center gap-2 text-sm font-medium text-slate-300 sm:flex">
-                        <span class="material-symbols-outlined text-[#0000FF]"
-                            style="font-size: 20px;">check_circle</span> Primera consulta gratuita y sin compromiso
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="py-20 bg-white">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <div class="mb-16 text-center">
-                    <h2 class="text-3xl font-bold tracking-tight text-text-main sm:text-4xl">¿Por qué elegir
-                        InfoAccidentes?</h2>
-                    <p class="mt-4 text-lg text-text-secondary">Garantizamos la mejor defensa legal y asistencia médica
-                        sin costes iniciales.</p>
-                </div>
-                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-                    <div
-                        class="group flex flex-col rounded-xl border border-slate-100 bg-white p-8 shadow-sm transition-all hover:border-primary/30 hover:shadow-md">
-                        <div
-                            class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined text-3xl">shield</span>
-                        </div>
-                        <h3 class="mb-2 text-xl font-bold text-text-main">Abogados Expertos</h3>
-                        <p class="text-text-secondary leading-relaxed">Especialistas con años de experiencia dedicados
-                            exclusivamente a tráfico.</p>
-                    </div>
-                    <div
-                        class="group flex flex-col rounded-xl border border-slate-100 bg-white p-8 shadow-sm transition-all hover:border-primary/30 hover:shadow-md">
-                        <div
-                            class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined text-3xl">medical_services</span>
-                        </div>
-                        <h3 class="mb-2 text-xl font-bold text-text-main">Rehabilitación Gratuita</h3>
-                        <p class="text-text-secondary leading-relaxed">Acceso inmediato a las mejores clínicas privadas
-                            sin coste para ti.</p>
-                    </div>
-                    <div
-                        class="group flex flex-col rounded-xl border border-slate-100 bg-white p-8 shadow-sm transition-all hover:border-primary/30 hover:shadow-md">
-                        <div
-                            class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined text-3xl">account_balance_wallet</span>
-                        </div>
-                        <h3 class="mb-2 text-xl font-bold text-text-main">Sin Gastos Iniciales</h3>
-                        <p class="text-text-secondary leading-relaxed">Trabajamos a éxito. Solo cobramos si tú cobras tu
-                            indemnización.</p>
-                    </div>
-                    <div
-                        class="group flex flex-col rounded-xl border border-slate-100 bg-white p-8 shadow-sm transition-all hover:border-primary/30 hover:shadow-md">
-                        <div
-                            class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined text-3xl">location_on</span>
-                        </div>
-                        <h3 class="mb-2 text-xl font-bold text-text-main">Cobertura Nacional</h3>
-                        <p class="text-text-secondary leading-relaxed">Red de abogados y centros médicos en todas las
-                            provincias de España.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="py-20 bg-slate-50 border-y border-slate-200">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <div class="mb-16 text-center">
-                    <h2 class="text-3xl font-bold tracking-tight text-text-main sm:text-4xl">Nuestro Proceso en 3 Pasos
-                    </h2>
-                    <p class="mt-4 text-lg text-text-secondary">Recuperar tu vida es así de sencillo.</p>
-                </div>
-                <div class="relative grid grid-cols-1 gap-10 md:grid-cols-3">
-                    <div class="hidden md:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-slate-200 -z-10"></div>
-                    <div class="flex flex-col items-center text-center">
-                        <div
-                            class="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-white border-4 border-slate-100 shadow-sm text-primary z-10">
-                            <span class="material-symbols-outlined text-4xl">phone_in_talk</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-text-main">1. Contacto</h3>
-                        <p class="mt-2 max-w-xs text-text-secondary">Cuéntanos tu caso a través del formulario o por
-                            teléfono. Es rápido y sencillo.</p>
-                    </div>
-                    <div class="flex flex-col items-center text-center">
-                        <div
-                            class="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-white border-4 border-slate-100 shadow-sm text-primary z-10">
-                            <span class="material-symbols-outlined text-4xl">assignment_turned_in</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-text-main">2. Evaluación Gratuita</h3>
-                        <p class="mt-2 max-w-xs text-text-secondary">Estudiamos la viabilidad de tu caso sin coste
-                            alguno y te explicamos tus opciones.</p>
-                    </div>
-                    <div class="flex flex-col items-center text-center">
-                        <div
-                            class="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-white border-4 border-slate-100 shadow-sm text-primary z-10">
-                            <span class="material-symbols-outlined text-4xl">gavel</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-text-main">3. Gestión Integral</h3>
-                        <p class="mt-2 max-w-xs text-text-secondary">Nos encargamos de todo el proceso legal y médico
-                            hasta que recibas tu indemnización.</p>
-                    </div>
-                </div>
-                <div class="mt-16 flex justify-center">
-                    <button
-                        class="flex h-12 items-center justify-center rounded-lg bg-primary/10 px-8 text-base font-bold text-primary hover:bg-primary/20 transition-colors">
-                        Ver cómo funciona en detalle
-                    </button>
-                </div>
-            </div>
-        </section>
-        <section class="py-24 bg-white">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <div class="mb-12 md:mb-20 text-center">
-                    <span
-                        class="inline-block rounded-full bg-blue-50 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-primary mb-4">Cobertura
-                        Nacional</span>
-                    <h2 class="text-3xl font-bold tracking-tight text-text-main sm:text-4xl">Encuentra el mejor abogado
-                        en tu provincia</h2>
-                    <p class="mt-4 text-lg text-text-secondary max-w-2xl mx-auto">Selecciona tu ubicación en el mapa
-                        interactivo para conectar con especialistas en accidentes de tráfico cerca de ti.</p>
-                </div>
-                <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
-                    <div class="w-full lg:w-3/5 order-2 lg:order-1 relative">
-                        <div class="relative aspect-[4/3] w-full max-w-3xl mx-auto">
-                            <svg class="w-full h-full drop-shadow-xl" fill="none" viewBox="0 0 800 600"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <filter height="130%" id="dropshadow">
-                                    <feGaussianBlur in="SourceAlpha" stdDeviation="3"></feGaussianBlur>
-                                    <feOffset dx="2" dy="2" result="offsetblur"></feOffset>
-                                    <feComponentTransfer>
-                                        <feFuncA slope="0.2" type="linear"></feFuncA>
-                                    </feComponentTransfer>
-                                    <feMerge>
-                                        <feMergeNode></feMergeNode>
-                                        <feMergeNode in="SourceGraphic"></feMergeNode>
-                                    </feMerge>
-                                </filter>
-                                <g stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                    <a aria-label="Abogados en Galicia" href="#">
-                                        <path class="map-path fill-slate-100"
-                                            d="M120,40 L160,30 L180,60 L160,100 L110,90 L90,60 Z" title="Galicia">
-                                        </path>
-                                    </a>
-                                    <a aria-label="Abogados en Asturias" href="#">
-                                        <path class="map-path fill-slate-100" d="M160,30 L220,35 L230,55 L180,60 Z"
-                                            title="Asturias"></path>
-                                    </a>
-                                    <a aria-label="Abogados en Cantabria" href="#">
-                                        <path class="map-path fill-slate-100" d="M220,35 L260,40 L260,60 L230,55 Z"
-                                            title="Cantabria"></path>
-                                    </a>
-                                    <a aria-label="Abogados en País Vasco" href="#">
-                                        <path class="map-path fill-slate-100" d="M260,40 L300,50 L290,80 L260,60 Z"
-                                            title="País Vasco"></path>
-                                    </a>
-                                    <a aria-label="Abogados en Navarra" href="#">
-                                        <path class="map-path fill-slate-100" d="M300,50 L340,60 L330,100 L290,80 Z"
-                                            title="Navarra"></path>
-                                    </a>
-                                    <a aria-label="Abogados en Aragón" href="#">
-                                        <path class="map-path fill-slate-100"
-                                            d="M340,60 L330,100 L350,150 L400,120 L420,80 Z" title="Aragón"></path>
-                                    </a>
-                                    <a aria-label="Abogados en Cataluña" href="#">
-                                        <path class="map-path fill-slate-100"
-                                            d="M420,80 L400,120 L440,160 L490,140 L500,90 Z" title="Cataluña"></path>
-                                    </a>
-                                    <a aria-label="Abogados en Castilla y León" href="#">
-                                        <path class="map-path fill-slate-100"
-                                            d="M160,100 L180,60 L230,55 L260,60 L290,80 L330,100 L350,150 L320,180 L200,180 L140,140 Z"
-                                            title="Castilla y León"></path>
-                                    </a>
-                                    <a aria-label="Abogados en La Rioja" href="#">
-                                        <path class="map-path fill-slate-100" d="M290,80 L330,100 L320,110 L280,90 Z"
-                                            title="La Rioja"></path>
-                                    </a>
-                                    <a aria-label="Abogados en Madrid" href="#">
-                                        <path class="map-path fill-slate-100" d="M290,190 L330,190 L330,220 L290,220 Z"
-                                            title="Madrid"></path>
-                                    </a>
-                                    <a aria-label="Abogados en Castilla-La Mancha" href="#">
-                                        <path class="map-path fill-slate-100"
-                                            d="M290,220 L330,220 L350,150 L400,120 L440,160 L420,220 L450,260 L380,300 L280,260 Z"
-                                            title="Castilla-La Mancha"></path>
-                                    </a>
-                                    <a aria-label="Abogados en Comunidad Valenciana" href="#">
-                                        <path class="map-path fill-slate-100"
-                                            d="M440,160 L490,140 L470,200 L450,260 L420,220 Z"
-                                            title="Comunidad Valenciana"></path>
-                                    </a>
-                                    <a aria-label="Abogados en Extremadura" href="#">
-                                        <path class="map-path fill-slate-100"
-                                            d="M200,180 L290,190 L290,220 L280,260 L200,240 L180,200 Z"
-                                            title="Extremadura"></path>
-                                    </a>
-                                    <a aria-label="Abogados en Murcia" href="#">
-                                        <path class="map-path fill-slate-100" d="M450,260 L470,280 L440,300 L410,290 Z"
-                                            title="Murcia"></path>
-                                    </a>
-                                    <a aria-label="Abogados en Andalucía" href="#">
-                                        <path class="map-path fill-slate-100"
-                                            d="M160,280 L200,240 L280,260 L380,300 L410,290 L440,300 L400,350 L250,350 L200,320 Z"
-                                            title="Andalucía"></path>
-                                    </a>
-                                    <a aria-label="Abogados en Baleares" href="#">
-                                        <path class="map-path fill-slate-100" d="M520,180 L550,190 L540,210 L510,200 Z"
-                                            title="Islas Baleares"></path>
-                                    </a>
-                                    <a aria-label="Abogados en Canarias" href="#">
-                                        <path class="map-path fill-slate-100" d="M100,450 L140,460 L130,480 L90,470 Z"
-                                            title="Islas Canarias"></path>
-                                    </a>
-                                </g>
-                            </svg>
-                            <div class="absolute bottom-4 left-0 right-0 text-center lg:hidden">
-                                <span
-                                    class="inline-flex items-center gap-2 rounded-full bg-slate-900/80 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
-                                    <span class="material-symbols-outlined text-sm">touch_app</span> Toca una provincia
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full lg:w-2/5 order-1 lg:order-2">
-                        <div class="rounded-2xl border border-slate-100 bg-slate-50 p-6 shadow-sm">
-                            <h3 class="font-bold text-xl text-text-main mb-6 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-primary">location_searching</span>
-                                Búsqueda Rápida
-                            </h3>
-                            <div class="relative mb-8">
-                                <input
-                                    class="w-full rounded-lg border-slate-200 bg-white py-3 pl-10 pr-4 text-sm font-medium placeholder:text-slate-400 focus:border-primary focus:ring-primary shadow-sm"
-                                    placeholder="Escribe tu provincia..." type="text" />
-                                <span
-                                    class="material-symbols-outlined absolute left-3 top-3 text-slate-400">search</span>
-                            </div>
-                            <div class="space-y-4">
-                                <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Provincias
-                                    Destacadas</p>
-                                <div class="grid grid-cols-2 gap-3">
-                                    <a class="flex items-center justify-between rounded-lg bg-white px-4 py-3 text-sm font-medium text-text-main shadow-sm transition-all hover:bg-blue-50 hover:text-primary hover:shadow-md group border border-transparent hover:border-blue-100"
-                                        href="#">
-                                        Madrid
-                                        <span
-                                            class="material-symbols-outlined text-slate-300 group-hover:text-primary text-base">chevron_right</span>
-                                    </a>
-                                    <a class="flex items-center justify-between rounded-lg bg-white px-4 py-3 text-sm font-medium text-text-main shadow-sm transition-all hover:bg-blue-50 hover:text-primary hover:shadow-md group border border-transparent hover:border-blue-100"
-                                        href="#">
-                                        Barcelona
-                                        <span
-                                            class="material-symbols-outlined text-slate-300 group-hover:text-primary text-base">chevron_right</span>
-                                    </a>
-                                    <a class="flex items-center justify-between rounded-lg bg-white px-4 py-3 text-sm font-medium text-text-main shadow-sm transition-all hover:bg-blue-50 hover:text-primary hover:shadow-md group border border-transparent hover:border-blue-100"
-                                        href="#">
-                                        Valencia
-                                        <span
-                                            class="material-symbols-outlined text-slate-300 group-hover:text-primary text-base">chevron_right</span>
-                                    </a>
-                                    <a class="flex items-center justify-between rounded-lg bg-white px-4 py-3 text-sm font-medium text-text-main shadow-sm transition-all hover:bg-blue-50 hover:text-primary hover:shadow-md group border border-transparent hover:border-blue-100"
-                                        href="#">
-                                        Sevilla
-                                        <span
-                                            class="material-symbols-outlined text-slate-300 group-hover:text-primary text-base">chevron_right</span>
-                                    </a>
-                                    <a class="flex items-center justify-between rounded-lg bg-white px-4 py-3 text-sm font-medium text-text-main shadow-sm transition-all hover:bg-blue-50 hover:text-primary hover:shadow-md group border border-transparent hover:border-blue-100"
-                                        href="#">
-                                        Málaga
-                                        <span
-                                            class="material-symbols-outlined text-slate-300 group-hover:text-primary text-base">chevron_right</span>
-                                    </a>
-                                    <a class="flex items-center justify-between rounded-lg bg-white px-4 py-3 text-sm font-medium text-text-main shadow-sm transition-all hover:bg-blue-50 hover:text-primary hover:shadow-md group border border-transparent hover:border-blue-100"
-                                        href="#">
-                                        Alicante
-                                        <span
-                                            class="material-symbols-outlined text-slate-300 group-hover:text-primary text-base">chevron_right</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="mt-8 pt-6 border-t border-slate-200">
-                                <a class="flex items-center justify-center gap-2 text-sm font-bold text-primary hover:text-primary-dark transition-colors"
-                                    href="#">
-                                    Ver listado completo
-                                    <span class="material-symbols-outlined text-base">arrow_forward</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="py-20 bg-slate-50 border-t border-slate-100">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <div class="mb-12 text-center">
-                    <h2 class="text-3xl font-bold tracking-tight text-text-main sm:text-4xl">Lo que nuestros clientes
-                        dicen</h2>
-                </div>
-                <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-                    <div class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-                        <div class="flex items-center gap-3">
-                            <div class="h-10 w-10 rounded-full bg-slate-200 bg-cover bg-center"
-                                data-alt="Portrait of Maria Garcia"
-                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDh_Amv9euEMgbmYeuM8EqhFm2dI6e4K5hfrITFHAF1axlRdW93a4Up8-UuRraf3cAM_p0IvQf1UruLyQGSKN3n1ftIRBCbJ4_Xb6NwjPLRrY0YqPEMUBN_ZiGNzFRiTUOxdXapo9EUIiB1PZ7fColZ5Rv7qTkDqno2_GSC6GijCPQCSewLgA0cHJ9gv9GzCs3lNZf6h2ZO6uQIJSGYxR9yvvt1SjhY40AP-u0Yn-hBzkD5n8iQgCBcWF4CfH28N3jcMGKmOOzIFW8");'>
-                            </div>
-                            <div>
-                                <p class="font-bold text-text-main">María García</p>
-                                <p class="text-xs text-text-secondary">Madrid</p>
-                            </div>
-                        </div>
-                        <div class="flex text-cta-orange">
-                            <span class="material-symbols-outlined text-xl fill-current">star</span>
-                            <span class="material-symbols-outlined text-xl fill-current">star</span>
-                            <span class="material-symbols-outlined text-xl fill-current">star</span>
-                            <span class="material-symbols-outlined text-xl fill-current">star</span>
-                            <span class="material-symbols-outlined text-xl fill-current">star</span>
-                        </div>
-                        <p class="text-sm leading-relaxed text-text-main">"Gracias a InfoAccidentes conseguí una
-                            indemnización justa y rehabilitación rápida. No tuve que preocuparme por nada."</p>
-                    </div>
-                    <div class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-                        <div class="flex items-center gap-3">
-                            <div class="h-10 w-10 rounded-full bg-slate-200 bg-cover bg-center"
-                                data-alt="Portrait of Juan Perez"
-                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuiVv919z0tTvo7PqDIPz7yYZu-7a-PbaqE5ELzLId_Kco_S3-TaYAax3VIr0HH7qvQ2PqJBSLMr1MVUoHKqCya0qo3qmeV5_SRMKh4YrF66MV0uG9lbyPt_8b_gZeXqcjUkc9BzIsssd04saqFauyEsHQ5Yc4R6CiSsnZXij8zYu9aEqbWL7Hac_jkbxkygF1KiVOmzym2NhPjpcNd_kbsxiPFeVgq5kYWt-3P4pMacxoQI01K5ryXTPCzYREI9Q2GK8wH8VohJc");'>
-                            </div>
-                            <div>
-                                <p class="font-bold text-text-main">Juan Pérez</p>
-                                <p class="text-xs text-text-secondary">Barcelona</p>
-                            </div>
-                        </div>
-                        <div class="flex text-cta-orange">
-                            <span class="material-symbols-outlined text-xl fill-current">star</span>
-                            <span class="material-symbols-outlined text-xl fill-current">star</span>
-                            <span class="material-symbols-outlined text-xl fill-current">star</span>
-                            <span class="material-symbols-outlined text-xl fill-current">star</span>
-                            <span class="material-symbols-outlined text-xl fill-current">star</span>
-                        </div>
-                        <p class="text-sm leading-relaxed text-text-main">"El proceso fue muy sencillo, ellos se
-                            encargaron de todo. Muy recomendables si buscas seriedad y rapidez."</p>
-                    </div>
-                    <div class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-                        <div class="flex items-center gap-3">
-                            <div class="h-10 w-10 rounded-full bg-slate-200 bg-cover bg-center"
-                                data-alt="Portrait of Elena Rodriguez"
-                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBdquagXjzse3jLi_ti4rBTMCaLDDc_3FDoiFvFFTZN_kDWMCnrpuuAAPOwMdkj_nNUUTKw3TZyLOi4YQVYQcN3oWPjaNQoC9S0JaAWVDfNUZKCJ-hazK00mOlX2aERbQj5hSprKC1kV8nMH7ZmkBXVfsDp5NppHiMwEIYLDd7ledFc2Uo3nxHWduqG9OwN8pB-R5zCdNSgZUvG3Xci0KrJINUgqqmMNLwvZ6Xtq1vOqyO4oBGZ5CVfBVSmMuGqtqhI4r5R3iQSMjE");'>
-                            </div>
-                            <div>
-                                <p class="font-bold text-text-main">Elena Rodríguez</p>
-                                <p class="text-xs text-text-secondary">Valencia</p>
-                            </div>
-                        </div>
-                        <div class="flex text-cta-orange">
-                            <span class="material-symbols-outlined text-xl fill-current">star</span>
-                            <span class="material-symbols-outlined text-xl fill-current">star</span>
-                            <span class="material-symbols-outlined text-xl fill-current">star</span>
-                            <span class="material-symbols-outlined text-xl fill-current">star</span>
-                            <span class="material-symbols-outlined text-xl fill-current">star</span>
-                        </div>
-                        <p class="text-sm leading-relaxed text-text-main">"Atención profesional y cercana. No tuve que
-                            adelantar nada de dinero y la clínica de rehabilitación fue excelente."</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="relative overflow-hidden bg-primary py-24">
-            <div class="absolute inset-0 opacity-10"
-                style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 24px 24px;">
-            </div>
-            <div class="relative mx-auto flex max-w-7xl flex-col items-center px-6 text-center lg:px-8">
-                <h2 class="mb-4 text-3xl font-black text-white sm:text-4xl">¿Necesitas un abogado en tu provincia?</h2>
-                <p class="mb-8 max-w-2xl text-lg text-blue-100">Encuentra a los mejores especialistas cerca de ti.
-                    Introduce tu ubicación para empezar.</p>
-                <form class="flex w-full max-w-lg flex-col gap-3 sm:flex-row" onsubmit="event.preventDefault()">
-                    <div class="relative grow">
-                        <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                            <span class="material-symbols-outlined text-gray-400">search</span>
-                        </div>
-                        <input
-                            class="block w-full rounded-lg border-0 bg-white py-4 pl-10 pr-4 text-text-main placeholder:text-gray-400 focus:ring-2 focus:ring-white/50"
-                            placeholder="Ej: Madrid, Sevilla, Valencia..." type="text" />
-                    </div>
-                    <button
-                        class="flex items-center justify-center rounded-lg bg-cta-orange px-8 py-4 text-base font-bold text-white shadow-lg transition-colors hover:bg-cta-orange-hover"
-                        type="submit">
-                        Buscar Abogado
-                    </button>
-                </form>
-            </div>
-        </section>
-        <section class="py-20 bg-slate-50">
-            <div class="mx-auto max-w-3xl px-6 lg:px-8">
-                <div class="mb-12 text-center">
-                    <h2 class="text-3xl font-bold tracking-tight text-text-main">Preguntas Frecuentes</h2>
-                    <p class="mt-2 text-text-secondary">Resolvemos tus dudas sobre accidentes de tráfico.</p>
-                </div>
-                <div class="space-y-4">
-                    <details
-                        class="group rounded-xl bg-white p-6 shadow-sm [&amp;_summary::-webkit-details-marker]:hidden open:ring-1 open:ring-primary/20">
-                        <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-text-main">
-                            <h3 class="font-bold text-lg">¿Cuánto cuesta contratar a un abogado de InfoAccidentes?</h3>
-                            <span
-                                class="material-symbols-outlined shrink-0 transition duration-300 group-open:-rotate-180">expand_more</span>
-                        </summary>
-                        <p class="mt-4 leading-relaxed text-text-secondary">
-                            Nada por adelantado. Nuestros abogados trabajan a porcentaje sobre la indemnización
+       </p>
+      </div>
+      <p class="mt-6 hidden items-center gap-2 text-sm font-medium text-slate-300 sm:flex">
+       <span class="material-symbols-outlined text-[#0000FF]" style="font-size: 20px;">
+        check_circle
+       </span>
+       Primera consulta gratuita y sin compromiso
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="py-20 bg-white">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+     <div class="mb-16 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-text-main sm:text-4xl">
+       ¿Por qué elegir
+                        InfoAccidentes?
+      </h2>
+      <p class="mt-4 text-lg text-text-secondary">
+       Garantizamos la mejor defensa legal y asistencia médica
+                        sin costes iniciales.
+      </p>
+     </div>
+     <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="group flex flex-col rounded-xl border border-slate-100 bg-white p-8 shadow-sm transition-all hover:border-primary/30 hover:shadow-md">
+       <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-3xl">
+         shield
+        </span>
+       </div>
+       <h3 class="mb-2 text-xl font-bold text-text-main">
+        Abogados Expertos
+       </h3>
+       <p class="text-text-secondary leading-relaxed">
+        Especialistas con años de experiencia dedicados
+                            exclusivamente a tráfico.
+       </p>
+      </div>
+      <div class="group flex flex-col rounded-xl border border-slate-100 bg-white p-8 shadow-sm transition-all hover:border-primary/30 hover:shadow-md">
+       <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-3xl">
+         medical_services
+        </span>
+       </div>
+       <h3 class="mb-2 text-xl font-bold text-text-main">
+        Rehabilitación Gratuita
+       </h3>
+       <p class="text-text-secondary leading-relaxed">
+        Acceso inmediato a las mejores clínicas privadas
+                            sin coste para ti.
+       </p>
+      </div>
+      <div class="group flex flex-col rounded-xl border border-slate-100 bg-white p-8 shadow-sm transition-all hover:border-primary/30 hover:shadow-md">
+       <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-3xl">
+         account_balance_wallet
+        </span>
+       </div>
+       <h3 class="mb-2 text-xl font-bold text-text-main">
+        Sin Gastos Iniciales
+       </h3>
+       <p class="text-text-secondary leading-relaxed">
+        Trabajamos a éxito. Solo cobramos si tú cobras tu
+                            indemnización.
+       </p>
+      </div>
+      <div class="group flex flex-col rounded-xl border border-slate-100 bg-white p-8 shadow-sm transition-all hover:border-primary/30 hover:shadow-md">
+       <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-3xl">
+         location_on
+        </span>
+       </div>
+       <h3 class="mb-2 text-xl font-bold text-text-main">
+        Cobertura Nacional
+       </h3>
+       <p class="text-text-secondary leading-relaxed">
+        Red de abogados y centros médicos en todas las
+                            provincias de España.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="py-20 bg-slate-50 border-y border-slate-200">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+     <div class="mb-16 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-text-main sm:text-4xl">
+       Nuestro Proceso en 3 Pasos
+      </h2>
+      <p class="mt-4 text-lg text-text-secondary">
+       Recuperar tu vida es así de sencillo.
+      </p>
+     </div>
+     <div class="relative grid grid-cols-1 gap-10 md:grid-cols-3">
+      <div class="hidden md:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-slate-200 -z-10">
+      </div>
+      <div class="flex flex-col items-center text-center">
+       <div class="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-white border-4 border-slate-100 shadow-sm text-primary z-10">
+        <span class="material-symbols-outlined text-4xl">
+         phone_in_talk
+        </span>
+       </div>
+       <h3 class="text-xl font-bold text-text-main">
+        1. Contacto
+       </h3>
+       <p class="mt-2 max-w-xs text-text-secondary">
+        Cuéntanos tu caso a través del formulario o por
+                            teléfono. Es rápido y sencillo.
+       </p>
+      </div>
+      <div class="flex flex-col items-center text-center">
+       <div class="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-white border-4 border-slate-100 shadow-sm text-primary z-10">
+        <span class="material-symbols-outlined text-4xl">
+         assignment_turned_in
+        </span>
+       </div>
+       <h3 class="text-xl font-bold text-text-main">
+        2. Evaluación Gratuita
+       </h3>
+       <p class="mt-2 max-w-xs text-text-secondary">
+        Estudiamos la viabilidad de tu caso sin coste
+                            alguno y te explicamos tus opciones.
+       </p>
+      </div>
+      <div class="flex flex-col items-center text-center">
+       <div class="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-white border-4 border-slate-100 shadow-sm text-primary z-10">
+        <span class="material-symbols-outlined text-4xl">
+         gavel
+        </span>
+       </div>
+       <h3 class="text-xl font-bold text-text-main">
+        3. Gestión Integral
+       </h3>
+       <p class="mt-2 max-w-xs text-text-secondary">
+        Nos encargamos de todo el proceso legal y médico
+                            hasta que recibas tu indemnización.
+       </p>
+      </div>
+     </div>
+     <div class="mt-16 flex justify-center">
+      <button class="flex h-12 items-center justify-center rounded-lg bg-primary/10 px-8 text-base font-bold text-primary hover:bg-primary/20 transition-colors">
+       Ver cómo funciona en detalle
+      </button>
+     </div>
+    </div>
+   </section>
+   <section class="py-24 bg-white">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+     <div class="mb-12 md:mb-20 text-center">
+      <span class="inline-block rounded-full bg-blue-50 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-primary mb-4">
+       Cobertura
+                        Nacional
+      </span>
+      <h2 class="text-3xl font-bold tracking-tight text-text-main sm:text-4xl">
+       Encuentra el mejor abogado
+                        en tu provincia
+      </h2>
+      <p class="mt-4 text-lg text-text-secondary max-w-2xl mx-auto">
+       Selecciona tu ubicación en el mapa
+                        interactivo para conectar con especialistas en accidentes de tráfico cerca de ti.
+      </p>
+     </div>
+     <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
+      <div class="w-full lg:w-3/5 order-2 lg:order-1 relative">
+       <div class="relative aspect-[4/3] w-full max-w-3xl mx-auto">
+        <svg class="w-full h-full drop-shadow-xl" fill="none" viewbox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+         <filter height="130%" id="dropshadow">
+          <fegaussianblur in="SourceAlpha" stddeviation="3">
+          </fegaussianblur>
+          <feoffset dx="2" dy="2" result="offsetblur">
+          </feoffset>
+          <fecomponenttransfer>
+           <fefunca slope="0.2" type="linear">
+           </fefunca>
+          </fecomponenttransfer>
+          <femerge>
+           <femergenode>
+           </femergenode>
+           <femergenode in="SourceGraphic">
+           </femergenode>
+          </femerge>
+         </filter>
+         <g stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <a aria-label="Abogados en Galicia" href="#">
+           <path class="map-path fill-slate-100" d="M120,40 L160,30 L180,60 L160,100 L110,90 L90,60 Z" title="Galicia">
+           </path>
+          </a>
+          <a aria-label="Abogados en Asturias" href="#">
+           <path class="map-path fill-slate-100" d="M160,30 L220,35 L230,55 L180,60 Z" title="Asturias">
+           </path>
+          </a>
+          <a aria-label="Abogados en Cantabria" href="#">
+           <path class="map-path fill-slate-100" d="M220,35 L260,40 L260,60 L230,55 Z" title="Cantabria">
+           </path>
+          </a>
+          <a aria-label="Abogados en País Vasco" href="#">
+           <path class="map-path fill-slate-100" d="M260,40 L300,50 L290,80 L260,60 Z" title="País Vasco">
+           </path>
+          </a>
+          <a aria-label="Abogados en Navarra" href="#">
+           <path class="map-path fill-slate-100" d="M300,50 L340,60 L330,100 L290,80 Z" title="Navarra">
+           </path>
+          </a>
+          <a aria-label="Abogados en Aragón" href="#">
+           <path class="map-path fill-slate-100" d="M340,60 L330,100 L350,150 L400,120 L420,80 Z" title="Aragón">
+           </path>
+          </a>
+          <a aria-label="Abogados en Cataluña" href="#">
+           <path class="map-path fill-slate-100" d="M420,80 L400,120 L440,160 L490,140 L500,90 Z" title="Cataluña">
+           </path>
+          </a>
+          <a aria-label="Abogados en Castilla y León" href="#">
+           <path class="map-path fill-slate-100" d="M160,100 L180,60 L230,55 L260,60 L290,80 L330,100 L350,150 L320,180 L200,180 L140,140 Z" title="Castilla y León">
+           </path>
+          </a>
+          <a aria-label="Abogados en La Rioja" href="#">
+           <path class="map-path fill-slate-100" d="M290,80 L330,100 L320,110 L280,90 Z" title="La Rioja">
+           </path>
+          </a>
+          <a aria-label="Abogados en Madrid" href="#">
+           <path class="map-path fill-slate-100" d="M290,190 L330,190 L330,220 L290,220 Z" title="Madrid">
+           </path>
+          </a>
+          <a aria-label="Abogados en Castilla-La Mancha" href="#">
+           <path class="map-path fill-slate-100" d="M290,220 L330,220 L350,150 L400,120 L440,160 L420,220 L450,260 L380,300 L280,260 Z" title="Castilla-La Mancha">
+           </path>
+          </a>
+          <a aria-label="Abogados en Comunidad Valenciana" href="#">
+           <path class="map-path fill-slate-100" d="M440,160 L490,140 L470,200 L450,260 L420,220 Z" title="Comunidad Valenciana">
+           </path>
+          </a>
+          <a aria-label="Abogados en Extremadura" href="#">
+           <path class="map-path fill-slate-100" d="M200,180 L290,190 L290,220 L280,260 L200,240 L180,200 Z" title="Extremadura">
+           </path>
+          </a>
+          <a aria-label="Abogados en Murcia" href="#">
+           <path class="map-path fill-slate-100" d="M450,260 L470,280 L440,300 L410,290 Z" title="Murcia">
+           </path>
+          </a>
+          <a aria-label="Abogados en Andalucía" href="#">
+           <path class="map-path fill-slate-100" d="M160,280 L200,240 L280,260 L380,300 L410,290 L440,300 L400,350 L250,350 L200,320 Z" title="Andalucía">
+           </path>
+          </a>
+          <a aria-label="Abogados en Baleares" href="#">
+           <path class="map-path fill-slate-100" d="M520,180 L550,190 L540,210 L510,200 Z" title="Islas Baleares">
+           </path>
+          </a>
+          <a aria-label="Abogados en Canarias" href="#">
+           <path class="map-path fill-slate-100" d="M100,450 L140,460 L130,480 L90,470 Z" title="Islas Canarias">
+           </path>
+          </a>
+         </g>
+        </svg>
+        <div class="absolute bottom-4 left-0 right-0 text-center lg:hidden">
+         <span class="inline-flex items-center gap-2 rounded-full bg-slate-900/80 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
+          <span class="material-symbols-outlined text-sm">
+           touch_app
+          </span>
+          Toca una provincia
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="w-full lg:w-2/5 order-1 lg:order-2">
+       <div class="rounded-2xl border border-slate-100 bg-slate-50 p-6 shadow-sm">
+        <h3 class="font-bold text-xl text-text-main mb-6 flex items-center gap-2">
+         <span class="material-symbols-outlined text-primary">
+          location_searching
+         </span>
+         Búsqueda Rápida
+        </h3>
+        <div class="relative mb-8">
+         <input class="w-full rounded-lg border-slate-200 bg-white py-3 pl-10 pr-4 text-sm font-medium placeholder:text-slate-400 focus:border-primary focus:ring-primary shadow-sm" placeholder="Escribe tu provincia..." type="text"/>
+         <span class="material-symbols-outlined absolute left-3 top-3 text-slate-400">
+          search
+         </span>
+        </div>
+        <div class="space-y-4">
+         <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">
+          Provincias
+                                    Destacadas
+         </p>
+         <div class="grid grid-cols-2 gap-3">
+          <a class="flex items-center justify-between rounded-lg bg-white px-4 py-3 text-sm font-medium text-text-main shadow-sm transition-all hover:bg-blue-50 hover:text-primary hover:shadow-md group border border-transparent hover:border-blue-100" href="#">
+           Madrid
+           <span class="material-symbols-outlined text-slate-300 group-hover:text-primary text-base">
+            chevron_right
+           </span>
+          </a>
+          <a class="flex items-center justify-between rounded-lg bg-white px-4 py-3 text-sm font-medium text-text-main shadow-sm transition-all hover:bg-blue-50 hover:text-primary hover:shadow-md group border border-transparent hover:border-blue-100" href="#">
+           Barcelona
+           <span class="material-symbols-outlined text-slate-300 group-hover:text-primary text-base">
+            chevron_right
+           </span>
+          </a>
+          <a class="flex items-center justify-between rounded-lg bg-white px-4 py-3 text-sm font-medium text-text-main shadow-sm transition-all hover:bg-blue-50 hover:text-primary hover:shadow-md group border border-transparent hover:border-blue-100" href="#">
+           Valencia
+           <span class="material-symbols-outlined text-slate-300 group-hover:text-primary text-base">
+            chevron_right
+           </span>
+          </a>
+          <a class="flex items-center justify-between rounded-lg bg-white px-4 py-3 text-sm font-medium text-text-main shadow-sm transition-all hover:bg-blue-50 hover:text-primary hover:shadow-md group border border-transparent hover:border-blue-100" href="#">
+           Sevilla
+           <span class="material-symbols-outlined text-slate-300 group-hover:text-primary text-base">
+            chevron_right
+           </span>
+          </a>
+          <a class="flex items-center justify-between rounded-lg bg-white px-4 py-3 text-sm font-medium text-text-main shadow-sm transition-all hover:bg-blue-50 hover:text-primary hover:shadow-md group border border-transparent hover:border-blue-100" href="#">
+           Málaga
+           <span class="material-symbols-outlined text-slate-300 group-hover:text-primary text-base">
+            chevron_right
+           </span>
+          </a>
+          <a class="flex items-center justify-between rounded-lg bg-white px-4 py-3 text-sm font-medium text-text-main shadow-sm transition-all hover:bg-blue-50 hover:text-primary hover:shadow-md group border border-transparent hover:border-blue-100" href="#">
+           Alicante
+           <span class="material-symbols-outlined text-slate-300 group-hover:text-primary text-base">
+            chevron_right
+           </span>
+          </a>
+         </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-slate-200">
+         <a class="flex items-center justify-center gap-2 text-sm font-bold text-primary hover:text-primary-dark transition-colors" href="#">
+          Ver listado completo
+          <span class="material-symbols-outlined text-base">
+           arrow_forward
+          </span>
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="py-20 bg-slate-50 border-t border-slate-100">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+     <div class="mb-12 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-text-main sm:text-4xl">
+       Lo que nuestros clientes
+                        dicen
+      </h2>
+     </div>
+     <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+      <div class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+       <div class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded-full bg-slate-200 bg-cover bg-center" data-alt="Portrait of Maria Garcia" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDh_Amv9euEMgbmYeuM8EqhFm2dI6e4K5hfrITFHAF1axlRdW93a4Up8-UuRraf3cAM_p0IvQf1UruLyQGSKN3n1ftIRBCbJ4_Xb6NwjPLRrY0YqPEMUBN_ZiGNzFRiTUOxdXapo9EUIiB1PZ7fColZ5Rv7qTkDqno2_GSC6GijCPQCSewLgA0cHJ9gv9GzCs3lNZf6h2ZO6uQIJSGYxR9yvvt1SjhY40AP-u0Yn-hBzkD5n8iQgCBcWF4CfH28N3jcMGKmOOzIFW8");'>
+        </div>
+        <div>
+         <p class="font-bold text-text-main">
+          María García
+         </p>
+         <p class="text-xs text-text-secondary">
+          Madrid
+         </p>
+        </div>
+       </div>
+       <div class="flex text-cta-orange">
+        <span class="material-symbols-outlined text-xl fill-current">
+         star
+        </span>
+        <span class="material-symbols-outlined text-xl fill-current">
+         star
+        </span>
+        <span class="material-symbols-outlined text-xl fill-current">
+         star
+        </span>
+        <span class="material-symbols-outlined text-xl fill-current">
+         star
+        </span>
+        <span class="material-symbols-outlined text-xl fill-current">
+         star
+        </span>
+       </div>
+       <p class="text-sm leading-relaxed text-text-main">
+        "Gracias a InfoAccidentes conseguí una
+                            indemnización justa y rehabilitación rápida. No tuve que preocuparme por nada."
+       </p>
+      </div>
+      <div class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+       <div class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded-full bg-slate-200 bg-cover bg-center" data-alt="Portrait of Juan Perez" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuiVv919z0tTvo7PqDIPz7yYZu-7a-PbaqE5ELzLId_Kco_S3-TaYAax3VIr0HH7qvQ2PqJBSLMr1MVUoHKqCya0qo3qmeV5_SRMKh4YrF66MV0uG9lbyPt_8b_gZeXqcjUkc9BzIsssd04saqFauyEsHQ5Yc4R6CiSsnZXij8zYu9aEqbWL7Hac_jkbxkygF1KiVOmzym2NhPjpcNd_kbsxiPFeVgq5kYWt-3P4pMacxoQI01K5ryXTPCzYREI9Q2GK8wH8VohJc");'>
+        </div>
+        <div>
+         <p class="font-bold text-text-main">
+          Juan Pérez
+         </p>
+         <p class="text-xs text-text-secondary">
+          Barcelona
+         </p>
+        </div>
+       </div>
+       <div class="flex text-cta-orange">
+        <span class="material-symbols-outlined text-xl fill-current">
+         star
+        </span>
+        <span class="material-symbols-outlined text-xl fill-current">
+         star
+        </span>
+        <span class="material-symbols-outlined text-xl fill-current">
+         star
+        </span>
+        <span class="material-symbols-outlined text-xl fill-current">
+         star
+        </span>
+        <span class="material-symbols-outlined text-xl fill-current">
+         star
+        </span>
+       </div>
+       <p class="text-sm leading-relaxed text-text-main">
+        "El proceso fue muy sencillo, ellos se
+                            encargaron de todo. Muy recomendables si buscas seriedad y rapidez."
+       </p>
+      </div>
+      <div class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+       <div class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded-full bg-slate-200 bg-cover bg-center" data-alt="Portrait of Elena Rodriguez" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBdquagXjzse3jLi_ti4rBTMCaLDDc_3FDoiFvFFTZN_kDWMCnrpuuAAPOwMdkj_nNUUTKw3TZyLOi4YQVYQcN3oWPjaNQoC9S0JaAWVDfNUZKCJ-hazK00mOlX2aERbQj5hSprKC1kV8nMH7ZmkBXVfsDp5NppHiMwEIYLDd7ledFc2Uo3nxHWduqG9OwN8pB-R5zCdNSgZUvG3Xci0KrJINUgqqmMNLwvZ6Xtq1vOqyO4oBGZ5CVfBVSmMuGqtqhI4r5R3iQSMjE");'>
+        </div>
+        <div>
+         <p class="font-bold text-text-main">
+          Elena Rodríguez
+         </p>
+         <p class="text-xs text-text-secondary">
+          Valencia
+         </p>
+        </div>
+       </div>
+       <div class="flex text-cta-orange">
+        <span class="material-symbols-outlined text-xl fill-current">
+         star
+        </span>
+        <span class="material-symbols-outlined text-xl fill-current">
+         star
+        </span>
+        <span class="material-symbols-outlined text-xl fill-current">
+         star
+        </span>
+        <span class="material-symbols-outlined text-xl fill-current">
+         star
+        </span>
+        <span class="material-symbols-outlined text-xl fill-current">
+         star
+        </span>
+       </div>
+       <p class="text-sm leading-relaxed text-text-main">
+        "Atención profesional y cercana. No tuve que
+                            adelantar nada de dinero y la clínica de rehabilitación fue excelente."
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="relative overflow-hidden bg-primary py-24">
+    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 24px 24px;">
+    </div>
+    <div class="relative mx-auto flex max-w-7xl flex-col items-center px-6 text-center lg:px-8">
+     <h2 class="mb-4 text-3xl font-black text-white sm:text-4xl">
+      ¿Necesitas un abogado en tu provincia?
+     </h2>
+     <p class="mb-8 max-w-2xl text-lg text-blue-100">
+      Encuentra a los mejores especialistas cerca de ti.
+                    Introduce tu ubicación para empezar.
+     </p>
+     <form class="flex w-full max-w-lg flex-col gap-3 sm:flex-row" onsubmit="event.preventDefault()">
+      <div class="relative grow">
+       <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+        <span class="material-symbols-outlined text-gray-400">
+         search
+        </span>
+       </div>
+       <input class="block w-full rounded-lg border-0 bg-white py-4 pl-10 pr-4 text-text-main placeholder:text-gray-400 focus:ring-2 focus:ring-white/50" placeholder="Ej: Madrid, Sevilla, Valencia..." type="text"/>
+      </div>
+      <button class="flex items-center justify-center rounded-lg bg-cta-orange px-8 py-4 text-base font-bold text-white shadow-lg transition-colors hover:bg-cta-orange-hover" type="submit">
+       Buscar Abogado
+      </button>
+     </form>
+    </div>
+   </section>
+   <section class="py-20 bg-slate-50">
+    <div class="mx-auto max-w-3xl px-6 lg:px-8">
+     <div class="mb-12 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-text-main">
+       Preguntas Frecuentes
+      </h2>
+      <p class="mt-2 text-text-secondary">
+       Resolvemos tus dudas sobre accidentes de tráfico.
+      </p>
+     </div>
+     <div class="space-y-4">
+      <details class="group rounded-xl bg-white p-6 shadow-sm [&amp;_summary::-webkit-details-marker]:hidden open:ring-1 open:ring-primary/20">
+       <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-text-main">
+        <h3 class="font-bold text-lg">
+         ¿Cuánto cuesta contratar a un abogado de InfoAccidentes?
+        </h3>
+        <span class="material-symbols-outlined shrink-0 transition duration-300 group-open:-rotate-180">
+         expand_more
+        </span>
+       </summary>
+       <p class="mt-4 leading-relaxed text-text-secondary">
+        Nada por adelantado. Nuestros abogados trabajan a porcentaje sobre la indemnización
                             conseguida. Si tú no cobras, nosotros tampoco. Además, en muchos casos, tu seguro de defensa
                             jurídica puede cubrir nuestros honorarios.
-                        </p>
-                    </details>
-                    <details
-                        class="group rounded-xl bg-white p-6 shadow-sm [&amp;_summary::-webkit-details-marker]:hidden open:ring-1 open:ring-primary/20">
-                        <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-text-main">
-                            <h3 class="font-bold text-lg">¿Tengo derecho a rehabilitación gratuita?</h3>
-                            <span
-                                class="material-symbols-outlined shrink-0 transition duration-300 group-open:-rotate-180">expand_more</span>
-                        </summary>
-                        <p class="mt-4 leading-relaxed text-text-secondary">
-                            Sí. Según el convenio de asistencia sanitaria, tienes derecho a elegir centro médico privado
+       </p>
+      </details>
+      <details class="group rounded-xl bg-white p-6 shadow-sm [&amp;_summary::-webkit-details-marker]:hidden open:ring-1 open:ring-primary/20">
+       <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-text-main">
+        <h3 class="font-bold text-lg">
+         ¿Tengo derecho a rehabilitación gratuita?
+        </h3>
+        <span class="material-symbols-outlined shrink-0 transition duration-300 group-open:-rotate-180">
+         expand_more
+        </span>
+       </summary>
+       <p class="mt-4 leading-relaxed text-text-secondary">
+        Sí. Según el convenio de asistencia sanitaria, tienes derecho a elegir centro médico privado
                             para tu recuperación sin coste alguno, ya que lo asume la aseguradora del vehículo
                             responsable. Nosotros gestionamos tu acceso inmediato.
-                        </p>
-                    </details>
-                    <details
-                        class="group rounded-xl bg-white p-6 shadow-sm [&amp;_summary::-webkit-details-marker]:hidden open:ring-1 open:ring-primary/20">
-                        <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-text-main">
-                            <h3 class="font-bold text-lg">¿Cuánto tiempo tengo para reclamar?</h3>
-                            <span
-                                class="material-symbols-outlined shrink-0 transition duration-300 group-open:-rotate-180">expand_more</span>
-                        </summary>
-                        <p class="mt-4 leading-relaxed text-text-secondary">
-                            El plazo general para reclamar por vía civil es de un año desde la estabilización de las
+       </p>
+      </details>
+      <details class="group rounded-xl bg-white p-6 shadow-sm [&amp;_summary::-webkit-details-marker]:hidden open:ring-1 open:ring-primary/20">
+       <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-text-main">
+        <h3 class="font-bold text-lg">
+         ¿Cuánto tiempo tengo para reclamar?
+        </h3>
+        <span class="material-symbols-outlined shrink-0 transition duration-300 group-open:-rotate-180">
+         expand_more
+        </span>
+       </summary>
+       <p class="mt-4 leading-relaxed text-text-secondary">
+        El plazo general para reclamar por vía civil es de un año desde la estabilización de las
                             lesiones. Sin embargo, recomendamos iniciar los trámites cuanto antes para asegurar las
                             pruebas y el tratamiento médico adecuado.
-                        </p>
-                    </details>
-                    <details
-                        class="group rounded-xl bg-white p-6 shadow-sm [&amp;_summary::-webkit-details-marker]:hidden open:ring-1 open:ring-primary/20">
-                        <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-text-main">
-                            <h3 class="font-bold text-lg">¿Qué pasa si el accidente fue culpa mía?</h3>
-                            <span
-                                class="material-symbols-outlined shrink-0 transition duration-300 group-open:-rotate-180">expand_more</span>
-                        </summary>
-                        <p class="mt-4 leading-relaxed text-text-secondary">
-                            Si eres el conductor y la culpa exclusiva es tuya, no tienes derecho a indemnización por
+       </p>
+      </details>
+      <details class="group rounded-xl bg-white p-6 shadow-sm [&amp;_summary::-webkit-details-marker]:hidden open:ring-1 open:ring-primary/20">
+       <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-text-main">
+        <h3 class="font-bold text-lg">
+         ¿Qué pasa si el accidente fue culpa mía?
+        </h3>
+        <span class="material-symbols-outlined shrink-0 transition duration-300 group-open:-rotate-180">
+         expand_more
+        </span>
+       </summary>
+       <p class="mt-4 leading-relaxed text-text-secondary">
+        Si eres el conductor y la culpa exclusiva es tuya, no tienes derecho a indemnización por
                             responsabilidad civil, aunque sí a asistencia sanitaria según tu póliza. Si eres ocupante,
                             siempre tienes derecho a indemnización, sea culpa de quien sea.
-                        </p>
-                    </details>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- Minimal Footer -->
-    <footer class="bg-background-dark text-white border-t border-white/10 pt-16 pb-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-                <!-- Col 1: Brand -->
-                <div class="flex flex-col gap-6">
-                    <a class="block" href="index.html">
-                        <img alt="InfoAccidentes"
-                            class="h-10 w-auto brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
-                            src="https://infoaccidentes.com/wp-content/uploads/2021/02/infoaccidentes_marca-300x111.webp" />
-                    </a>
-                    <p class="text-sm text-gray-300 leading-relaxed">
-                        Plataforma líder en la defensa de víctimas de tráfico. Conectamos personas con soluciones
+       </p>
+      </details>
+     </div>
+    </div>
+   </section>
+  </main>
+  <!-- Minimal Footer -->
+  <footer class="bg-background-dark text-white border-t border-white/10 pt-16 pb-8">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+     <!-- Col 1: Brand -->
+     <div class="flex flex-col gap-6">
+      <a class="block" href="index.html">
+       <img alt="InfoAccidentes" class="h-10 w-auto brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" src="https://infoaccidentes.com/wp-content/uploads/2021/02/infoaccidentes_marca-300x111.webp"/>
+      </a>
+      <p class="text-sm text-gray-300 leading-relaxed">
+       Plataforma líder en la defensa de víctimas de tráfico. Conectamos personas con soluciones
                         legales y médicas de primer nivel.
-                    </p>
-                </div>
-                <!-- Col 2: Servicios -->
-                <div>
-                    <h4 class="font-bold text-lg mb-6 text-white">Servicios</h4>
-                    <ul class="space-y-4 text-sm text-gray-300">
-                        <li><a class="hover:text-cta-orange transition-colors" href="abogados.html">Abogados
-                                Especialistas</a></li>
-                        <li><a class="hover:text-cta-orange transition-colors" href="clinicas.html">Clínicas
-                                Rehabilitación</a></li>
-                        <li><a class="hover:text-cta-orange transition-colors" href="calculadora.html">Calculadora
-                                Indemnización</a></li>
-                    </ul>
-                </div>
-                <!-- Col 3: Información -->
-                <div>
-                    <h4 class="font-bold text-lg mb-6 text-white">Información</h4>
-                    <ul class="space-y-4 text-sm text-gray-300">
-                        <li><a class="hover:text-cta-orange transition-colors" href="lesiones.html">Indemnizaciones y
-                                Lesiones</a></li>
-                        <li><a class="hover:text-cta-orange transition-colors" href="accidentes.html">Tipos de
-                                Accidentes</a></li>
-                        <li><a class="hover:text-cta-orange transition-colors" href="#">Guías de Reclamación</a></li>
-                    </ul>
-                </div>
-                <!-- Col 4: Contacto -->
-                <div>
-                    <h4 class="font-bold text-lg mb-6 text-white">Contacto</h4>
-                    <ul class="space-y-4 text-sm text-gray-300">
-                        <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-cta-orange">mail</span>
-                            <a class="hover:text-white transition-colors"
-                                href="mailto:info@infoaccidentes.com">info@infoaccidentes.com</a>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-cta-orange">chat</span>
-                            <a class="hover:text-white transition-colors"
-                                href="https://api.whatsapp.com/send/?phone=34635243155&text=Hola%2CNecesito+hacer+una+consulta&app_absent=0">WhatsApp
-                                24h</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Subfooter -->
-            <div
-                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300">
-                <div>&copy; 2026 InfoAccidentes. Todos los derechos reservados.</div>
-                <div class="flex gap-6">
-                    <a class="hover:text-white transition-colors" href="#">Aviso Legal</a>
-                    <a class="hover:text-white transition-colors" href="#">Política de Privacidad</a>
-                    <a class="hover:text-white transition-colors" href="#">Cookies</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
-
+      </p>
+     </div>
+     <!-- Col 2: Servicios -->
+     <div>
+      <h4 class="font-bold text-lg mb-6 text-white">
+       Servicios
+      </h4>
+      <ul class="space-y-4 text-sm text-gray-300">
+       <li>
+        <a class="hover:text-cta-orange transition-colors" href="abogados-trafico/index.html">
+         Abogados
+                                Especialistas
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-cta-orange transition-colors" href="clinicas-accidentes-trafico/index.html">
+         Clínicas
+                                Rehabilitación
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-cta-orange transition-colors" href="calculadora-indemnizacion/index.html">
+         Calculadora
+                                Indemnización
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- Col 3: Información -->
+     <div>
+      <h4 class="font-bold text-lg mb-6 text-white">
+       Información
+      </h4>
+      <ul class="space-y-4 text-sm text-gray-300">
+       <li>
+        <a class="hover:text-cta-orange transition-colors" href="indemnizacion/index.html">
+         Indemnizaciones y
+                                Lesiones
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-cta-orange transition-colors" href="reclamar-accidente/index.html">
+         Tipos de
+                                Accidentes
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-cta-orange transition-colors" href="guia/index.html">
+         Guías de Reclamación
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- Col 4: Contacto -->
+     <div>
+      <h4 class="font-bold text-lg mb-6 text-white">
+       Contacto
+      </h4>
+      <ul class="space-y-4 text-sm text-gray-300">
+       <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-cta-orange">
+         mail
+        </span>
+        <a class="hover:text-white transition-colors" href="mailto:info@infoaccidentes.com" rel="noopener noreferrer" target="_blank">
+         info@infoaccidentes.com
+        </a>
+       </li>
+       <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-cta-orange">
+         chat
+        </span>
+        <a class="hover:text-white transition-colors" href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+         WhatsApp
+                                24h
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <!-- Subfooter -->
+    <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300">
+     <div>
+      © 2026 InfoAccidentes. Todos los derechos reservados.
+     </div>
+     <div class="flex gap-6">
+      <a class="hover:text-white transition-colors" href="#">
+       Aviso Legal
+      </a>
+      <a class="hover:text-white transition-colors" href="#">
+       Política de Privacidad
+      </a>
+      <a class="hover:text-white transition-colors" href="#">
+       Cookies
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+ </body>
 </html>

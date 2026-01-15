@@ -1,0 +1,2154 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Blog Legal, Noticias y Guías - InfoAccidentes
+  </title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography">
+  </script>
+  <script src="../js/theme.js">
+  </script>
+  <link href="../css/styles.css" rel="stylesheet"/>
+  <script src="../js/main.js">
+  </script>
+  <style>
+   .prose a {
+            color: #0000FF;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .prose strong {
+            color: #0d141b;
+            font-weight: 700;
+        }
+  </style>
+ </head>
+ <body class="bg-background-light text-text-dark flex flex-col min-h-screen antialiased selection:bg-primary/20 selection:text-primary">
+  <!-- 1. Sticky Header -->
+  <header class="sticky top-0 z-50 w-full bg-white shadow-sm border-b border-gray-100">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+     <!-- Logo -->
+     <div class="flex-shrink-0 flex items-center">
+      <a href="../index.html">
+       <img alt="InfoAccidentes" class="h-10 w-auto" src="https://infoaccidentes.com/wp-content/uploads/2021/02/infoaccidentes_marca-300x111.webp"/>
+      </a>
+     </div>
+     <!-- Desktop Menu -->
+     <nav class="hidden md:flex space-x-8">
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="../abogados-trafico/index.html">
+       Abogados
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="../clinicas-accidentes-trafico/index.html">
+       Clínicas
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="../calculadora-indemnizacion/index.html">
+       Calculadora
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="../indemnizacion/index.html">
+       Lesiones
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="../reclamar-accidente/index.html">
+       Accidentes
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="../guia/index.html">
+       Guías
+      </a>
+     </nav>
+     <!-- CTA Button -->
+     <div class="hidden md:flex items-center">
+      <a class="bg-cta-orange hover:bg-cta-orange-hover text-white px-6 py-2.5 rounded-lg font-bold transition-colors shadow-sm flex items-center gap-2" href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+       <span class="material-symbols-outlined text-[20px]">
+        chat
+       </span>
+       WhatsApp 24h
+      </a>
+     </div>
+     <!-- Mobile Menu Button -->
+     <div class="flex items-center md:hidden">
+      <button class="text-text-muted hover:text-primary p-2" onclick="toggleMobileMenu()" type="button">
+       <span class="material-symbols-outlined text-3xl">
+        menu
+       </span>
+      </button>
+     </div>
+    </div>
+   </div>
+   <!-- Mobile Menu -->
+   <div class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-lg" id="mobile-menu">
+    <div class="px-4 pt-2 pb-6 space-y-2">
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="../abogados-trafico/index.html">
+      Abogados
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="../clinicas-accidentes-trafico/index.html">
+      Clínicas
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="../calculadora-indemnizacion/index.html">
+      Calculadora
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="../indemnizacion/index.html">
+      Lesiones
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="../reclamar-accidente/index.html">
+      Accidentes
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="../guia/index.html">
+      Guías
+     </a>
+     <div class="pt-4 mt-4 border-t border-gray-100">
+      <a class="flex items-center justify-center gap-2 w-full bg-cta-orange text-white py-3 rounded-lg font-bold" href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+       <span class="material-symbols-outlined">
+        chat
+       </span>
+       WhatsApp 24h
+      </a>
+     </div>
+    </div>
+   </div>
+  </header>
+  <!-- 2. Hero Section -->
+  <section class="relative bg-white pt-16 pb-20 overflow-hidden">
+   <!-- Abstract Background Pattern -->
+   <div class="absolute inset-0 z-0 opacity-30">
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl">
+    </div>
+    <div class="absolute top-1/2 -left-24 w-72 h-72 bg-blue-100 rounded-full blur-2xl">
+    </div>
+   </div>
+   <div class="relative z-10 max-w-4xl mx-auto px-4 text-center sm:px-6 lg:px-8">
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 tracking-tight mb-6 leading-tight">
+     Biblioteca Legal:
+     <span class="text-primary">
+      Guías y Noticias
+     </span>
+    </h1>
+    <p class="mt-4 text-xl text-text-muted max-w-2xl mx-auto mb-10">
+     Resuelve tus dudas legales. Todo sobre indemnizaciones, baremos, plazos y consejos para víctimas de accidentes.
+    </p>
+    <!-- Search Bar -->
+    <div class="max-w-2xl mx-auto">
+     <div class="relative group">
+      <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+       <span class="material-symbols-outlined text-gray-400 group-focus-within:text-primary transition-colors">
+        search
+       </span>
+      </div>
+      <input class="block w-full pl-12 pr-4 py-4 border-2 border-gray-100 rounded-xl bg-gray-50 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-base shadow-sm" data-alt="Campo de búsqueda de accidentes" id="searchInput" placeholder="Buscar en la biblioteca (ej. baremo 2026, latigazo, plazos...)" type="text"/>
+      <div class="absolute inset-y-0 right-2 flex items-center">
+       <button class="p-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors">
+        <span class="material-symbols-outlined text-[20px]">
+         arrow_forward
+        </span>
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- 3. Accident Scenarios Grid (Silo) -->
+  <section class="py-16 bg-background-light border-t border-gray-100">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-12 text-center md:text-left">
+     <h2 class="text-3xl font-bold text-gray-900">
+      Índice de Artículos y Guías
+     </h2>
+     <p class="mt-2 text-text-muted">
+      Navega por nuestra colección completa de artículos ordenados alfabéticamente.
+     </p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden prose prose-lg prose-slate max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-p:text-gray-600 prose-p:leading-relaxed prose-a:text-cta-orange prose-a:no-underline hover:prose-a:underline prose-li:text-gray-600 prose-strong:text-gray-900 prose-strong:font-bold" data-keywords="15 recomendaciones para evitar los accidentes de tráfico en embarazadas (guía 2026) recomendaciones embarazadas trafico">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         local_police
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="recomendaciones-embarazadas-trafico/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        15 Recomendaciones para evitar los accidentes de tráfico en embarazadas (Guía 2026)
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía actualizada 2026: 15 consejos vitales de seguridad vial para embarazadas. Uso correcto del cinturón, airbag y er...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="accidente con conductor a la fuga: cómo reclamar su indemnización en 2026 conductor a la fuga">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="conductor-a-la-fuga/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Accidente con Conductor a la Fuga: Cómo reclamar su indemnización en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía legal 2026 para reclamar indemnización tras un accidente con conductor a la fuga. Cómo cobrar del Consorcio de C...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="accidente con un coche prestado: guía práctica 2026 para reclamar con éxito su indemnización y asistencia gratuita accidente coche prestado">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="accidente-coche-prestado/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Accidente con un Coche Prestado: Guía Práctica 2026 para Reclamar con Éxito su Indemnización y Asistencia Gratuita
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía legal completa 2026 sobre cómo reclamar con éxito tras un accidente en un coche prestado. Resolvemos quién paga,...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="accidente de coche sin seguro: guía clara 2026 para reclamar con éxito su indemnización accidente sin seguro">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         security
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="accidente-sin-seguro/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Accidente de Coche sin Seguro: Guía Clara 2026 para Reclamar con Éxito su Indemnización
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía legal 2026: ¿Ha sufrido un accidente de coche sin seguro en España? Sepa quién paga, cómo reclamar y consiga su ...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="accidente de tráfico con embarazada: causas, protocolo de actuación y derechos legales (actualizado 2026) embarazo accidente trafico">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         gavel
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="embarazo-accidente-trafico/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Accidente de Tráfico con Embarazada: Causas, Protocolo de Actuación y Derechos Legales (Actualizado 2026)
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       ¿Has sufrido un accidente de tráfico embarazada? Conoce tus derechos legales y la atención médica prioritaria que nec...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="accidente por carretera en mal estado: cómo reclamar su indemnización en 2026 reclamar carretera mal estado">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="reclamar-carretera-mal-estado/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Accidente por Carretera en Mal Estado: Cómo reclamar su indemnización en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía legal 2026 para reclamar indemnización por accidentes causados por baches, aceite o mala señalización. Cómo exig...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="accidentes de tráfico de autónomos y el lucro cesante en el baremo de indemnizaciones 2026 lucro cesante autonomos">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="lucro-cesante-autonomos/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Accidentes de Tráfico de Autónomos y el Lucro Cesante en el Baremo de Indemnizaciones 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa 2026 sobre accidentes de tráfico sufridos por autónomos en España: cómo reclamar el Lucro Cesante, dife...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="accidentes de tráfico en el extranjero: qué hacer y cómo reclamar la máxima indemnización en 2026 accidente extranjero">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="accidente-extranjero/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Accidentes de Tráfico en el Extranjero: Qué Hacer y Cómo Reclamar la Máxima Indemnización en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       ¿Sufrió un accidente de tráfico fuera de España? Le explicamos qué hacer. Reclame su máxima indemnización con nuestro...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="accidentes en prácticas de autoescuela: ¿quién es responsable y cómo reclamar la indemnización máxima en 2026? accidente autoescuela">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="accidente-autoescuela/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Accidentes en Prácticas de Autoescuela: ¿Quién es Responsable y Cómo Reclamar la Indemnización Máxima en 2026?
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía legal actualizada 2026 sobre accidentes en prácticas de autoescuela. Descubra quién es responsable (instructor, ...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="amaxofobia: qué es, causas y cómo superar el miedo a conducir en 2026 amaxofobia miedo conducir">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         article
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="amaxofobia-miedo-conducir/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Amaxofobia: Qué es, Causas y Cómo Superar el Miedo a Conducir en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa sobre la Amaxofobia (miedo a conducir). Descubra sus causas, síntomas y las terapias más efectivas (TCC...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="atestado policial en accidentes de tráfico: qué es, cómo pedirlo y su valor legal (guía 2026) atestado policial">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="atestado-policial/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Atestado Policial en Accidentes de Tráfico: Qué es, Cómo Pedirlo y su Valor Legal (Guía 2026)
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa 2026 sobre el atestado policial en accidentes de tráfico en España. Descubra qué es, cómo pedirlo y por...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="baremo médico de secuelas por accidente de tráfico: valoración de indemnizaciones 2026 baremo medico secuelas">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="baremo-medico-secuelas/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Baremo Médico de Secuelas por Accidente de Tráfico: Valoración de Indemnizaciones 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa del Baremo Médico de Secuelas de la Ley 35/2015 (actualizado 2026). Entienda cómo se clasifican y valor...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="cartel de los coches: qué es y cómo reclamar tu indemnización en 2026 cartel coches">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="cartel-coches/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Cartel de los Coches: Qué es y Cómo Reclamar tu Indemnización en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       ¿Fuiste afectado por el Cartel de Coches (2006-2013)? Guía experta 2026 para reclamar tu indemnización y recuperar en...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="clínicas de rehabilitación y fisioterapia independientes: tratamiento gratuito en toda españa (2026) solicitar forense">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         medical_services
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="solicitar-forense/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Clínicas de Rehabilitación y Fisioterapia Independientes: Tratamiento Gratuito en toda España (2026)
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Acceda a las mejores clínicas de rehabilitación privadas e independientes para accidentes de tráfico en España. Ejerz...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="consorcio de compensación de seguros (ccs) 2026: ¿cuándo debe acudir para reclamar su indemnización? consorcio compensacion seguros">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         security
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="consorcio-compensacion-seguros/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Consorcio de Compensación de Seguros (CCS) 2026: ¿Cuándo debe acudir para reclamar su indemnización?
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía 2026 sobre el Consorcio de Compensación de Seguros (CCS). Descubra en qué casos el CCS le indemniza (falta de se...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="definición y tipos de accidente de tráfico en españa: clasificación legal para su reclamación (guía 2026) tipos accidente trafico">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         gavel
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="tipos-accidente-trafico/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Definición y Tipos de Accidente de Tráfico en España: Clasificación Legal para su Reclamación (Guía 2026)
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Entienda la Definición legal y los Tipos de Accidentes de Tráfico en España (choque, colisión, atropello) para reclam...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="delito de conducción temeraria en españa: sanciones, penas de prisión y consecuencias legales (guía 2026) delito conduccion temeraria">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         gavel
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="delito-conduccion-temeraria/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Delito de Conducción Temeraria en España: Sanciones, Penas de Prisión y Consecuencias Legales (Guía 2026)
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía legal actualizada 2026 sobre el delito de conducción temeraria en España: qué es, penas de prisión, multas y ret...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="delito de lesiones agravadas: todo lo que necesitas saber sobre consecuencias y reclamación en 2026 delito lesiones">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         gavel
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="delito-lesiones/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Delito de Lesiones Agravadas: Todo lo que Necesitas Saber sobre Consecuencias y Reclamación en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa 2026 sobre el delito de lesiones agravadas en el Código Penal español. Factores de agravación, consecue...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="derechos clave que tienes ante un accidente de tráfico en 2026: obtén la máxima indemnización derechos victima accidente">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="derechos-victima-accidente/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Derechos Clave que Tienes ante un Accidente de Tráfico en 2026: Obtén la Máxima Indemnización
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       ¿Ha sufrido un accidente de tráfico? Conozca sus derechos fundamentales para reclamar la máxima indemnización y elegi...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="documentos necesarios para reclamar su indemnización por accidente de tráfico o caída (guía 2026) documentacion reclamacion">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="documentacion-reclamacion/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Documentos Necesarios para Reclamar su Indemnización por Accidente de Tráfico o Caída (Guía 2026)
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa 2026 sobre la documentación esencial (partes, informes médicos, facturas) que necesita para reclamar su...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="días de baja por accidente de tráfico: qué son días impeditivos, no impeditivos y hospitalarios (guía legal 2026) dias impeditivos baja">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         medical_services
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="dias-impeditivos-baja/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Días de Baja por Accidente de Tráfico: Qué son Días Impeditivos, No Impeditivos y Hospitalarios (Guía Legal 2026)
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía 2026 sobre la calificación de los días de baja por accidente de tráfico (impeditivos, no impeditivos). Entienda ...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="el baremo de accidentes de tráfico 2026: cómo se calcula su indemnización por daño corporal nuevo baremo valoracion">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="nuevo-baremo-valoracion/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        El Baremo de Accidentes de Tráfico 2026: Cómo se Calcula su Indemnización por Daño Corporal
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía actualizada 2026 sobre el Baremo de valoración de daños en accidentes de tráfico. Conozca los factores clave (mu...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="el nuevo baremo de valoración de daños y perjuicios en accidentes de circulación (2026): principios generales esenciales principios baremo">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="principios-baremo/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        El Nuevo Baremo de Valoración de Daños y Perjuicios en Accidentes de Circulación (2026): Principios Generales Esenciales
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Entienda los principios fundamentales del Baremo de valoración de daños en accidentes de tráfico (Ley 35/2015), vigen...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="falsificar un parte amistoso de accidente de tráfico: consecuencias penales y delitos asociados en 2026 falsificar parte amistoso">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         gavel
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="falsificar-parte-amistoso/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Falsificar un Parte Amistoso de Accidente de Tráfico: Consecuencias Penales y Delitos Asociados en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       La falsificación de un parte amistoso de accidente es una práctica grave que conlleva serias consecuencias penales en...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="falso positivo en alcoholemia: causas, cómo impugnar y asistencia legal urgente 2026 falso positivo alcoholemia">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         gavel
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="falso-positivo-alcoholemia/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Falso Positivo en Alcoholemia: Causas, Cómo Impugnar y Asistencia Legal Urgente 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía 2026: ¿Qué es un falso positivo en alcoholemia? Conozca las causas (medicamentos, dieta), cómo actuar legalmente...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="fiscalidad 2026: ¿tengo que declarar a hacienda mi indemnización por accidente? tributacion indemnizaciones">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="tributacion-indemnizaciones/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Fiscalidad 2026: ¿Tengo que Declarar a Hacienda mi Indemnización por Accidente?
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía fiscal 2026: ¿Debo declarar mi indemnización a Hacienda? Sepa qué está exento en el IRPF y cuándo tributa (lucro...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="glosario del baremo de accidentes de tráfico 2026 glosario baremo">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         local_police
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="glosario-baremo/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Glosario del Baremo de Accidentes de Tráfico 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía técnica 2026 con las definiciones del Baremo de Accidentes de Tráfico en España. Entienda conceptos como secuela...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="guía 2026: cómo rellenar el parte amistoso (daa) correctamente rellenar parte amistoso">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         description
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="rellenar-parte-amistoso/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Guía 2026: Cómo Rellenar el Parte Amistoso (DAA) Correctamente
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía paso a paso 2026 para rellenar el Parte Amistoso de Accidente (DAA). Evite errores en las casillas de culpa, ase...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="guía 2026: qué hacer inmediatamente tras sufrir un accidente de tráfico protocolo actuacion accidente">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         local_police
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="protocolo-actuacion-accidente/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Guía 2026: Qué hacer inmediatamente tras sufrir un Accidente de Tráfico
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa 2026: Pasos a seguir tras un accidente de tráfico en España (Protocolo PAS). Cómo recopilar pruebas, pl...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="histórico del baremo de indemnizaciones de tráfico: evolución 2016-2025 baremo historico">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         local_police
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="baremo-historico/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Histórico del Baremo de Indemnizaciones de Tráfico: Evolución 2016-2025
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Histórico completo del Baremo de Accidentes de Tráfico en España (2016-2025). Consulte las tablas de indemnización an...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="itv caducada o desfavorable: ¿qué daños cubre su seguro en caso de accidente de tráfico en 2026? itv caducada seguro">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         security
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="itv-caducada-seguro/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        ITV Caducada o Desfavorable: ¿Qué Daños Cubre su Seguro en caso de Accidente de Tráfico en 2026?
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Accidente con ITV caducada en España: Descubra qué daños cubre su seguro en 2026, si es culpable o no, y las sancione...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="indemnización por accidente de tráfico sin baja laboral en 2026: sus derechos y la máxima cuantía indemnizacion sin baja">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="indemnizacion-sin-baja/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Indemnización por Accidente de Tráfico sin Baja Laboral en 2026: Sus Derechos y la Máxima Cuantía
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía 2026 sobre cómo reclamar la máxima indemnización por accidente de tráfico sin baja laboral. Conozca sus derechos...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="indemnización por accidente de tráfico: claves para reclamar tras días de baja médica (actualizado 2026) dias baja medica">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="dias-baja-medica/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Indemnización por Accidente de Tráfico: Claves para Reclamar Tras Días de Baja Médica (Actualizado 2026)
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa para calcular la máxima indemnización por accidente de tráfico en 2026. Entienda la diferencia entre dí...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="indemnización por accidente de tráfico: mitos y realidades (guía 2026) mitos indemnizaciones">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="mitos-indemnizaciones/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Indemnización por Accidente de Tráfico: Mitos y Realidades (Guía 2026)
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Desmontamos los mitos sobre indemnizaciones de tráfico. Descubra si tiene derecho a cobrar aunque no pida la baja, si...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="indemnización por lesiones temporales tras accidente de tráfico: guía completa 2026 lesiones temporales">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="lesiones-temporales/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Indemnización por Lesiones Temporales Tras Accidente de Tráfico: Guía Completa 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       ¿Sufrió lesiones temporales en un accidente? Entienda cómo se calcula su indemnización en 2026. Asesoramiento legal g...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="indemnización por secuelas sufridas a causa de un accidente de tráfico: máxima reclamación en 2026 secuelas accidente">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="secuelas-accidente/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Indemnización por Secuelas Sufridas a Causa de un Accidente de Tráfico: Máxima Reclamación en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Si usted ha sufrido un accidente de tráfico y, tras el proceso de curación, le quedan secuelas físicas, psicológicas ...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="informe de biomecánica: clave para la máxima indemnización por accidente de tráfico en 2026 informe biomecanica">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="informe-biomecanica/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Informe de biomecánica: Clave para la máxima indemnización por accidente de tráfico en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Obtenga su informe de biomecánica con expertos para demostrar la relación entre el accidente y sus lesiones. Pruebas ...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="la defensa jurídica en caso de accidente de tráfico: su derecho a elegir abogado especialista y máxima indemnización en 2026 defensa juridica seguro">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="defensa-juridica-seguro/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        La Defensa Jurídica en caso de accidente de tráfico: Su derecho a elegir abogado especialista y máxima indemnización en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa 2026 sobre la cobertura de Defensa Jurídica en tu seguro de coche. Aprende a elegir libremente tu aboga...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="la valoración de las secuelas físicas tras un accidente de tráfico: claves para su indemnización en 2026 valoracion secuelas">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="valoracion-secuelas/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        La Valoración de las Secuelas Físicas tras un Accidente de Tráfico: Claves para su Indemnización en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Entienda cómo se valoran las secuelas físicas (lesiones permanentes) tras un accidente de tráfico en 2026. Consiga la...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="lesiones leves producidas en accidentes de tráfico: guía sobre torceduras y esguinces para 2026 lesiones leves">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         local_police
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="lesiones-leves/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Lesiones Leves Producidas en Accidentes de Tráfico: Guía sobre Torceduras y Esguinces para 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa sobre lesiones leves (torceduras y esguinces) tras un accidente de tráfico. Conozca los grados de lesió...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="lesiones típicas producidas en accidentes de tráfico: guía actualizada 2026 lesiones comunes">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         local_police
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="lesiones-comunes/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Lesiones Típicas Producidas en Accidentes de Tráfico: Guía Actualizada 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa sobre las lesiones más frecuentes tras un accidente de tráfico (latigazo cervical, fracturas, esguinces...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="médicos valoradores del daño corporal: el pilar de su indemnización en 2026 medicos valoradores">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="medicos-valoradores/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Médicos Valoradores del Daño Corporal: El Pilar de su Indemnización en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa 2026 sobre la importancia del médico valorador independiente en accidentes de tráfico. Aprenda a defend...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="niveles de gravedad de las lesiones por accidente de tráfico: escalas de clasificación 2026 gravedad lesiones">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         local_police
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="gravedad-lesiones/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Niveles de Gravedad de las Lesiones por Accidente de Tráfico: Escalas de Clasificación 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa sobre los niveles de gravedad de las lesiones por accidente de tráfico (AIS, ISS, GCS). Entienda su cla...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="oferta motivada y respuesta motivada de aseguradoras: guía legal 2026 para lesionados oferta motivada">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         gavel
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="oferta-motivada/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Oferta Motivada y Respuesta Motivada de Aseguradoras: Guía Legal 2026 para Lesionados
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía actualizada 2026 sobre la obligación de las aseguradoras de responder a su reclamación (Oferta Motivada o Respue...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="peritación de coches: guía 2026 para reclamar y obtener la máxima indemnización peritaje coches">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="peritaje-coches/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Peritación de Coches: Guía 2026 para Reclamar y Obtener la Máxima Indemnización
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa sobre la peritación de coches tras un accidente. Descubra qué es, cómo se realiza y los 5 pasos clave p...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="perjuicio personal básico por accidente de tráfico: definición, cálculo y reclamación de su indemnización en 2026 perjuicio personal basico">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="perjuicio-personal-basico/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Perjuicio Personal Básico por Accidente de Tráfico: Definición, Cálculo y Reclamación de su Indemnización en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa sobre el Perjuicio Personal Básico (indemnización mínima por lesiones) tras un accidente de tráfico. De...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="perjuicio personal particular en accidentes de tráfico: claves para su indemnización máxima en 2026 perjuicio personal particular">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="perjuicio-personal-particular/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Perjuicio Personal Particular en Accidentes de Tráfico: Claves para su Indemnización Máxima en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa sobre el Perjuicio Personal Particular en accidentes de tráfico (moderado y grave). Entienda cómo se in...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="rehabilitación integral para lesionados en accidentes de tráfico: máxima recuperación en 2026 rehabilitacion accidentes">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         medical_services
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="rehabilitacion-accidentes/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Rehabilitación Integral para Lesionados en Accidentes de Tráfico: Máxima Recuperación en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa sobre la rehabilitación para lesionados en accidentes de tráfico en 2026. Conozca los diferentes método...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="sov (seguro obligatorio de viajeros) 2026: cobertura, requisitos y asistencia legal gratuita seguro obligatorio viajeros sov">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         security
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="seguro-obligatorio-viajeros-sov/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        SOV (Seguro Obligatorio de Viajeros) 2026: Cobertura, Requisitos y Asistencia Legal Gratuita
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Si ha sufrido un accidente en transporte público, es fundamental conocer sus derechos. ElSeguro Obligatorio de Viajer...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="secuelas concurrentes por accidente de tráfico: guía para reclamar la máxima indemnización en 2026 secuelas concurrentes">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="secuelas-concurrentes/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Secuelas Concurrentes por Accidente de Tráfico: Guía para Reclamar la Máxima Indemnización en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa sobre secuelas concurrentes tras un accidente de tráfico. Entienda la diferencia con secuelas interagra...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="secuelas interagravatorias por accidente de tráfico: cómo reclamar la máxima indemnización en 2026 secuelas interagravatorias">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="secuelas-interagravatorias/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Secuelas Interagravatorias por Accidente de Tráfico: Cómo Reclamar la Máxima Indemnización en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       ¿Sufre secuelas interagravatorias tras un accidente de tráfico? Reclame la máxima indemnización legal en 2026. Guía c...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="si he tenido un accidente de tráfico y solo he sufrido daños materiales: reclame su indemnización en 2026 danos materiales">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="danos-materiales/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Si he tenido un accidente de tráfico y solo he sufrido daños materiales: Reclame su indemnización en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía legal 2026 sobre cómo reclamar indemnización por daños materiales en un accidente de tráfico sin lesiones. Conoz...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="siniestro total en 2026: guía para reclamar la máxima indemnización siniestro total valor venal">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="siniestro-total-valor-venal/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Siniestro Total en 2026: Guía para Reclamar la Máxima Indemnización
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía 2026 sobre Siniestro Total. Entienda la diferencia entre Valor Venal, Valor de Mercado y Valor a Nuevo. Cómo rec...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="tabla de culpabilidad en siniestros de tráfico: guía definitiva 2026 para reclamar tu indemnización máxima tabla culpabilidad">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="tabla-culpabilidad/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Tabla de Culpabilidad en Siniestros de Tráfico: Guía Definitiva 2026 para Reclamar tu Indemnización Máxima
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Consulta la Tabla de Culpabilidad de Siniestros de Tráfico 2026 en España. Entiende cómo las aseguradoras determinan ...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="traumatismos provocados por accidentes de tráfico: guía médica y legal 2026 traumatismos accidente">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         gavel
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="traumatismos-accidente/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Traumatismos Provocados por Accidentes de Tráfico: Guía Médica y Legal 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía exhaustiva sobre los traumatismos más comunes tras un accidente de tráfico (torácicos, abdominales, pélvicos, ex...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="valor de afección en accidentes de tráfico: clave para la máxima indemnización por su vehículo en 2026 valor afeccion">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="valor-afeccion/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Valor de Afección en Accidentes de Tráfico: Clave para la Máxima Indemnización por su Vehículo en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa sobre el valor de afección en accidentes de tráfico en 2026. Entienda qué es, cómo se aplica en siniest...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="¡atención! el baremo de accidentes de tráfico sube en 2026: su guía para la máxima indemnización actualizacion baremo">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="actualizacion-baremo/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        ¡Atención! El Baremo de Accidentes de Tráfico Sube en 2026: Su Guía para la Máxima Indemnización
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       ¿Ha sufrido un accidente de tráfico? Es crucial conocer las últimas actualizaciones delBaremo de Accidentes de Tráfic...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="¿a qué taller llevar su coche tras un accidente? sus derechos en 2026 talleres accidente">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         directions_car
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="talleres-accidente/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        ¿A qué Taller Llevar su Coche tras un Accidente? Sus Derechos en 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía 2026: ¿A qué taller llevar el coche tras un accidente? Conozca su derecho a la libre elección, evite presiones d...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="¿cuál es el valor que tiene nuestro vehículo tras un accidente de tráfico sin culpa? guía legal 2026 valoracion vehiculo accidente">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="valoracion-vehiculo-accidente/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        ¿Cuál es el valor que tiene nuestro vehículo tras un accidente de tráfico sin culpa? Guía legal 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía 2026 sobre el valor de su vehículo tras un accidente de tráfico en España. Entienda qué es el valor venal y el v...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="¿cuándo tengo derecho a una indemnización por accidente de tráfico en 2026? derecho indemnizacion">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="derecho-indemnizacion/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        ¿Cuándo tengo Derecho a una Indemnización por Accidente de Tráfico en 2026?
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa 2026 sobre cuándo tienes derecho a una indemnización por accidente de tráfico en España. Entiende la re...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="¿cómo reclamar mi indemnización por accidente de tráfico en 2026? guía legal post-reforma penal (1 julio 2015) reclamacion codigo penal">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="reclamacion-codigo-penal/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        ¿Cómo Reclamar mi Indemnización por Accidente de Tráfico en 2026? Guía Legal Post-Reforma Penal (1 Julio 2015)
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa 2026 sobre cómo reclamar su máxima indemnización por accidente de tráfico en España tras la reforma del...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="¿cómo reclamo la indemnización por accidente de tráfico? (ii) guía 2026 con el baremo vigente desde 2016 reclamar nuevo baremo">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="reclamar-nuevo-baremo/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        ¿Cómo Reclamo la Indemnización por Accidente de Tráfico? (II) Guía 2026 con el Baremo Vigente desde 2016
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía actualizada 2026 para reclamar su máxima indemnización por accidente de tráfico con el Baremo 2016. Conozca los ...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="¿cómo actuar en caso de accidente de tráfico con menores? guía esencial 2026 menores accidente trafico">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         local_police
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="menores-accidente-trafico/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        ¿Cómo actuar en caso de accidente de tráfico con menores? Guía Esencial 2026
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía completa 2026: Descubra cómo actuar legal y sanitariamente en un accidente de tráfico con niños en España. Prote...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="¿de qué depende la indemnización por accidente de tráfico? guía 2026 para víctimas calculo indemnizacion">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="calculo-indemnizacion/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        ¿De qué depende la indemnización por accidente de tráfico? Guía 2026 para víctimas
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       ¿De qué depende la indemnización por tu accidente de tráfico en 2026? Descubre los factores que influyen en el cálcul...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+     <article class="searchable-item group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-keywords="¿quién es el responsable legal de un accidente de tráfico en 2026? claves de la indemnización responsable accidente">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="flex items-center justify-between mb-4">
+       <div class="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-[24px]">
+         payments
+        </span>
+       </div>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+       <a class="focus:outline-none" href="responsable-accidente/">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        ¿Quién es el Responsable Legal de un Accidente de Tráfico en 2026? Claves de la Indemnización
+       </a>
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow line-clamp-3">
+       Guía legal 2026 sobre la responsabilidad en accidentes de tráfico en España. Distinción clave entre daños personales ...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer más
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </article>
+    </div>
+   </div>
+  </section>
+  <!-- 4. Trust & Expertise Section -->
+  <section class="py-20 bg-white">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+     <span class="text-primary font-bold text-sm tracking-wider uppercase mb-2 block">
+      ¿Por qué
+                    elegirnos?
+     </span>
+     <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+      Abogados Expertos para Cada Tipo de
+                    Accidente
+     </h2>
+     <p class="mt-4 text-xl text-text-muted max-w-3xl mx-auto">
+      En Infoaccidentes, contamos con especialistas en cada escenario de accidente, garantizando el
+                    asesoramiento más preciso y la máxima indemnización para su caso.
+     </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+     <!-- Feature 1 -->
+     <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-2xl">
+      <div class="w-16 h-16 rounded-full bg-blue-100 text-primary flex items-center justify-center mb-6">
+       <span class="material-symbols-outlined text-[32px]">
+        verified_user
+       </span>
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-3">
+       Especialistas por Tipo
+      </h3>
+      <p class="text-text-muted">
+       No es lo mismo un atropello que un choque múltiple. Le asignamos un
+                        abogado con experiencia probada en su caso específico.
+      </p>
+     </div>
+     <!-- Feature 2 -->
+     <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-2xl">
+      <div class="w-16 h-16 rounded-full bg-blue-100 text-primary flex items-center justify-center mb-6">
+       <span class="material-symbols-outlined text-[32px]">
+        calculate
+       </span>
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-3">
+       Valoración Personalizada
+      </h3>
+      <p class="text-text-muted">
+       Analizamos los daños materiales, físicos y secuelas para calcular la
+                        indemnización máxima que le corresponde por ley.
+      </p>
+     </div>
+     <!-- Feature 3 -->
+     <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-2xl">
+      <div class="w-16 h-16 rounded-full bg-blue-100 text-primary flex items-center justify-center mb-6">
+       <span class="material-symbols-outlined text-[32px]">
+        medical_services
+       </span>
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-3">
+       Rehabilitación Gratuita
+      </h3>
+      <p class="text-text-muted">
+       Acceda a nuestra red de clínicas concertadas sin coste para usted. La
+                        salud es lo primero para su recuperación.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- 5. Secondary CTA Section -->
+  <section class="py-20 bg-primary relative overflow-hidden">
+   <!-- Abstract Decoration -->
+   <div class="absolute top-0 right-0 w-full h-full opacity-10 pointer-events-none">
+    <div class="absolute right-0 bottom-0 w-64 h-64 bg-white rounded-full blur-3xl transform translate-y-1/3 translate-x-1/3">
+    </div>
+    <div class="absolute left-10 top-10 w-32 h-32 bg-white rounded-full blur-2xl">
+    </div>
+   </div>
+   <div class="relative z-10 max-w-5xl mx-auto px-4 text-center sm:px-6 lg:px-8">
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">
+     ¿No encuentras tu tipo de accidente o
+                necesitas asesoramiento?
+    </h2>
+    <p class="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+     Cada accidente es único. Contáctanos directamente por WhatsApp para una consulta gratuita y resolveremos
+                todas tus dudas en minutos.
+    </p>
+    <a class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-xl shadow-lg text-white bg-cta-orange hover:bg-cta-orange-hover transition-all duration-200 transform hover:scale-[1.02] ring-4 ring-orange-500/20" href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+     <span class="material-symbols-outlined mr-3 text-[28px]">
+      chat
+     </span>
+     CONSULTA GRATUITA POR WHATSAPP
+    </a>
+    <p class="mt-4 text-blue-200 text-sm">
+     Respuesta inmediata • Sin compromiso
+    </p>
+   </div>
+  </section>
+  <!-- 6. Footer -->
+  <footer class="bg-background-dark text-white border-t border-white/10 pt-16 pb-8">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+     <!-- Col 1: Brand -->
+     <div class="flex flex-col gap-6">
+      <a class="block" href="../index.html">
+       <img alt="InfoAccidentes" class="h-10 w-auto brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" src="https://infoaccidentes.com/wp-content/uploads/2021/02/infoaccidentes_marca-300x111.webp"/>
+      </a>
+      <p class="text-sm text-gray-300 leading-relaxed">
+       Plataforma líder en la defensa de víctimas de tráfico. Conectamos personas con soluciones
+                        legales y médicas de primer nivel.
+      </p>
+     </div>
+     <!-- Col 2: Servicios -->
+     <div>
+      <h4 class="font-bold text-lg mb-6 text-white">
+       Servicios
+      </h4>
+      <ul class="space-y-4 text-sm text-gray-300">
+       <li>
+        <a class="hover:text-cta-orange transition-colors" href="../abogados-trafico/index.html">
+         Abogados
+                                Especialistas
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-cta-orange transition-colors" href="../clinicas-accidentes-trafico/index.html">
+         Clínicas
+                                Rehabilitación
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-cta-orange transition-colors" href="../calculadora-indemnizacion/index.html">
+         Calculadora
+                                Indemnización
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- Col 3: Información -->
+     <div>
+      <h4 class="font-bold text-lg mb-6 text-white">
+       Información
+      </h4>
+      <ul class="space-y-4 text-sm text-gray-300">
+       <li>
+        <a class="hover:text-cta-orange transition-colors" href="../indemnizacion/index.html">
+         Indemnizaciones y
+                                Lesiones
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-cta-orange transition-colors" href="../reclamar-accidente/index.html">
+         Tipos de
+                                Accidentes
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-cta-orange transition-colors" href="../guia/index.html">
+         Guías de Reclamación
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- Col 4: Contacto -->
+     <div>
+      <h4 class="font-bold text-lg mb-6 text-white">
+       Contacto
+      </h4>
+      <ul class="space-y-4 text-sm text-gray-300">
+       <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-cta-orange">
+         mail
+        </span>
+        <a class="hover:text-white transition-colors" href="mailto:info@infoaccidentes.com" rel="noopener noreferrer" target="_blank">
+         info@infoaccidentes.com
+        </a>
+       </li>
+       <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-cta-orange">
+         chat
+        </span>
+        <a class="hover:text-white transition-colors" href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+         WhatsApp
+                                24h
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <!-- Subfooter -->
+    <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300">
+     <div>
+      © 2026 InfoAccidentes. Todos los derechos reservados.
+     </div>
+     <div class="flex gap-6">
+      <a class="hover:text-white transition-colors" href="#">
+       Aviso Legal
+      </a>
+      <a class="hover:text-white transition-colors" href="#">
+       Política de Privacidad
+      </a>
+      <a class="hover:text-white transition-colors" href="#">
+       Cookies
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script>
+   document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.getElementById('searchInput');
+        const items = document.querySelectorAll('.searchable-item');
+        const container = document.querySelector('.grid');
+        
+        // Simple debouncing could be added but for 60 items instant is fine
+        if (searchInput) {
+            searchInput.addEventListener('input', function(e) {
+                const term = e.target.value.toLowerCase().trim();
+                let hasResults = false;
+                
+                items.forEach(item => {
+                    const keywords = item.getAttribute('data-keywords') || '';
+                    if (keywords.includes(term)) {
+                        item.classList.remove('hidden');
+                        hasResults = true;
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+                
+                // Optional: Show "No results" message if needed
+            });
+        }
+    });
+  </script>
+ </body>
+</html>

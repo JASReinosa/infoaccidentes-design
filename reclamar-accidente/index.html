@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Directorio de Escenarios de Accidentes - InfoAccidentes
+  </title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography">
+  </script>
+  <script src="../js/theme.js">
+  </script>
+  <link href="../css/styles.css" rel="stylesheet"/>
+  <script src="../js/main.js">
+  </script>
+  <style>
+   .prose a {
+            color: #0000FF;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .prose strong {
+            color: #0d141b;
+            font-weight: 700;
+        }
+  </style>
+ </head>
+ <body class="bg-background-light text-text-dark flex flex-col min-h-screen antialiased selection:bg-primary/20 selection:text-primary">
+  <!-- 1. Sticky Header -->
+  <header class="sticky top-0 z-50 w-full bg-white shadow-sm border-b border-gray-100">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+     <!-- Logo -->
+     <div class="flex-shrink-0 flex items-center">
+      <a href="../index.html">
+       <img alt="InfoAccidentes" class="h-10 w-auto" src="https://infoaccidentes.com/wp-content/uploads/2021/02/infoaccidentes_marca-300x111.webp"/>
+      </a>
+     </div>
+     <!-- Desktop Menu -->
+     <nav class="hidden md:flex space-x-8">
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="../abogados-trafico/index.html">
+       Abogados
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="../clinicas-accidentes-trafico/index.html">
+       Clínicas
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="../calculadora-indemnizacion/index.html">
+       Calculadora
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="../indemnizacion/index.html">
+       Lesiones
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="../reclamar-accidente/index.html">
+       Accidentes
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="../guia/index.html">
+       Guías
+      </a>
+     </nav>
+     <!-- CTA Button -->
+     <div class="hidden md:flex items-center">
+      <a class="bg-cta-orange hover:bg-cta-orange-hover text-white px-6 py-2.5 rounded-lg font-bold transition-colors shadow-sm flex items-center gap-2" href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+       <span class="material-symbols-outlined text-[20px]">
+        chat
+       </span>
+       WhatsApp 24h
+      </a>
+     </div>
+     <!-- Mobile Menu Button -->
+     <div class="flex items-center md:hidden">
+      <button class="text-text-muted hover:text-primary p-2" onclick="toggleMobileMenu()" type="button">
+       <span class="material-symbols-outlined text-3xl">
+        menu
+       </span>
+      </button>
+     </div>
+    </div>
+   </div>
+   <!-- Mobile Menu -->
+   <div class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-lg" id="mobile-menu">
+    <div class="px-4 pt-2 pb-6 space-y-2">
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="../abogados-trafico/index.html">
+      Abogados
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="../clinicas-accidentes-trafico/index.html">
+      Clínicas
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="../calculadora-indemnizacion/index.html">
+      Calculadora
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="../indemnizacion/index.html">
+      Lesiones
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="../reclamar-accidente/index.html">
+      Accidentes
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="../guia/index.html">
+      Guías
+     </a>
+     <div class="pt-4 mt-4 border-t border-gray-100">
+      <a class="flex items-center justify-center gap-2 w-full bg-cta-orange text-white py-3 rounded-lg font-bold" href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+       <span class="material-symbols-outlined">
+        chat
+       </span>
+       WhatsApp 24h
+      </a>
+     </div>
+    </div>
+   </div>
+  </header>
+  <!-- 2. Hero Section -->
+  <section class="relative bg-white pt-16 pb-20 overflow-hidden">
+   <!-- Abstract Background Pattern -->
+   <div class="absolute inset-0 z-0 opacity-30">
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl">
+    </div>
+    <div class="absolute top-1/2 -left-24 w-72 h-72 bg-blue-100 rounded-full blur-2xl">
+    </div>
+   </div>
+   <div class="relative z-10 max-w-4xl mx-auto px-4 text-center sm:px-6 lg:px-8">
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 tracking-tight mb-6 leading-tight">
+     Guía Completa de Accidentes de Tráfico:
+     <span class="text-primary">
+      Escenarios y Casos
+     </span>
+    </h1>
+    <p class="mt-4 text-xl text-text-muted max-w-2xl mx-auto mb-10">
+     Explora nuestra colección de artículos sobre diferentes tipos de accidentes, responsabilidades y cómo
+                reclamar tu indemnización de manera efectiva.
+    </p>
+    <!-- Search Bar -->
+    <div class="max-w-2xl mx-auto">
+     <div class="relative group">
+      <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+       <span class="material-symbols-outlined text-gray-400 group-focus-within:text-primary transition-colors">
+        search
+       </span>
+      </div>
+      <input class="block w-full pl-12 pr-4 py-4 border-2 border-gray-100 rounded-xl bg-gray-50 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-base shadow-sm" data-alt="Campo de búsqueda de accidentes" placeholder="Buscar tipo de accidente (ej. latigazo cervical, atropello...)" type="text"/>
+      <div class="absolute inset-y-0 right-2 flex items-center">
+       <button class="p-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors">
+        <span class="material-symbols-outlined text-[20px]">
+         arrow_forward
+        </span>
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- 3. Accident Scenarios Grid (Silo) -->
+  <section class="py-16 bg-background-light border-t border-gray-100">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-12 text-center md:text-left">
+     <h2 class="text-3xl font-bold text-gray-900">
+      ¿Qué tipo de accidente ha sufrido o le interesa?
+     </h2>
+     <p class="mt-2 text-text-muted">
+      Seleccione la categoría que mejor describa su situación para ver
+                    información detallada.
+     </p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="alcance-cadena/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        minor_crash
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Alcance Cadena
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       Guía legal actualizada 2026 sobre accidentes en cadena. Descubra las causas, quién tiene la culpa y cómo actuar para ...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="alcance-trasero/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        minor_crash
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Alcance Trasero
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       Guía legal actualizada sobre colisiones por alcance: causas comunes (distracción, velocidad), pasos a seguir tras el ...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="animales-cinegeticos/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        pets
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Animales Cinegeticos
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       Guía 2026 sobre accidentes con animales (cinegéticos o domésticos). Descubra quién es responsable según la nueva Ley ...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="atropello/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        directions_walk
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Atropello
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       Guía legal 2026 sobre atropellos a peatones. Sepa quién tiene la culpa, calcule su indemnización y acceda a abogados ...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="autobus/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        directions_bus
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Autobus
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       Guía 2026 para reclamar accidentes de autobús (urbano o autocar). Descubra cómo cobrar la Doble Indemnización (Seguro...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="bicicleta/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        pedal_bike
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Bicicleta
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       Guía 2026 para reclamar accidentes de bicicleta (urbana o carretera). Reclame sus lesiones y el valor real de su bici...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="camion/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        local_shipping
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Camion
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       ¿Sufrió un accidente de camión? Conozca las causas, las indemnizaciones que puede reclamar (gastos médicos, daños mat...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="ciclistas/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        pedal_bike
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Ciclistas
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       ¿Sufrió un atropello en bicicleta? Reclame la máxima indemnización legal con nuestros abogados especialistas en tráfi...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="ciclomotor/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        moped
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Ciclomotor
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       Guía 2026 para reclamar accidentes de ciclomotor (49cc). Especialistas en atropellos urbanos, menores y repartidores....
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="coche/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        directions_car
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Coche
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       Guía 2026 para reclamar accidentes de coche. Especialistas en todo tipo de lesiones: fracturas, latigazo, traumatismo...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="coche-de-alquiler/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        car_rental
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Coche De Alquiler
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       Guía completa 2026 para accidentes con coche de alquiler. Qué hacer si es culpable o víctima, cómo funciona la franqu...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="furgoneta/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        airport_shuttle
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Furgoneta
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       Guía 2026 para reclamar accidentes de furgoneta. Especialistas en autónomos y empresas: reclamación de lucro cesante,...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="in-itinere/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        work
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       In Itinere
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       ¿Ha sufrido un accidente de tráfico in itinere? Conozca sus derechos, cómo reclamar la máxima indemnización legal en ...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="moto/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        two_wheeler
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Moto
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       Guía actualizada 2026 para reclamar indemnización por accidente de moto. Especial atención a embarazadas, ocupantes y...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="pasajero/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        airline_seat_recline_normal
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Pasajero
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       Guía 2026 sobre la Indemnización por Accidente de Tráfico para Ocupantes. Descubre cómo reclamar tu compensación máxi...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="patinete-electrico/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        electric_scooter
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Patinete Electrico
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       ¿Sufrió un accidente o atropello con patinete eléctrico? Conozca sus derechos en 2026. Guía legal, pasos a seguir y a...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="peaton/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        directions_walk
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Peaton
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       Guía 2026 para reclamar atropellos. Sepa cómo cobrar su indemnización incluso si cruzaba mal (concurrencia). Abogados...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="rotonda/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        u_turn_right
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Rotonda
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       Guía 2026 sobre accidentes de tráfico en rotondas. Aprenda a determinar la culpabilidad, recopilar pruebas y reclamar...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="taxi/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        local_taxi
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Taxi
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       Guía 2026 para pasajeros de Taxi. Descubra cómo cobrar la Doble Indemnización (SOV + Responsabilidad Civil). Abogados...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="transporte-publico/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        directions_bus
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Transporte Publico
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       Guía completa 2026 para reclamar indemnización por accidente como pasajero en Taxi, Uber, Cabify, Autobús o Metro. Co...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+     <a class="group bg-white rounded-xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 flex flex-col h-full relative overflow-hidden" href="vtc/">
+      <div class="absolute top-0 left-0 w-1 h-full bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300">
+      </div>
+      <div class="w-12 h-12 rounded-lg bg-blue-50 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+       <span class="material-symbols-outlined text-[28px]">
+        local_taxi
+       </span>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+       Vtc
+      </h3>
+      <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">
+       Guía 2026 para pasajeros de VTC (Uber, Cabify, Bolt). Cómo reclamar la Doble Indemnización (SOV + RC). Abogados indep...
+      </p>
+      <div class="flex items-center text-sm font-semibold text-primary mt-auto">
+       Leer guía
+       <span class="material-symbols-outlined text-[16px] ml-1 group-hover:translate-x-1 transition-transform">
+        arrow_forward
+       </span>
+      </div>
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- 4. Trust & Expertise Section -->
+  <section class="py-20 bg-white">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+     <span class="text-primary font-bold text-sm tracking-wider uppercase mb-2 block">
+      ¿Por qué
+                    elegirnos?
+     </span>
+     <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+      Abogados Expertos para Cada Tipo de
+                    Accidente
+     </h2>
+     <p class="mt-4 text-xl text-text-muted max-w-3xl mx-auto">
+      En Infoaccidentes, contamos con especialistas en cada escenario de accidente, garantizando el
+                    asesoramiento más preciso y la máxima indemnización para su caso.
+     </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+     <!-- Feature 1 -->
+     <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-2xl">
+      <div class="w-16 h-16 rounded-full bg-blue-100 text-primary flex items-center justify-center mb-6">
+       <span class="material-symbols-outlined text-[32px]">
+        verified_user
+       </span>
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-3">
+       Especialistas por Tipo
+      </h3>
+      <p class="text-text-muted">
+       No es lo mismo un atropello que un choque múltiple. Le asignamos un
+                        abogado con experiencia probada en su caso específico.
+      </p>
+     </div>
+     <!-- Feature 2 -->
+     <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-2xl">
+      <div class="w-16 h-16 rounded-full bg-blue-100 text-primary flex items-center justify-center mb-6">
+       <span class="material-symbols-outlined text-[32px]">
+        calculate
+       </span>
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-3">
+       Valoración Personalizada
+      </h3>
+      <p class="text-text-muted">
+       Analizamos los daños materiales, físicos y secuelas para calcular la
+                        indemnización máxima que le corresponde por ley.
+      </p>
+     </div>
+     <!-- Feature 3 -->
+     <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-2xl">
+      <div class="w-16 h-16 rounded-full bg-blue-100 text-primary flex items-center justify-center mb-6">
+       <span class="material-symbols-outlined text-[32px]">
+        medical_services
+       </span>
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-3">
+       Rehabilitación Gratuita
+      </h3>
+      <p class="text-text-muted">
+       Acceda a nuestra red de clínicas concertadas sin coste para usted. La
+                        salud es lo primero para su recuperación.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- 5. Secondary CTA Section -->
+  <section class="py-20 bg-primary relative overflow-hidden">
+   <!-- Abstract Decoration -->
+   <div class="absolute top-0 right-0 w-full h-full opacity-10 pointer-events-none">
+    <div class="absolute right-0 bottom-0 w-64 h-64 bg-white rounded-full blur-3xl transform translate-y-1/3 translate-x-1/3">
+    </div>
+    <div class="absolute left-10 top-10 w-32 h-32 bg-white rounded-full blur-2xl">
+    </div>
+   </div>
+   <div class="relative z-10 max-w-5xl mx-auto px-4 text-center sm:px-6 lg:px-8">
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">
+     ¿No encuentras tu tipo de accidente o
+                necesitas asesoramiento?
+    </h2>
+    <p class="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+     Cada accidente es único. Contáctanos directamente por WhatsApp para una consulta gratuita y resolveremos
+                todas tus dudas en minutos.
+    </p>
+    <a class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-xl shadow-lg text-white bg-cta-orange hover:bg-cta-orange-hover transition-all duration-200 transform hover:scale-[1.02] ring-4 ring-orange-500/20" href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+     <span class="material-symbols-outlined mr-3 text-[28px]">
+      chat
+     </span>
+     CONSULTA GRATUITA POR WHATSAPP
+    </a>
+    <p class="mt-4 text-blue-200 text-sm">
+     Respuesta inmediata • Sin compromiso
+    </p>
+   </div>
+  </section>
+  <!-- 6. Footer -->
+  <footer class="bg-background-dark text-white border-t border-white/10 pt-16 pb-8">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+     <!-- Col 1: Brand -->
+     <div class="flex flex-col gap-6">
+      <a class="block" href="../index.html">
+       <img alt="InfoAccidentes" class="h-10 w-auto brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" src="https://infoaccidentes.com/wp-content/uploads/2021/02/infoaccidentes_marca-300x111.webp"/>
+      </a>
+      <p class="text-sm text-gray-300 leading-relaxed">
+       Plataforma líder en la defensa de víctimas de tráfico. Conectamos personas con soluciones
+                        legales y médicas de primer nivel.
+      </p>
+     </div>
+     <!-- Col 2: Servicios -->
+     <div>
+      <h4 class="font-bold text-lg mb-6 text-white">
+       Servicios
+      </h4>
+      <ul class="space-y-4 text-sm text-gray-300">
+       <li>
+        <a class="hover:text-cta-orange transition-colors" href="../abogados-trafico/index.html">
+         Abogados
+                                Especialistas
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-cta-orange transition-colors" href="../clinicas-accidentes-trafico/index.html">
+         Clínicas
+                                Rehabilitación
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-cta-orange transition-colors" href="../calculadora-indemnizacion/index.html">
+         Calculadora
+                                Indemnización
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- Col 3: Información -->
+     <div>
+      <h4 class="font-bold text-lg mb-6 text-white">
+       Información
+      </h4>
+      <ul class="space-y-4 text-sm text-gray-300">
+       <li>
+        <a class="hover:text-cta-orange transition-colors" href="../indemnizacion/index.html">
+         Indemnizaciones y
+                                Lesiones
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-cta-orange transition-colors" href="index.html">
+         Tipos de
+                                Accidentes
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-cta-orange transition-colors" href="../guia/index.html">
+         Guías de Reclamación
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- Col 4: Contacto -->
+     <div>
+      <h4 class="font-bold text-lg mb-6 text-white">
+       Contacto
+      </h4>
+      <ul class="space-y-4 text-sm text-gray-300">
+       <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-cta-orange">
+         mail
+        </span>
+        <a class="hover:text-white transition-colors" href="mailto:info@infoaccidentes.com" rel="noopener noreferrer" target="_blank">
+         info@infoaccidentes.com
+        </a>
+       </li>
+       <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-cta-orange">
+         chat
+        </span>
+        <a class="hover:text-white transition-colors" href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+         WhatsApp
+                                24h
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <!-- Subfooter -->
+    <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300">
+     <div>
+      © 2026 InfoAccidentes. Todos los derechos reservados.
+     </div>
+     <div class="flex gap-6">
+      <a class="hover:text-white transition-colors" href="#">
+       Aviso Legal
+      </a>
+      <a class="hover:text-white transition-colors" href="#">
+       Política de Privacidad
+      </a>
+      <a class="hover:text-white transition-colors" href="#">
+       Cookies
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
