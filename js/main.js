@@ -7,11 +7,7 @@ function toggleMobileMenu() {
 
 // Add event listeners if needed when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile menu button event listener
-    const mobileMenuBtn = document.querySelector('button[onclick="toggleMobileMenu()"]');
-    if (mobileMenuBtn) {
-        // Just ensuring it works if inline onclick is removed later, but currently inline handles it.
-    }
+
 
     // Update WhatsApp links to include current page URL
     const waLinks = document.querySelectorAll('a[href*="api.whatsapp.com"], a[href*="wa.me"]');

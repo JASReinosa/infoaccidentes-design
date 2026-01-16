@@ -6,8 +6,6 @@ tailwind.config = {
                 "primary": "#0000FF",
                 "primary-dark": "#0000cc",
                 "primary-light": "#60a5fa",
-                "cta-orange": "#0000FF",
-                "cta-orange-hover": "#0000cc",
                 "background-light": "#f6f7f8",
                 "background-dark": "#101922",
                 "text-dark": "#0d141b",

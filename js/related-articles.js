@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </a>
                 </h4>
                 <div class="flex items-center gap-2 mt-1.5 text-xs">
-                    <span class="text-ct-orange font-semibold text-orange-600 bg-orange-50 px-1.5 py-0.5 rounded flex items-center gap-1">
+                    <span class="font-semibold text-orange-600 bg-orange-50 px-1.5 py-0.5 rounded flex items-center gap-1">
                         <span class="material-symbols-outlined text-[14px]">visibility</span>
                         ${views}
                     </span>

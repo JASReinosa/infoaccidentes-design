@@ -51,6 +51,4 @@ a.bg-primary, button.bg-primary {
 .bg-slate-800 li, .bg-background-dark li {
     color: #f3f4f6; /* text-gray-100 for readability */
 }
-.bg-slate-800 :where(h1,h2,h3,h4), .bg-background-dark :where(h1,h2,h3,h4) {
-    color: #ffffff;
-}
+
