@@ -8,120 +8,49 @@ body {
 }
 
 /* Material Symbols Config */
-.material-symbols-outlined {
+.material-symbols-outlined, .filled-icon {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
-
-.filled-icon {
-    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-}
+.filled-icon { font-variation-settings: 'FILL' 1; }
 
 /* Utilities */
-.no-scrollbar::-webkit-scrollbar {
-    display: none;
-}
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-.no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-/* Map Interactivity (for abogados.html) */
-.map-path {
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
+/* Interactive Elements */
+.map-path { transition: all 0.3s ease; cursor: pointer; }
 .map-path:hover {
     fill: #0000FF;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 255, 0.3));
-    z-index: 10;
-    position: relative;
+    z-index: 10; position: relative;
+}
+.tooltip { pointer-events: none; }
+
+/* Global Typography Defaults (Low Specificity) */
+/* Using :where() ensures these can be easily overridden by utilities */
+:where(h1, h2, h3, h4) { color: #0d141b; }
+.gold-gradient-text { color: #0000FF; }
+
+/* Helpers & Safety Overrides */
+/* Ensure Primary Buttons/Utilities always have white text */
+.bg-primary, .text-white, 
+a.bg-primary, button.bg-primary {
+    color: #ffffff !important;
 }
 
-.tooltip {
-    pointer-events: none;
-}
-
-/* Custom Headings Color */
-h1,
-h2,
-h3,
-h4 {
-    color: #0d141b;
-}
-
-.gold-gradient-text {
-    color: #0000FF;
-}
-
-/* Typography / Prose (from abogados_provincia.html) */
-.prose-content p {
-    margin-bottom: 1.5rem;
-    line-height: 1.75;
-    color: #4b5563;
-    /* text-muted */
-}
-
-.prose-content h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #0d141b;
-    /* text-dark */
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-    letter-spacing: -0.025em;
-}
-
-.prose-content ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: #4b5563;
-}
-
-.prose-content li {
-    margin-bottom: 0.5rem;
-}
-
-/* Accessibility Overrides for Dark Sections */
-.bg-slate-800,
-.bg-background-dark {
+/* Dark Mode Helper Classes (Auto-apply white text in standard dark containers) */
+.bg-slate-800, .bg-background-dark {
     color: #ffffff;
 }
-
-/* Enforce list contrast in dark sections */
-.bg-slate-800 p,
-.bg-background-dark p,
-.bg-slate-800 li,
-.bg-background-dark li,
-.bg-slate-800 span,
-.bg-background-dark span {
-    color: #f3f4f6;
-    /* text-gray-100 - AAA Compliant */
+.bg-slate-800 :where(h1, h2, h3, h4, p, li, span),
+.bg-background-dark :where(h1, h2, h3, h4, p, li, span) {
+    color: inherit; /* inherit from the container's white */
 }
-
-/* Enforce heading contrast in dark sections */
-.bg-slate-800 h1,
-.bg-slate-800 h2,
-.bg-slate-800 h3,
-.bg-slate-800 h4,
-.bg-background-dark h1,
-.bg-background-dark h2,
-.bg-background-dark h3,
-.bg-background-dark h4 {
-    color: #ffffff !important;
+/* Explicitly set inheritance/contrast for known dark containers */
+.bg-slate-800 p, .bg-background-dark p,
+.bg-slate-800 li, .bg-background-dark li {
+    color: #f3f4f6; /* text-gray-100 for readability */
 }
-
-/* Specific Prose Overrides to defeat .prose-content p */
-.prose-content .not-prose p,
-.prose-content .not-prose li {
-    color: #f3f4f6 !important;
-}
-
-.prose-content .not-prose h1,
-.prose-content .not-prose h2,
-.prose-content .not-prose h3,
-.prose-content .not-prose h4 {
-    color: #ffffff !important;
+.bg-slate-800 :where(h1,h2,h3,h4), .bg-background-dark :where(h1,h2,h3,h4) {
+    color: #ffffff;
 }
