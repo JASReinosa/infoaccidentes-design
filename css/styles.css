@@ -8,47 +8,306 @@ body {
 }
 
 /* Material Symbols Config */
-.material-symbols-outlined, .filled-icon {
+.material-symbols-outlined,
+.filled-icon {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
-.filled-icon { font-variation-settings: 'FILL' 1; }
+
+.filled-icon {
+    font-variation-settings: 'FILL' 1;
+}
 
 /* Utilities */
-.no-scrollbar::-webkit-scrollbar { display: none; }
-.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
 /* Interactive Elements */
-.map-path { transition: all 0.3s ease; cursor: pointer; }
+.map-path {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
 .map-path:hover {
     fill: #0000FF;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 255, 0.3));
-    z-index: 10; position: relative;
+    z-index: 10;
+    position: relative;
 }
-.tooltip { pointer-events: none; }
+
+.tooltip {
+    pointer-events: none;
+}
 
 /* Global Typography Defaults (Low Specificity) */
 /* Using :where() ensures these can be easily overridden by utilities */
-:where(h1, h2, h3, h4) { color: #0d141b; }
-.gold-gradient-text { color: #0000FF; }
+:where(h1, h2, h3, h4) {
+    color: #0d141b;
+}
+
+.gold-gradient-text {
+    color: #0000FF;
+}
 
 /* Helpers & Safety Overrides */
 /* Ensure Primary Buttons/Utilities always have white text */
-.bg-primary, .text-white, 
-a.bg-primary, button.bg-primary {
+.bg-primary,
+.text-white,
+a.bg-primary,
+button.bg-primary {
     color: #ffffff !important;
 }
 
 /* Dark Mode Helper Classes (Auto-apply white text in standard dark containers) */
-.bg-slate-800, .bg-background-dark {
+.bg-slate-800,
+.bg-background-dark {
     color: #ffffff;
 }
+
 .bg-slate-800 :where(h1, h2, h3, h4, p, li, span),
 .bg-background-dark :where(h1, h2, h3, h4, p, li, span) {
-    color: inherit; /* inherit from the container's white */
-}
-/* Explicitly set inheritance/contrast for known dark containers */
-.bg-slate-800 p, .bg-background-dark p,
-.bg-slate-800 li, .bg-background-dark li {
-    color: #f3f4f6; /* text-gray-100 for readability */
+    color: inherit;
+    /* inherit from the container's white */
 }
 
+/* Explicitly set inheritance/contrast for known dark containers */
+.bg-slate-800 p,
+.bg-background-dark p,
+.bg-slate-800 li,
+.bg-background-dark li {
+    color: #f3f4f6;
+    /* text-gray-100 for readability */
+}
+
+/* Calculator Widget Styles */
+:root {
+    --ia-primary: #0056b3;
+    --ia-secondary: #00a8e8;
+    --ia-whatsapp: #25D366;
+    --ia-bg-light: #f8f9fa;
+    --ia-border: #e1e4e8;
+}
+
+.ia-calc-wrapper {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.ia-calc-progress {
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.ia-calc-progress-bar {
+    height: 100%;
+    background: var(--ia-primary);
+    transition: width 0.4s ease;
+}
+
+.ia-step {
+    display: none;
+}
+
+.ia-step.active {
+    display: block;
+    animation: iaSlideUp 0.5s ease-out;
+}
+
+.ia-step-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.ia-options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.ia-option-card {
+    border: 2px solid var(--ia-border);
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.ia-option-card:hover {
+    border-color: var(--ia-secondary);
+    background: #f0f8ff;
+}
+
+.ia-option-card input {
+    display: none;
+}
+
+.ia-option-card:has(input:checked) {
+    border-color: var(--ia-primary);
+    background: #e7f1ff;
+    color: var(--ia-primary);
+    font-weight: 700;
+}
+
+.ia-options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ia-option-row {
+    padding: 15px;
+    border: 1px solid var(--ia-border);
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ia-option-row:hover {
+    background: var(--ia-bg-light);
+}
+
+.ia-input-group {
+    margin-bottom: 15px;
+}
+
+.ia-input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.ia-input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.ia-nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.ia-btn-next {
+    background: var(--ia-primary);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    flex: 2;
+    font-size: 1rem;
+}
+
+.ia-btn-prev {
+    background: #e9ecef;
+    color: #444;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    flex: 1;
+}
+
+.ia-result-box {
+    background: #f1f8ff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #cce5ff;
+    margin-bottom: 30px;
+}
+
+.ia-result-amount {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--ia-primary);
+    margin-top: 10px;
+}
+
+.ia-btn-whatsapp {
+    display: block;
+    background: var(--ia-whatsapp);
+    color: white;
+    text-align: center;
+    padding: 16px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+    transition: transform 0.2s;
+}
+
+.ia-btn-whatsapp:hover {
+    transform: translateY(-2px);
+    background: #1ebc57;
+}
+
+.ia-or-divider {
+    text-align: center;
+    margin: 15px 0;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.ia-btn-call {
+    display: block;
+    text-align: center;
+    color: var(--ia-primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ia-alert {
+    background: #fff3cd;
+    color: #856404;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+@keyframes iaSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .ia-options-grid {
+        grid-template-columns: 1fr;
+    }
+}
