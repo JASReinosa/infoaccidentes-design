@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html class="light" lang="es">
 
+<html class="light" lang="es">
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
         InfoAccidentes - Reclamación de Accidentes de Tráfico
     </title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography">
-    </script>
-    <script src="js/theme.js">
-    </script>
-    <link href="css/styles.css" rel="stylesheet" />
-    <script src="js/main.js">
-    </script>
-    <style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography">
+</script>
+<script src="js/theme.js">
+</script>
+<link href="css/styles.css" rel="stylesheet"/>
+<script src="js/main.js">
+</script>
+<style>
         .prose a {
             color: #0000FF;
             text-decoration: underline;
@@ -27,911 +27,825 @@
         }
     </style>
 </head>
-
 <body class="bg-background-light text-text-dark font-body flex flex-col min-h-screen overflow-x-hidden">
-    <header class="sticky top-0 z-50 w-full bg-white shadow-sm border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html">
-                        <img alt="InfoAccidentes" class="h-10 w-auto"
-                            src="https://infoaccidentes.com/wp-content/uploads/2021/02/infoaccidentes_marca-300x111.webp" />
-                    </a>
-                </div>
-                <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-8">
-                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
-                        href="abogados-trafico/index.html">
+<header class="sticky top-0 z-50 w-full bg-white shadow-sm border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<!-- Logo -->
+<div class="flex-shrink-0 flex items-center">
+<a href="index.html">
+<img alt="InfoAccidentes" class="h-10 w-auto" src="https://infoaccidentes.com/wp-content/uploads/2021/02/infoaccidentes_marca-300x111.webp"/>
+</a>
+</div>
+<!-- Desktop Menu -->
+<nav class="hidden md:flex space-x-8">
+<a class="text-text-muted hover:text-primary font-medium transition-colors" href="abogados-trafico/index.html">
                         Abogados
                     </a>
-                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
-                        href="clinicas-accidentes-trafico/index.html">
+<a class="text-text-muted hover:text-primary font-medium transition-colors" href="clinicas-accidentes-trafico/index.html">
                         Clínicas
                     </a>
-                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
-                        href="calculadora-indemnizacion/index.html">
+<a class="text-text-muted hover:text-primary font-medium transition-colors" href="calculadora-indemnizacion/index.html">
                         Calculadora
                     </a>
-                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
-                        href="indemnizacion/index.html">
+<a class="text-text-muted hover:text-primary font-medium transition-colors" href="indemnizacion/index.html">
                         Lesiones
                     </a>
-                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
-                        href="reclamar-accidente/index.html">
+<a class="text-text-muted hover:text-primary font-medium transition-colors" href="reclamar-accidente/index.html">
                         Accidentes
                     </a>
-                    <a class="text-text-muted hover:text-primary font-medium transition-colors" href="guia/index.html">
+<a class="text-text-muted hover:text-primary font-medium transition-colors" href="guia/index.html">
                         Guías
                     </a>
-                </nav>
-                <!-- CTA Button -->
-                <div class="hidden md:flex items-center">
-                    <a class="text-white px-6 py-2.5 rounded-lg font-bold transition-colors shadow-sm flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a]"
-                        href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0"
-                        rel="noopener noreferrer" target="_blank">
-                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
-                            </path>
-                        </svg>
+</nav>
+<!-- CTA Button -->
+<div class="hidden md:flex items-center">
+<a class="text-white px-6 py-2.5 rounded-lg font-bold transition-colors shadow-sm flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a]" href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+</path>
+</svg>
                         WhatsApp
                     </a>
-                </div>
-                <!-- Mobile Menu Button -->
-                <div class="flex items-center md:hidden">
-                    <button class="text-text-muted hover:text-primary p-2" onclick="toggleMobileMenu()" type="button">
-                        <span class="material-symbols-outlined text-3xl">
+</div>
+<!-- Mobile Menu Button -->
+<div class="flex items-center md:hidden">
+<button class="text-text-muted hover:text-primary p-2" onclick="toggleMobileMenu()" type="button">
+<span class="material-symbols-outlined text-3xl">
                             menu
                         </span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-lg"
-            id="mobile-menu">
-            <div class="px-4 pt-2 pb-6 space-y-2">
-                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
-                    href="abogados-trafico/index.html">
+</button>
+</div>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-lg" id="mobile-menu">
+<div class="px-4 pt-2 pb-6 space-y-2">
+<a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="abogados-trafico/index.html">
                     Abogados
                 </a>
-                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
-                    href="clinicas-accidentes-trafico/index.html">
+<a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="clinicas-accidentes-trafico/index.html">
                     Clínicas
                 </a>
-                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
-                    href="calculadora-indemnizacion/index.html">
+<a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="calculadora-indemnizacion/index.html">
                     Calculadora
                 </a>
-                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
-                    href="indemnizacion/index.html">
+<a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="indemnizacion/index.html">
                     Lesiones
                 </a>
-                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
-                    href="reclamar-accidente/index.html">
+<a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="reclamar-accidente/index.html">
                     Accidentes
                 </a>
-                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
-                    href="guia/index.html">
+<a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="guia/index.html">
                     Guías
                 </a>
-                <div class="pt-4 mt-4 border-t border-gray-100">
-                    <a class="flex items-center justify-center gap-2 w-full text-white py-3 rounded-lg font-bold bg-[#25D366] hover:bg-[#20bd5a]"
-                        href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0"
-                        rel="noopener noreferrer" target="_blank">
-                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
-                            </path>
-                        </svg>
+<div class="pt-4 mt-4 border-t border-gray-100">
+<a class="flex items-center justify-center gap-2 w-full text-white py-3 rounded-lg font-bold bg-[#25D366] hover:bg-[#20bd5a]" href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+</path>
+</svg>
                         WhatsApp
                     </a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="flex-grow">
-        <section class="relative bg-gradient-to-b from-[#ffffff] to-[#f8f8f8] py-12 md:py-20 lg:py-24">
-            <div class="max-w-7xl mx-auto px-4 md:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                    <div class="lg:col-span-7 flex flex-col gap-6">
-                        <h1
-                            class="text-text-dark text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight">
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<section class="relative bg-gradient-to-b from-[#ffffff] to-[#f8f8f8] py-12 md:py-20 lg:py-24">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 flex flex-col gap-6">
+<h1 class="text-text-dark text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight">
                             Reclamación de Accidentes de Tráfico:
                             <span class="text-primary">
                                 Abogados y Rehabilitación
                                 Gratuita.
                             </span>
-                        </h1>
-                        <p class="text-text-dark/80 text-lg md:text-xl font-normal leading-relaxed max-w-2xl">
+</h1>
+<p class="text-text-dark/80 text-lg md:text-xl font-normal leading-relaxed max-w-2xl">
                             Gestionamos tu indemnización máxima y tu recuperación sin adelantar dinero. Cobertura
                             completa en toda España.
                         </p>
-                        <div class="hidden md:flex gap-6 mt-4 text-sm font-medium text-muted">
-                            <div class="flex items-center gap-2">
-                                <span class="material-symbols-outlined text-primary">
+<div class="hidden md:flex gap-6 mt-4 text-sm font-medium text-muted">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">
                                     verified_user
                                 </span>
-                                <span>
+<span>
                                     Abogados Especialistas
                                 </span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <span class="material-symbols-outlined text-primary">
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">
                                     savings
                                 </span>
-                                <span>
+<span>
                                     Sin adelantar dinero
                                 </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lg:col-span-5 w-full">
-                        <div class="bg-white rounded-xl shadow-soft border border-gray-100 overflow-hidden p-1">
-                            <div class="grid grid-cols-2 p-1 gap-1 bg-gray-100 rounded-lg mb-6">
-                                <button id="btn-abogado"
-                                    class="flex items-center justify-center gap-2 py-3 px-4 rounded-md bg-white text-primary font-bold shadow-sm transition-all"
-                                    onclick="setSearchMode('abogados')">
-                                    <span class="material-symbols-outlined text-[20px]">
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 w-full">
+<div class="bg-white rounded-xl shadow-soft border border-gray-100 overflow-hidden p-1">
+<div class="grid grid-cols-2 p-1 gap-1 bg-gray-100 rounded-lg mb-6">
+<button class="flex items-center justify-center gap-2 py-3 px-4 rounded-md bg-white text-primary font-bold shadow-sm transition-all" id="btn-abogado" onclick="setSearchMode('abogados')">
+<span class="material-symbols-outlined text-[20px]">
                                         gavel
                                     </span>
-                                    <span>
+<span>
                                         Busco Abogado
                                     </span>
-                                </button>
-                                <button id="btn-clinica"
-                                    class="flex items-center justify-center gap-2 py-3 px-4 rounded-md text-muted hover:text-primary hover:bg-white/50 font-medium transition-all"
-                                    onclick="setSearchMode('clinicas')">
-                                    <span class="material-symbols-outlined text-[20px]">
+</button>
+<button class="flex items-center justify-center gap-2 py-3 px-4 rounded-md text-muted hover:text-primary hover:bg-white/50 font-medium transition-all" id="btn-clinica" onclick="setSearchMode('clinicas')">
+<span class="material-symbols-outlined text-[20px]">
                                         medical_services
                                     </span>
-                                    <span>
+<span>
                                         Busco Clínica
                                     </span>
-                                </button>
-                            </div>
-                            <div class="px-6 pb-8 pt-2 flex flex-col gap-5">
-                                <label class="flex flex-col gap-2">
-                                    <span class="text-sm font-semibold text-text-dark ml-1">
+</button>
+</div>
+<div class="px-6 pb-8 pt-2 flex flex-col gap-5">
+<label class="flex flex-col gap-2">
+<span class="text-sm font-semibold text-text-dark ml-1">
                                         ¿Dónde ocurrió el accidente?
                                     </span>
-                                    <div class="relative flex w-full items-center">
-                                        <div class="absolute left-4 text-primary flex items-center pointer-events-none">
-                                            <span class="material-symbols-outlined">
+<div class="relative flex w-full items-center">
+<div class="absolute left-4 text-primary flex items-center pointer-events-none">
+<span class="material-symbols-outlined">
                                                 location_on
                                             </span>
-                                        </div>
-                                        <select id="search-location"
-                                            class="w-full h-14 pl-12 pr-4 rounded-lg bg-gray-50 border border-gray-200 text-text-dark focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-base appearance-none cursor-pointer">
-                                            <option value="" disabled selected>Selecciona tu ciudad o provincia</option>
-                                            <option value="a-coruna">A Coruña</option>
-                                            <option value="alava">Álava</option>
-                                            <option value="albacete">Albacete</option>
-                                            <option value="alcala-de-henares">Alcalá de Henares</option>
-                                            <option value="alcorcon">Alcorcón</option>
-                                            <option value="alicante">Alicante</option>
-                                            <option value="almeria">Almería</option>
-                                            <option value="asturias">Asturias</option>
-                                            <option value="avila">Ávila</option>
-                                            <option value="badajoz">Badajoz</option>
-                                            <option value="badalona">Badalona</option>
-                                            <option value="barcelona">Barcelona</option>
-                                            <option value="burgos">Burgos</option>
-                                            <option value="caceres">Cáceres</option>
-                                            <option value="cadiz">Cádiz</option>
-                                            <option value="cantabria">Cantabria</option>
-                                            <option value="cartagena">Cartagena</option>
-                                            <option value="castellon">Castellón</option>
-                                            <option value="ceuta">Ceuta</option>
-                                            <option value="ciudad-real">Ciudad Real</option>
-                                            <option value="cordoba">Córdoba</option>
-                                            <option value="cuenca">Cuenca</option>
-                                            <option value="dos-hermanas">Dos Hermanas</option>
-                                            <option value="elche">Elche</option>
-                                            <option value="fuenlabrada">Fuenlabrada</option>
-                                            <option value="getafe">Getafe</option>
-                                            <option value="gijon">Gijón</option>
-                                            <option value="girona">Girona</option>
-                                            <option value="granada">Granada</option>
-                                            <option value="guadalajara">Guadalajara</option>
-                                            <option value="guipuzcoa">Guipúzcoa</option>
-                                            <option value="huelva">Huelva</option>
-                                            <option value="huesca">Huesca</option>
-                                            <option value="islas-baleares">Islas Baleares</option>
-                                            <option value="jaen">Jaén</option>
-                                            <option value="jerez-de-la-frontera">Jerez de la Frontera</option>
-                                            <option value="l-hospitalet-de-lobregat">L'Hospitalet de Llobregat</option>
-                                            <option value="la-rioja">La Rioja</option>
-                                            <option value="las-palmas">Las Palmas</option>
-                                            <option value="leganes">Leganés</option>
-                                            <option value="leon">León</option>
-                                            <option value="lleida">Lleida</option>
-                                            <option value="lugo">Lugo</option>
-                                            <option value="madrid">Madrid</option>
-                                            <option value="malaga">Málaga</option>
-                                            <option value="marbella">Marbella</option>
-                                            <option value="melilla">Melilla</option>
-                                            <option value="mostoles">Móstoles</option>
-                                            <option value="murcia">Murcia</option>
-                                            <option value="navarra">Navarra</option>
-                                            <option value="ourense">Ourense</option>
-                                            <option value="oviedo">Oviedo</option>
-                                            <option value="palencia">Palencia</option>
-                                            <option value="pontevedra">Pontevedra</option>
-                                            <option value="sabadell">Sabadell</option>
-                                            <option value="salamanca">Salamanca</option>
-                                            <option value="santa-cruz-de-tenerife">Santa Cruz de Tenerife</option>
-                                            <option value="segovia">Segovia</option>
-                                            <option value="sevilla">Sevilla</option>
-                                            <option value="soria">Soria</option>
-                                            <option value="tarragona">Tarragona</option>
-                                            <option value="terrassa">Terrassa</option>
-                                            <option value="teruel">Teruel</option>
-                                            <option value="toledo">Toledo</option>
-                                            <option value="torrejon-de-ardoz">Torrejón de Ardoz</option>
-                                            <option value="valencia">Valencia</option>
-                                            <option value="valladolid">Valladolid</option>
-                                            <option value="vigo">Vigo</option>
-                                            <option value="vitoria">Vitoria</option>
-                                            <option value="vizcaya">Vizcaya</option>
-                                            <option value="zamora">Zamora</option>
-                                            <option value="zaragoza">Zaragoza</option>
-                                        </select>
-                                        <!-- Custom arrow icon to replace default select arrow -->
-                                        <div class="absolute right-4 text-muted pointer-events-none">
-                                            <span class="material-symbols-outlined">expand_more</span>
-                                        </div>
-                                    </div>
-                                </label>
-                                <button id="btn-search" onclick="performSearch()"
-                                    class="w-full h-14 bg-primary hover:bg-primary-dark text-white text-lg font-bold rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 mt-2">
-                                    <span class="material-symbols-outlined">
+</div>
+<select class="w-full h-14 pl-12 pr-4 rounded-lg bg-gray-50 border border-gray-200 text-text-dark focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-base appearance-none cursor-pointer" id="search-location">
+<option disabled="" selected="" value="">Selecciona tu ciudad o provincia</option>
+<option value="a-coruna">A Coruña</option>
+<option value="alava">Álava</option>
+<option value="albacete">Albacete</option>
+<option value="alcala-de-henares">Alcalá de Henares</option>
+<option value="alcorcon">Alcorcón</option>
+<option value="alicante">Alicante</option>
+<option value="almeria">Almería</option>
+<option value="asturias">Asturias</option>
+<option value="avila">Ávila</option>
+<option value="badajoz">Badajoz</option>
+<option value="badalona">Badalona</option>
+<option value="barcelona">Barcelona</option>
+<option value="burgos">Burgos</option>
+<option value="caceres">Cáceres</option>
+<option value="cadiz">Cádiz</option>
+<option value="cantabria">Cantabria</option>
+<option value="cartagena">Cartagena</option>
+<option value="castellon">Castellón</option>
+<option value="ceuta">Ceuta</option>
+<option value="ciudad-real">Ciudad Real</option>
+<option value="cordoba">Córdoba</option>
+<option value="cuenca">Cuenca</option>
+<option value="dos-hermanas">Dos Hermanas</option>
+<option value="elche">Elche</option>
+<option value="fuenlabrada">Fuenlabrada</option>
+<option value="getafe">Getafe</option>
+<option value="gijon">Gijón</option>
+<option value="girona">Girona</option>
+<option value="granada">Granada</option>
+<option value="guadalajara">Guadalajara</option>
+<option value="guipuzcoa">Guipúzcoa</option>
+<option value="huelva">Huelva</option>
+<option value="huesca">Huesca</option>
+<option value="islas-baleares">Islas Baleares</option>
+<option value="jaen">Jaén</option>
+<option value="jerez-de-la-frontera">Jerez de la Frontera</option>
+<option value="l-hospitalet-de-lobregat">L'Hospitalet de Llobregat</option>
+<option value="la-rioja">La Rioja</option>
+<option value="las-palmas">Las Palmas</option>
+<option value="leganes">Leganés</option>
+<option value="leon">León</option>
+<option value="lleida">Lleida</option>
+<option value="lugo">Lugo</option>
+<option value="madrid">Madrid</option>
+<option value="malaga">Málaga</option>
+<option value="marbella">Marbella</option>
+<option value="melilla">Melilla</option>
+<option value="mostoles">Móstoles</option>
+<option value="murcia">Murcia</option>
+<option value="navarra">Navarra</option>
+<option value="ourense">Ourense</option>
+<option value="oviedo">Oviedo</option>
+<option value="palencia">Palencia</option>
+<option value="pontevedra">Pontevedra</option>
+<option value="sabadell">Sabadell</option>
+<option value="salamanca">Salamanca</option>
+<option value="santa-cruz-de-tenerife">Santa Cruz de Tenerife</option>
+<option value="segovia">Segovia</option>
+<option value="sevilla">Sevilla</option>
+<option value="soria">Soria</option>
+<option value="tarragona">Tarragona</option>
+<option value="terrassa">Terrassa</option>
+<option value="teruel">Teruel</option>
+<option value="toledo">Toledo</option>
+<option value="torrejon-de-ardoz">Torrejón de Ardoz</option>
+<option value="valencia">Valencia</option>
+<option value="valladolid">Valladolid</option>
+<option value="vigo">Vigo</option>
+<option value="vitoria">Vitoria</option>
+<option value="vizcaya">Vizcaya</option>
+<option value="zamora">Zamora</option>
+<option value="zaragoza">Zaragoza</option>
+</select>
+<!-- Custom arrow icon to replace default select arrow -->
+<div class="absolute right-4 text-muted pointer-events-none">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</label>
+<button class="w-full h-14 bg-primary hover:bg-primary-dark text-white text-lg font-bold rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 mt-2" id="btn-search" onclick="performSearch()">
+<span class="material-symbols-outlined">
                                         search
                                     </span>
-                                    <span id="btn-search-text">Buscar Abogado</span>
-                                </button>
-                                <p class="text-xs text-center text-muted mt-2">
+<span id="btn-search-text">Buscar Abogado</span>
+</button>
+<p class="text-xs text-center text-muted mt-2">
                                     Más de 5.000 casos resueltos con éxito este año.
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="bg-primary/10 border-y border-primary/20">
-            <div class="max-w-7xl mx-auto px-4 md:px-8 py-10 md:py-12">
-                <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-                    <div class="flex-1 space-y-3 text-center md:text-left">
-                        <div class="inline-flex items-center gap-2 bg-white px-3 py-1 rounded-full shadow-sm mb-2">
-                            <span class="material-symbols-outlined text-primary text-sm">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-primary/10 border-y border-primary/20">
+<div class="max-w-7xl mx-auto px-4 md:px-8 py-10 md:py-12">
+<div class="flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex-1 space-y-3 text-center md:text-left">
+<div class="inline-flex items-center gap-2 bg-white px-3 py-1 rounded-full shadow-sm mb-2">
+<span class="material-symbols-outlined text-primary text-sm">
                                 calculate
                             </span>
-                            <span class="text-xs font-bold text-primary uppercase tracking-wide">
+<span class="text-xs font-bold text-primary uppercase tracking-wide">
                                 Actualizado
                                 Baremo 2026
                             </span>
-                        </div>
-                        <h2 class="text-3xl font-black text-text-dark tracking-tight">
+</div>
+<h2 class="text-3xl font-black text-text-dark tracking-tight">
                             ¿Cuánto dinero te corresponde?
                         </h2>
-                        <p class="text-text-dark/80 text-lg max-w-xl">
+<p class="text-text-dark/80 text-lg max-w-xl">
                             Calcula tu indemnización real. No aceptes la
                             primera oferta de la aseguradora sin consultar.
                         </p>
-                    </div>
-                    <div class="w-full md:w-auto">
-                        <a class="w-full md:w-auto min-w-[300px] h-16 bg-primary hover:bg-primary-dark text-white text-xl font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all flex items-center justify-center gap-3"
-                            href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0"
-                            rel="noopener noreferrer" target="_blank">
-                            <span>
+</div>
+<div class="w-full md:w-auto">
+<a class="w-full md:w-auto min-w-[300px] h-16 bg-primary hover:bg-primary-dark text-white text-xl font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all flex items-center justify-center gap-3" href="calculadora-indemnizacion/index.html">
+<span>
                                 INICIAR CÁLCULO AHORA
                             </span>
-                            <span class="material-symbols-outlined">
+<span class="material-symbols-outlined">
                                 arrow_forward
                             </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="py-16 md:py-24 bg-white">
-            <div class="max-w-7xl mx-auto px-4 md:px-8">
-                <div class="mb-12 flex flex-col md:flex-row justify-between items-end gap-4">
-                    <div class="text-left">
-                        <h2 class="text-3xl md:text-4xl font-bold text-text-dark mb-4 tracking-tight">
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24 bg-white">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="mb-12 flex flex-col md:flex-row justify-between items-end gap-4">
+<div class="text-left">
+<h2 class="text-3xl md:text-4xl font-bold text-text-dark mb-4 tracking-tight">
                             ¿Qué tipo de accidente
                             <span class="block text-primary">
                                 has tenido?
                             </span>
-                        </h2>
-                        <p class="text-muted text-lg">
+</h2>
+<p class="text-muted text-lg">
                             Selecciona tu caso para recibir asesoramiento personalizado
                         </p>
-                    </div>
-                    <a class="hidden md:flex items-center gap-2 text-primary font-bold hover:text-primary-dark transition-colors"
-                        href="reclamar-accidente/index.html">
+</div>
+<a class="hidden md:flex items-center gap-2 text-primary font-bold hover:text-primary-dark transition-colors" href="reclamar-accidente/index.html">
                         Ver todos los accidentes
                         <span class="material-symbols-outlined">
                             arrow_forward
                         </span>
-                    </a>
-                </div>
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
-                    <a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer"
-                        href="reclamar-accidente/coche/index.html">
-                        <div
-                            class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined text-3xl">
+</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
+<a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer" href="reclamar-accidente/coche/index.html">
+<div class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">
                                 directions_car
                             </span>
-                        </div>
-                        <span class="font-bold text-text-dark group-hover:text-primary transition-colors">
+</div>
+<span class="font-bold text-text-dark group-hover:text-primary transition-colors">
                             Coche
                         </span>
-                    </a>
-                    <a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer"
-                        href="reclamar-accidente/moto/index.html">
-                        <div
-                            class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined text-3xl">
+</a>
+<a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer" href="reclamar-accidente/moto/index.html">
+<div class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">
                                 two_wheeler
                             </span>
-                        </div>
-                        <span class="font-bold text-text-dark group-hover:text-primary transition-colors">
+</div>
+<span class="font-bold text-text-dark group-hover:text-primary transition-colors">
                             Moto
                         </span>
-                    </a>
-                    <a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer"
-                        href="reclamar-accidente/atropello/index.html">
-                        <div
-                            class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined text-3xl">
+</a>
+<a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer" href="reclamar-accidente/atropello/index.html">
+<div class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">
                                 directions_walk
                             </span>
-                        </div>
-                        <span class="font-bold text-text-dark group-hover:text-primary transition-colors">
+</div>
+<span class="font-bold text-text-dark group-hover:text-primary transition-colors">
                             Atropello
                         </span>
-                    </a>
-                    <a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer"
-                        href="reclamar-accidente/patinete-electrico/index.html">
-                        <div
-                            class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined text-3xl">
+</a>
+<a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer" href="reclamar-accidente/patinete-electrico/index.html">
+<div class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">
                                 electric_scooter
                             </span>
-                        </div>
-                        <span class="font-bold text-text-dark group-hover:text-primary transition-colors">
+</div>
+<span class="font-bold text-text-dark group-hover:text-primary transition-colors">
                             Patinete
                         </span>
-                    </a>
-                    <a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer"
-                        href="reclamar-accidente/transporte-publico/index.html">
-                        <div
-                            class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined text-3xl">
+</a>
+<a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer" href="reclamar-accidente/transporte-publico/index.html">
+<div class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">
                                 directions_bus
                             </span>
-                        </div>
-                        <span class="font-bold text-text-dark group-hover:text-primary transition-colors">
+</div>
+<span class="font-bold text-text-dark group-hover:text-primary transition-colors">
                             Transp.
                             Público
                         </span>
-                    </a>
-                    <a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer"
-                        href="reclamar-accidente/in-itinere/index.html">
-                        <div
-                            class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined text-3xl">
+</a>
+<a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer" href="reclamar-accidente/in-itinere/index.html">
+<div class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">
                                 work
                             </span>
-                        </div>
-                        <span class="font-bold text-text-dark group-hover:text-primary transition-colors">
+</div>
+<span class="font-bold text-text-dark group-hover:text-primary transition-colors">
                             In
                             Itinere
                         </span>
-                    </a>
-                    <a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer"
-                        href="reclamar-accidente/bicicleta/index.html">
-                        <div
-                            class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined text-3xl">
+</a>
+<a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer" href="reclamar-accidente/bicicleta/index.html">
+<div class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">
                                 pedal_bike
                             </span>
-                        </div>
-                        <span class="font-bold text-text-dark group-hover:text-primary transition-colors">
+</div>
+<span class="font-bold text-text-dark group-hover:text-primary transition-colors">
                             Bicicleta
                         </span>
-                    </a>
-                    <a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer"
-                        href="reclamar-accidente/camion/index.html">
-                        <div
-                            class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined text-3xl">
+</a>
+<a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer" href="reclamar-accidente/camion/index.html">
+<div class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">
                                 local_shipping
                             </span>
-                        </div>
-                        <span class="font-bold text-text-dark group-hover:text-primary transition-colors">
+</div>
+<span class="font-bold text-text-dark group-hover:text-primary transition-colors">
                             Camión
                         </span>
-                    </a>
-                    <a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer"
-                        href="reclamar-accidente/pasajero/index.html">
-                        <div
-                            class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined text-3xl">
+</a>
+<a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer" href="reclamar-accidente/pasajero/index.html">
+<div class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">
                                 airline_seat_recline_normal
                             </span>
-                        </div>
-                        <span class="font-bold text-text-dark group-hover:text-primary transition-colors">
+</div>
+<span class="font-bold text-text-dark group-hover:text-primary transition-colors">
                             Pasajero
                         </span>
-                    </a>
-                    <a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer"
-                        href="reclamar-accidente/rotonda/index.html">
-                        <div
-                            class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined text-3xl">
+</a>
+<a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer" href="reclamar-accidente/rotonda/index.html">
+<div class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">
                                 roundabout_right
                             </span>
-                        </div>
-                        <span class="font-bold text-text-dark group-hover:text-primary transition-colors">
+</div>
+<span class="font-bold text-text-dark group-hover:text-primary transition-colors">
                             Rotonda
                         </span>
-                    </a>
-                    <a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer"
-                        href="reclamar-accidente/alcance-trasero/index.html">
-                        <div
-                            class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined text-3xl">
+</a>
+<a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer" href="reclamar-accidente/alcance-trasero/index.html">
+<div class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">
                                 minor_crash
                             </span>
-                        </div>
-                        <span class="font-bold text-text-dark group-hover:text-primary transition-colors">
+</div>
+<span class="font-bold text-text-dark group-hover:text-primary transition-colors">
                             Alcance Trasero
                         </span>
-                    </a>
-                    <a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer"
-                        href="reclamar-accidente/ciclomotor/index.html">
-                        <div
-                            class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined text-3xl">
+</a>
+<a class="group flex flex-col items-center p-6 bg-gray-50 rounded-xl border border-transparent hover:border-primary/30 hover:bg-white hover:shadow-md transition-all cursor-pointer" href="reclamar-accidente/ciclomotor/index.html">
+<div class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">
                                 moped
                             </span>
-                        </div>
-                        <span class="font-bold text-text-dark group-hover:text-primary transition-colors">
+</div>
+<span class="font-bold text-text-dark group-hover:text-primary transition-colors">
                             Ciclomotor
                         </span>
-                    </a>
-                </div>
-                <div class="mt-8 text-center md:hidden">
-                    <a class="inline-flex items-center gap-2 text-primary font-bold hover:text-primary-dark transition-colors"
-                        href="reclamar-accidente/index.html">
+</a>
+</div>
+<div class="mt-8 text-center md:hidden">
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:text-primary-dark transition-colors" href="reclamar-accidente/index.html">
                         Ver todos los accidentes
                         <span class="material-symbols-outlined">
                             arrow_forward
                         </span>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="py-16 md:py-24 bg-background-light">
-            <div class="max-w-7xl mx-auto px-4 md:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                    <div class="flex flex-col gap-6">
-                        <div class="flex items-center gap-3 mb-2">
-                            <div class="p-2 bg-primary/10 rounded-lg text-primary">
-                                <span class="material-symbols-outlined">
+</a>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24 bg-background-light">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3 mb-2">
+<div class="p-2 bg-primary/10 rounded-lg text-primary">
+<span class="material-symbols-outlined">
                                     medical_information
                                 </span>
-                            </div>
-                            <h2 class="text-3xl font-bold text-text-dark tracking-tight">
+</div>
+<h2 class="text-3xl font-bold text-text-dark tracking-tight">
                                 Indemnizaciones por Lesiones
                             </h2>
-                        </div>
-                        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                            <a class="flex items-center justify-between p-5 border-b border-gray-100 hover:bg-primary/5 transition-colors group"
-                                href="indemnizacion/latigazo-cervical/index.html">
-                                <div class="flex items-center gap-4">
-                                    <span class="material-symbols-outlined text-muted group-hover:text-primary">
+</div>
+<div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+<a class="flex items-center justify-between p-5 border-b border-gray-100 hover:bg-primary/5 transition-colors group" href="indemnizacion/latigazo-cervical/index.html">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-muted group-hover:text-primary">
                                         personal_injury
                                     </span>
-                                    <span class="font-semibold text-lg text-text-dark">
+<span class="font-semibold text-lg text-text-dark">
                                         Latigazo Cervical
                                     </span>
-                                </div>
-                                <span class="material-symbols-outlined text-primary">
+</div>
+<span class="material-symbols-outlined text-primary">
                                     chevron_right
                                 </span>
-                            </a>
-                            <a class="flex items-center justify-between p-5 border-b border-gray-100 hover:bg-primary/5 transition-colors group"
-                                href="indemnizacion/traumatismo-craneoencefalico/index.html">
-                                <div class="flex items-center gap-4">
-                                    <span class="material-symbols-outlined text-muted group-hover:text-primary">
+</a>
+<a class="flex items-center justify-between p-5 border-b border-gray-100 hover:bg-primary/5 transition-colors group" href="indemnizacion/traumatismo-craneoencefalico/index.html">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-muted group-hover:text-primary">
                                         emergency
                                     </span>
-                                    <span class="font-semibold text-lg text-text-dark">
+<span class="font-semibold text-lg text-text-dark">
                                         Traumatismos Graves
                                     </span>
-                                </div>
-                                <span class="material-symbols-outlined text-primary">
+</div>
+<span class="material-symbols-outlined text-primary">
                                     chevron_right
                                 </span>
-                            </a>
-                            <a class="flex items-center justify-between p-5 border-b border-gray-100 hover:bg-primary/5 transition-colors group"
-                                href="indemnizacion/fallecimiento/index.html">
-                                <div class="flex items-center gap-4">
-                                    <span class="material-symbols-outlined text-muted group-hover:text-primary">
+</a>
+<a class="flex items-center justify-between p-5 border-b border-gray-100 hover:bg-primary/5 transition-colors group" href="indemnizacion/fallecimiento/index.html">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-muted group-hover:text-primary">
                                         heart_broken
                                     </span>
-                                    <span class="font-semibold text-lg text-text-dark">
+<span class="font-semibold text-lg text-text-dark">
                                         Fallecimiento
                                     </span>
-                                </div>
-                                <span class="material-symbols-outlined text-primary">
+</div>
+<span class="material-symbols-outlined text-primary">
                                     chevron_right
                                 </span>
-                            </a>
-                            <a class="flex items-center justify-between p-5 border-b border-gray-100 hover:bg-primary/5 transition-colors group"
-                                href="indemnizacion/amputacion/index.html">
-                                <div class="flex items-center gap-4">
-                                    <span class="material-symbols-outlined text-muted group-hover:text-primary">
+</a>
+<a class="flex items-center justify-between p-5 border-b border-gray-100 hover:bg-primary/5 transition-colors group" href="indemnizacion/amputacion/index.html">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-muted group-hover:text-primary">
                                         accessible
                                     </span>
-                                    <span class="font-semibold text-lg text-text-dark">
+<span class="font-semibold text-lg text-text-dark">
                                         Amputaciones
                                     </span>
-                                </div>
-                                <span class="material-symbols-outlined text-primary">
+</div>
+<span class="material-symbols-outlined text-primary">
                                     chevron_right
                                 </span>
-                            </a>
-                            <a class="flex items-center justify-between p-5 border-b border-gray-100 hover:bg-primary/5 transition-colors group"
-                                href="indemnizacion/hernia-discal/index.html">
-                                <div class="flex items-center gap-4">
-                                    <span class="material-symbols-outlined text-muted group-hover:text-primary">
+</a>
+<a class="flex items-center justify-between p-5 border-b border-gray-100 hover:bg-primary/5 transition-colors group" href="indemnizacion/hernia-discal/index.html">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-muted group-hover:text-primary">
                                         accessibility_new
                                     </span>
-                                    <span class="font-semibold text-lg text-text-dark">
+<span class="font-semibold text-lg text-text-dark">
                                         Hernia Discal
                                     </span>
-                                </div>
-                                <span class="material-symbols-outlined text-primary">
+</div>
+<span class="material-symbols-outlined text-primary">
                                     chevron_right
                                 </span>
-                            </a>
-                            <a class="flex items-center justify-between p-5 border-b border-gray-100 hover:bg-primary/5 transition-colors group"
-                                href="indemnizacion/estres-postraumatico/index.html">
-                                <div class="flex items-center gap-4">
-                                    <span class="material-symbols-outlined text-muted group-hover:text-primary">
+</a>
+<a class="flex items-center justify-between p-5 border-b border-gray-100 hover:bg-primary/5 transition-colors group" href="indemnizacion/estres-postraumatico/index.html">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-muted group-hover:text-primary">
                                         psychology
                                     </span>
-                                    <span class="font-semibold text-lg text-text-dark">
+<span class="font-semibold text-lg text-text-dark">
                                         Estrés Postraumático
                                     </span>
-                                </div>
-                                <span class="material-symbols-outlined text-primary">
+</div>
+<span class="material-symbols-outlined text-primary">
                                     chevron_right
                                 </span>
-                            </a>
-                            <a class="flex items-center justify-between p-5 hover:bg-primary/5 transition-colors group"
-                                href="indemnizacion/lesion-medular/index.html">
-                                <div class="flex items-center gap-4">
-                                    <span class="material-symbols-outlined text-muted group-hover:text-primary">
+</a>
+<a class="flex items-center justify-between p-5 hover:bg-primary/5 transition-colors group" href="indemnizacion/lesion-medular/index.html">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-muted group-hover:text-primary">
                                         wheelchair_pickup
                                     </span>
-                                    <span class="font-semibold text-lg text-text-dark">
+<span class="font-semibold text-lg text-text-dark">
                                         Lesión Medular
                                     </span>
-                                </div>
-                                <span class="material-symbols-outlined text-primary">
+</div>
+<span class="material-symbols-outlined text-primary">
                                     chevron_right
                                 </span>
-                            </a>
-                        </div>
-                        <div class="mt-4 text-center">
-                            <a class="inline-flex items-center gap-2 text-primary font-bold hover:text-primary-dark transition-colors"
-                                href="indemnizacion/index.html">
+</a>
+</div>
+<div class="mt-4 text-center">
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:text-primary-dark transition-colors" href="indemnizacion/index.html">
                                 Ver todas las lesiones
                                 <span class="material-symbols-outlined">
                                     arrow_forward
                                 </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-6">
-                        <div class="flex items-center gap-3 mb-2">
-                            <div class="p-2 bg-primary/10 rounded-lg text-primary">
-                                <span class="material-symbols-outlined">
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3 mb-2">
+<div class="p-2 bg-primary/10 rounded-lg text-primary">
+<span class="material-symbols-outlined">
                                     menu_book
                                 </span>
-                            </div>
-                            <h2 class="text-3xl font-bold text-text-dark tracking-tight">
+</div>
+<h2 class="text-3xl font-bold text-text-dark tracking-tight">
                                 Guía del Accidentado
                             </h2>
-                        </div>
-                        <div
-                            class="flex lg:grid lg:grid-cols-2 gap-4 overflow-x-auto pb-4 lg:pb-0 snap-x snap-mandatory lg:snap-none -mx-4 px-4 lg:mx-0 lg:px-0">
-                            <div
-                                class="min-w-[260px] lg:min-w-0 snap-center bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col gap-3">
-                                <div class="flex items-start justify-between">
-                                    <span class="material-symbols-outlined text-3xl text-primary">
+</div>
+<div class="flex lg:grid lg:grid-cols-2 gap-4 overflow-x-auto pb-4 lg:pb-0 snap-x snap-mandatory lg:snap-none -mx-4 px-4 lg:mx-0 lg:px-0">
+<div class="min-w-[260px] lg:min-w-0 snap-center bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-3xl text-primary">
                                         description
                                     </span>
-                                    <span class="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">
+<span class="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">
                                         LEGAL
                                     </span>
-                                </div>
-                                <h3 class="font-bold text-lg leading-tight">
+</div>
+<h3 class="font-bold text-lg leading-tight">
                                     Atestado Policial: Claves
                                 </h3>
-                                <p class="text-sm text-muted">
+<p class="text-sm text-muted">
                                     Cómo solicitarlo y por qué es vital para tu caso.
                                 </p>
-                                <a class="text-sm font-bold text-primary mt-auto flex items-center gap-1 hover:underline"
-                                    href="guia/atestado-policial/index.html">
+<a class="text-sm font-bold text-primary mt-auto flex items-center gap-1 hover:underline" href="guia/atestado-policial/index.html">
                                     Leer más
                                     <span class="material-symbols-outlined text-base">
                                         arrow_forward
                                     </span>
-                                </a>
-                            </div>
-                            <div
-                                class="min-w-[260px] lg:min-w-0 snap-center bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col gap-3">
-                                <div class="flex items-start justify-between">
-                                    <span class="material-symbols-outlined text-3xl text-primary">
+</a>
+</div>
+<div class="min-w-[260px] lg:min-w-0 snap-center bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-3xl text-primary">
                                         table_chart
                                     </span>
-                                    <span class="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">
+<span class="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">
                                         INFO
                                     </span>
-                                </div>
-                                <h3 class="font-bold text-lg leading-tight">
+</div>
+<h3 class="font-bold text-lg leading-tight">
                                     Tabla de Culpabilidad
                                 </h3>
-                                <p class="text-sm text-muted">
+<p class="text-sm text-muted">
                                     ¿Quién paga en cruces, alcances o giros?
                                 </p>
-                                <a class="text-sm font-bold text-primary mt-auto flex items-center gap-1 hover:underline"
-                                    href="guia/tabla-culpabilidad/index.html">
+<a class="text-sm font-bold text-primary mt-auto flex items-center gap-1 hover:underline" href="guia/tabla-culpabilidad/index.html">
                                     Ver tabla
                                     <span class="material-symbols-outlined text-base">
                                         arrow_forward
                                     </span>
-                                </a>
-                            </div>
-                            <div
-                                class="min-w-[260px] lg:min-w-0 lg:col-span-2 snap-center bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col gap-3">
-                                <div class="flex items-start justify-between">
-                                    <span class="material-symbols-outlined text-3xl text-primary">
+</a>
+</div>
+<div class="min-w-[260px] lg:min-w-0 lg:col-span-2 snap-center bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-3xl text-primary">
                                         shield
                                     </span>
-                                    <span class="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">
+<span class="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">
                                         SEGUROS
                                     </span>
-                                </div>
-                                <h3 class="font-bold text-lg leading-tight">
+</div>
+<h3 class="font-bold text-lg leading-tight">
                                     Consorcio de Seguros
                                 </h3>
-                                <p class="text-sm text-muted">
+<p class="text-sm text-muted">
                                     Qué hacer si el contrario no tiene seguro o se da a
                                     la fuga. Te explicamos los plazos.
                                 </p>
-                                <a class="text-sm font-bold text-primary mt-auto flex items-center gap-1 hover:underline"
-                                    href="guia/consorcio-compensacion-seguros/index.html">
+<a class="text-sm font-bold text-primary mt-auto flex items-center gap-1 hover:underline" href="guia/consorcio-compensacion-seguros/index.html">
                                     Guía completa
                                     <span class="material-symbols-outlined text-base">
                                         arrow_forward
                                     </span>
-                                </a>
-                            </div>
-                            <div
-                                class="min-w-[260px] lg:min-w-0 snap-center bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col gap-3">
-                                <div class="flex items-start justify-between">
-                                    <span class="material-symbols-outlined text-3xl text-primary">
+</a>
+</div>
+<div class="min-w-[260px] lg:min-w-0 snap-center bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-3xl text-primary">
                                         edit_document
                                     </span>
-                                    <span class="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">
+<span class="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">
                                         LEGAL
                                     </span>
-                                </div>
-                                <h3 class="font-bold text-lg leading-tight">
+</div>
+<h3 class="font-bold text-lg leading-tight">
                                     Parte Amistoso
                                 </h3>
-                                <p class="text-sm text-muted">
+<p class="text-sm text-muted">
                                     Cómo rellenarlo correctamente para evitar problemas.
                                 </p>
-                                <a class="text-sm font-bold text-primary mt-auto flex items-center gap-1 hover:underline"
-                                    href="guia/rellenar-parte-amistoso/index.html">
+<a class="text-sm font-bold text-primary mt-auto flex items-center gap-1 hover:underline" href="guia/rellenar-parte-amistoso/index.html">
                                     Ver guía
                                     <span class="material-symbols-outlined text-base">
                                         arrow_forward
                                     </span>
-                                </a>
-                            </div>
-                            <div
-                                class="min-w-[260px] lg:min-w-0 snap-center bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col gap-3">
-                                <div class="flex items-start justify-between">
-                                    <span class="material-symbols-outlined text-3xl text-primary">
+</a>
+</div>
+<div class="min-w-[260px] lg:min-w-0 snap-center bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-3xl text-primary">
                                         folder
                                     </span>
-                                    <span class="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">
+<span class="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">
                                         INFO
                                     </span>
-                                </div>
-                                <h3 class="font-bold text-lg leading-tight">
+</div>
+<h3 class="font-bold text-lg leading-tight">
                                     Documentación
                                 </h3>
-                                <p class="text-sm text-muted">
+<p class="text-sm text-muted">
                                     Papeles necesarios para iniciar tu reclamación.
                                 </p>
-                                <a class="text-sm font-bold text-primary mt-auto flex items-center gap-1 hover:underline"
-                                    href="guia/documentacion-reclamacion/index.html">
+<a class="text-sm font-bold text-primary mt-auto flex items-center gap-1 hover:underline" href="guia/documentacion-reclamacion/index.html">
                                     Leer más
                                     <span class="material-symbols-outlined text-base">
                                         arrow_forward
                                     </span>
-                                </a>
-                            </div>
-                            <div
-                                class="min-w-[260px] lg:min-w-0 snap-center bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col gap-3">
-                                <div class="flex items-start justify-between">
-                                    <span class="material-symbols-outlined text-3xl text-primary">
+</a>
+</div>
+<div class="min-w-[260px] lg:min-w-0 snap-center bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-3xl text-primary">
                                         work_history
                                     </span>
-                                    <span class="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">
+<span class="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">
                                         SEGUROS
                                     </span>
-                                </div>
-                                <h3 class="font-bold text-lg leading-tight">
+</div>
+<h3 class="font-bold text-lg leading-tight">
                                     Sin Baja Médica
                                 </h3>
-                                <p class="text-sm text-muted">
+<p class="text-sm text-muted">
                                     ¿Es posible cobrar indemnización sin estar de baja?
                                 </p>
-                                <a class="text-sm font-bold text-primary mt-auto flex items-center gap-1 hover:underline"
-                                    href="guia/indemnizacion-sin-baja/index.html">
+<a class="text-sm font-bold text-primary mt-auto flex items-center gap-1 hover:underline" href="guia/indemnizacion-sin-baja/index.html">
                                     Descúbrelo
                                     <span class="material-symbols-outlined text-base">
                                         arrow_forward
                                     </span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="mt-4 text-center lg:text-right">
-                            <a class="inline-flex items-center gap-2 text-primary font-bold hover:text-primary-dark transition-colors"
-                                href="guia/index.html">
+</a>
+</div>
+</div>
+<div class="mt-4 text-center lg:text-right">
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:text-primary-dark transition-colors" href="guia/index.html">
                                 Ver todas las guías
                                 <span class="material-symbols-outlined">
                                     arrow_forward
                                 </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="bg-background-dark text-white border-t border-white/10 pt-16 pb-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-                <!-- Col 1: Brand -->
-                <div class="flex flex-col gap-6">
-                    <a class="block" href="index.html">
-                        <img alt="InfoAccidentes"
-                            class="h-10 w-auto brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
-                            src="https://infoaccidentes.com/wp-content/uploads/2021/02/infoaccidentes_marca-300x111.webp" />
-                    </a>
-                    <p class="text-sm text-gray-200 leading-relaxed">
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-background-dark text-white border-t border-white/10 pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+<!-- Col 1: Brand -->
+<div class="flex flex-col gap-6">
+<a class="block" href="index.html">
+<img alt="InfoAccidentes" class="h-10 w-auto brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" src="https://infoaccidentes.com/wp-content/uploads/2021/02/infoaccidentes_marca-300x111.webp"/>
+</a>
+<p class="text-sm text-gray-200 leading-relaxed">
                         Plataforma líder en la defensa de víctimas de tráfico. Conectamos personas con soluciones
                         legales y médicas de primer nivel.
                     </p>
-                </div>
-                <!-- Col 2: Servicios -->
-                <div>
-                    <h4 class="font-bold text-lg mb-6 text-white">
+</div>
+<!-- Col 2: Servicios -->
+<div>
+<h4 class="font-bold text-lg mb-6 text-white">
                         Servicios
                     </h4>
-                    <ul class="space-y-4 text-sm text-gray-200">
-                        <li>
-                            <a class="hover:text-blue-400 transition-colors" href="abogados-trafico/index.html">
+<ul class="space-y-4 text-sm text-gray-200">
+<li>
+<a class="hover:text-blue-400 transition-colors" href="abogados-trafico/index.html">
                                 Abogados
                                 Especialistas
                             </a>
-                        </li>
-                        <li>
-                            <a class="hover:text-blue-400 transition-colors"
-                                href="clinicas-accidentes-trafico/index.html">
+</li>
+<li>
+<a class="hover:text-blue-400 transition-colors" href="clinicas-accidentes-trafico/index.html">
                                 Clínicas
                                 Rehabilitación
                             </a>
-                        </li>
-                        <li>
-                            <a class="hover:text-blue-400 transition-colors"
-                                href="calculadora-indemnizacion/index.html">
+</li>
+<li>
+<a class="hover:text-blue-400 transition-colors" href="calculadora-indemnizacion/index.html">
                                 Calculadora
                                 Indemnización
                             </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Col 3: Información -->
-                <div>
-                    <h4 class="font-bold text-lg mb-6 text-white">
+</li>
+</ul>
+</div>
+<!-- Col 3: Información -->
+<div>
+<h4 class="font-bold text-lg mb-6 text-white">
                         Información
                     </h4>
-                    <ul class="space-y-4 text-sm text-gray-200">
-                        <li>
-                            <a class="hover:text-blue-400 transition-colors" href="indemnizacion/index.html">
+<ul class="space-y-4 text-sm text-gray-200">
+<li>
+<a class="hover:text-blue-400 transition-colors" href="indemnizacion/index.html">
                                 Indemnizaciones y
                                 Lesiones
                             </a>
-                        </li>
-                        <li>
-                            <a class="hover:text-blue-400 transition-colors" href="reclamar-accidente/index.html">
+</li>
+<li>
+<a class="hover:text-blue-400 transition-colors" href="reclamar-accidente/index.html">
                                 Tipos de
                                 Accidentes
                             </a>
-                        </li>
-                        <li>
-                            <a class="hover:text-blue-400 transition-colors" href="guia/index.html">
+</li>
+<li>
+<a class="hover:text-blue-400 transition-colors" href="guia/index.html">
                                 Guías de Reclamación
                             </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Col 4: Contacto -->
-                <div>
-                    <h4 class="font-bold text-lg mb-6 text-white">
+</li>
+</ul>
+</div>
+<!-- Col 4: Contacto -->
+<div>
+<h4 class="font-bold text-lg mb-6 text-white">
                         Contacto
                     </h4>
-                    <ul class="space-y-4 text-sm text-gray-200">
-                        <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-blue-400">
+<ul class="space-y-4 text-sm text-gray-200">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-blue-400">
                                 mail
                             </span>
-                            <a class="hover:text-white transition-colors" href="mailto:info@infoaccidentes.com"
-                                rel="noopener noreferrer" target="_blank">
+<a class="hover:text-white transition-colors" href="mailto:info@infoaccidentes.com" rel="noopener noreferrer" target="_blank">
                                 info@infoaccidentes.com
                             </a>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-blue-400">
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-blue-400">
                                 chat
                             </span>
-                            <a class="hover:text-white transition-colors"
-                                href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0"
-                                rel="noopener noreferrer" target="_blank">
+<a class="hover:text-white transition-colors" href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
                                 WhatsApp
                                 24h
                             </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Subfooter -->
-            <div
-                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300">
-                <div>
+</li>
+</ul>
+</div>
+</div>
+<!-- Subfooter -->
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300">
+<div>
                     © 2026 InfoAccidentes. Todos los derechos reservados.
                 </div>
-                <div class="flex gap-6">
-                    <a class="hover:text-white transition-colors" href="aviso-legal/">
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="aviso-legal/">
                         Aviso Legal
                     </a>
-                    <a class="hover:text-white transition-colors" href="politica-de-privacidad/">
+<a class="hover:text-white transition-colors" href="politica-de-privacidad/">
                         Política de
                         Privacidad
                     </a>
-                    <a class="hover:text-white transition-colors" href="politica-de-cookies/">
+<a class="hover:text-white transition-colors" href="politica-de-cookies/">
                         Cookies
                     </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+</div>
+</div>
+</div>
+</footer>
 </body>
-
 </html>
