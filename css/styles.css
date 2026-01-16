@@ -52,7 +52,7 @@ h4 {
 }
 
 .gold-gradient-text {
-    color: #FF8C00;
+    color: #0000FF;
 }
 
 /* Typography / Prose (from abogados_provincia.html) */
@@ -82,4 +82,46 @@ h4 {
 
 .prose-content li {
     margin-bottom: 0.5rem;
+}
+
+/* Accessibility Overrides for Dark Sections */
+.bg-slate-800,
+.bg-background-dark {
+    color: #ffffff;
+}
+
+/* Enforce list contrast in dark sections */
+.bg-slate-800 p,
+.bg-background-dark p,
+.bg-slate-800 li,
+.bg-background-dark li,
+.bg-slate-800 span,
+.bg-background-dark span {
+    color: #f3f4f6;
+    /* text-gray-100 - AAA Compliant */
+}
+
+/* Enforce heading contrast in dark sections */
+.bg-slate-800 h1,
+.bg-slate-800 h2,
+.bg-slate-800 h3,
+.bg-slate-800 h4,
+.bg-background-dark h1,
+.bg-background-dark h2,
+.bg-background-dark h3,
+.bg-background-dark h4 {
+    color: #ffffff !important;
+}
+
+/* Specific Prose Overrides to defeat .prose-content p */
+.prose-content .not-prose p,
+.prose-content .not-prose li {
+    color: #f3f4f6 !important;
+}
+
+.prose-content .not-prose h1,
+.prose-content .not-prose h2,
+.prose-content .not-prose h3,
+.prose-content .not-prose h4 {
+    color: #ffffff !important;
 }
