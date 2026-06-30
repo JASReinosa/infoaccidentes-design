@@ -148,7 +148,32 @@ def restore_clinicas():
             t_h1.string = h1_text
             # Optionally style the "en City" part if we want, but simple string is robust.
 
-        # 5d. Fix Relative Paths
+        # 5d. Fix Relative Paths and Apply WhatsApp Split (Norte vs Sur)
+        SUR_PROVINCES = [
+            # Andalucía
+            "almeria", "cadiz", "cordoba", "granada", "huelva", "jaen", "malaga", "sevilla", "jerez-de-la-frontera", "marbella", "dos-hermanas",
+            # Castilla-La Mancha
+            "albacete", "ciudad-real", "cuenca", "guadalajara", "toledo",
+            # Extremadura
+            "badajoz", "caceres",
+            # Murcia
+            "murcia", "cartagena",
+            # Comunidad Valenciana
+            "alicante", "castellon", "valencia", "elche",
+            # Canarias
+            "las-palmas", "santa-cruz-de-tenerife",
+            # Ceuta y Melilla
+            "ceuta", "melilla"
+        ]
+        
+        # WhatsApp numbers config
+        WA_PHONE_NORTE = "34635243155"
+        WA_PHONE_SUR = "34635243155" # Update this when Sur phone is defined
+        
+        city_slug = parts[-2] if (len(parts) >= 2 and parts[-2] != "clinicas-accidentes-trafico") else ""
+        region = "sur" if city_slug in SUR_PROVINCES else "norte"
+        target_phone = WA_PHONE_NORTE if region == "norte" else WA_PHONE_SUR
+
         def fix_path(path):
             if not path: return path
             if path.startswith(("http", "//", "#", "mailto:", "tel:")): return path
@@ -156,7 +181,15 @@ def restore_clinicas():
             return "../../" + path 
 
         for tag in template_soup.find_all(['a', 'link'], href=True):
-            tag['href'] = fix_path(tag['href'])
+            href = tag['href']
+            # If it's a WhatsApp link, apply routing split
+            if "api.whatsapp.com" in href or "wa.me" in href:
+                new_href = re.sub(r'phone=\d+', f'phone={target_phone}', href)
+                new_href = re.sub(r'wa\.me/\d+', f'wa.me/{target_phone}', new_href)
+                tag['href'] = new_href
+            else:
+                tag['href'] = fix_path(href)
+                
         for tag in template_soup.find_all(['script', 'img'], src=True):
             tag['src'] = fix_path(tag['src'])
 

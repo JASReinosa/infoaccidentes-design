@@ -1,22 +1,30 @@
 <!-- Indemnización Calculator Wizard -->
 <!DOCTYPE html>
 <html class="light" lang="es">
-
-<head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>
-        Calculadora de Indemnización - InfoAccidentes
-    </title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography">
-    </script>
-    <script src="../js/theme.js">
-    </script>
-    <link href="../css/styles.css" rel="stylesheet" />
-    <script src="../js/main.js">
-    </script>
-    <style>
-        .prose a {
+ <head>
+  <!-- Google Tag Manager -->
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://sst.infoaccidentes.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Calculadora de Indemnización - InfoAccidentes
+  </title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography">
+  </script>
+  <script src="../js/theme.js">
+  </script>
+  <link href="../css/styles.css" rel="stylesheet"/>
+  <script src="../js/main.js">
+  </script>
+  <style>
+   .prose a {
             color: #0000FF;
             text-decoration: underline;
             font-weight: 500;
@@ -26,269 +34,490 @@
             color: #0d141b;
             font-weight: 700;
         }
-    </style>
-</head>
-
-<body
-    class="bg-background-light dark:bg-background-dark font-display text-text-dark antialiased selection:bg-primary/20 selection:text-primary">
-    <!-- Sticky Header -->
-    <header class="sticky top-0 z-50 w-full bg-white shadow-sm border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="../index.html">
-                        <img alt="InfoAccidentes" class="h-10 w-auto"
-                            src="https://infoaccidentes.com/wp-content/uploads/2021/02/infoaccidentes_marca-300x111.webp" />
-                    </a>
-                </div>
-                <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-8">
-                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
-                        href="../abogados-trafico/index.html">
-                        Abogados
-                    </a>
-                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
-                        href="../clinicas-accidentes-trafico/index.html">
-                        Clínicas
-                    </a>
-                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
-                        href="../calculadora-indemnizacion/index.html">
-                        Calculadora
-                    </a>
-                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
-                        href="../indemnizacion/index.html">
-                        Lesiones
-                    </a>
-                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
-                        href="../reclamar-accidente/index.html">
-                        Accidentes
-                    </a>
-                    <a class="text-text-muted hover:text-primary font-medium transition-colors"
-                        href="../guia/index.html">
-                        Guías
-                    </a>
-                </nav>
-                <!-- CTA Button -->
-                <div class="hidden md:flex items-center">
-                    <a class="text-white px-6 py-2.5 rounded-lg font-bold transition-colors shadow-sm flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a]"
-                        href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0"
-                        rel="noopener noreferrer" target="_blank">
-                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
-                            </path>
-                        </svg>
-                        WhatsApp
-                    </a>
-                </div>
-                <!-- Mobile Menu Button -->
-                <div class="flex items-center md:hidden">
-                    <button class="text-text-muted hover:text-primary p-2" onclick="toggleMobileMenu()" type="button">
-                        <span class="material-symbols-outlined text-3xl">
-                            menu
-                        </span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-lg"
-            id="mobile-menu">
-            <div class="px-4 pt-2 pb-6 space-y-2">
-                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
-                    href="../abogados-trafico/index.html">
-                    Abogados
-                </a>
-                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
-                    href="../clinicas-accidentes-trafico/index.html">
-                    Clínicas
-                </a>
-                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
-                    href="../calculadora-indemnizacion/index.html">
-                    Calculadora
-                </a>
-                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
-                    href="../indemnizacion/index.html">
-                    Lesiones
-                </a>
-                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
-                    href="../reclamar-accidente/index.html">
-                    Accidentes
-                </a>
-                <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md"
-                    href="../guia/index.html">
-                    Guías
-                </a>
-                <div class="pt-4 mt-4 border-t border-gray-100">
-                    <a class="flex items-center justify-center gap-2 w-full text-white py-3 rounded-lg font-bold bg-[#25D366] hover:bg-[#20bd5a]"
-                        href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0"
-                        rel="noopener noreferrer" target="_blank">
-                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
-                            </path>
-                        </svg>
-                        WhatsApp
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="flex-grow flex flex-col items-center justify-start pt-8 pb-16 px-4 sm:px-6">
-        <!-- Hero Content -->
-        <div class="text-center max-w-3xl mx-auto mb-10">
-            <h1
-                class="text-3xl sm:text-4xl md:text-5xl font-black text-text-dark dark:text-white leading-tight tracking-tight mb-4">
-                Calcula tu Indemnización
-                <br class="hidden sm:block" />
-                por Accidente de Tráfico
-            </h1>
-            <p class="text-lg text-text-muted dark:text-slate-400 max-w-2xl mx-auto">
-                Descubre cuánto dinero te corresponde según el
-                <span class="font-semibold text-primary">
-                    Baremo
+  </style>
+ </head>
+ <body class="bg-background-light dark:bg-background-dark font-display text-text-dark antialiased selection:bg-primary/20 selection:text-primary">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+   <iframe height="0" src="https://sst.infoaccidentes.com/ns.html?id=GTM-XXXXXXX" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- Sticky Header -->
+  <header class="sticky top-0 z-50 w-full bg-white shadow-sm border-b border-gray-100">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+     <!-- Logo -->
+     <div class="flex-shrink-0 flex items-center">
+      <a href="../index.html">
+       <img alt="InfoAccidentes" class="h-10 w-auto" src="https://infoaccidentes.com/wp-content/uploads/2021/02/infoaccidentes_marca-300x111.webp"/>
+      </a>
+     </div>
+     <!-- Desktop Menu -->
+     <nav class="hidden md:flex space-x-8">
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="../abogados-trafico/index.html">
+       Abogados
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="../clinicas-accidentes-trafico/index.html">
+       Clínicas
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="../calculadora-indemnizacion/index.html">
+       Calculadora
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="../indemnizacion/index.html">
+       Lesiones
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="../reclamar-accidente/index.html">
+       Accidentes
+      </a>
+      <a class="text-text-muted hover:text-primary font-medium transition-colors" href="../guia/index.html">
+       Guías
+      </a>
+     </nav>
+     <!-- CTA Button -->
+     <div class="hidden md:flex items-center">
+      <a class="text-white px-6 py-2.5 rounded-lg font-bold transition-colors shadow-sm flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a]" href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+       <svg class="w-5 h-5 fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+        </path>
+       </svg>
+       WhatsApp
+      </a>
+     </div>
+     <!-- Mobile Menu Button -->
+     <div class="flex items-center md:hidden">
+      <button class="text-text-muted hover:text-primary p-2" onclick="toggleMobileMenu()" type="button">
+       <span class="material-symbols-outlined text-3xl">
+        menu
+       </span>
+      </button>
+     </div>
+    </div>
+   </div>
+   <!-- Mobile Menu -->
+   <div class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-lg" id="mobile-menu">
+    <div class="px-4 pt-2 pb-6 space-y-2">
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="../abogados-trafico/index.html">
+      Abogados
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="../clinicas-accidentes-trafico/index.html">
+      Clínicas
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="../calculadora-indemnizacion/index.html">
+      Calculadora
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="../indemnizacion/index.html">
+      Lesiones
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="../reclamar-accidente/index.html">
+      Accidentes
+     </a>
+     <a class="block py-3 px-4 text-base font-medium text-text-dark hover:bg-gray-50 rounded-md" href="../guia/index.html">
+      Guías
+     </a>
+     <div class="pt-4 mt-4 border-t border-gray-100">
+      <a class="flex items-center justify-center gap-2 w-full text-white py-3 rounded-lg font-bold bg-[#25D366] hover:bg-[#20bd5a]" href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+       <svg class="w-5 h-5 fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+        </path>
+       </svg>
+       WhatsApp
+      </a>
+     </div>
+    </div>
+   </div>
+  </header>
+  <main class="flex-grow flex flex-col items-center justify-start pt-8 pb-16 px-4 sm:px-6">
+   <!-- Hero Content -->
+   <div class="text-center max-w-3xl mx-auto mb-10">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-text-dark dark:text-white leading-tight tracking-tight mb-4">
+     Calcula tu Indemnización
+     <br class="hidden sm:block"/>
+     por Accidente de Tráfico
+    </h1>
+    <p class="text-lg text-text-muted dark:text-slate-400 max-w-2xl mx-auto">
+     Descubre cuánto dinero te corresponde según el
+     <span class="font-semibold text-primary">
+      Baremo
                     2026
-                </span>
-                .
-                <br />
-                Es rápido, fácil y 100% gratuito.
-            </p>
-        </div>
-        <!-- Wizard Container -->
-        <!-- Calculator Widget -->
-        <div id="calculator-container" class="ia-calc-wrapper">
-            <!-- Progress Bar -->
-            <div class="ia-calc-progress">
-                <div class="ia-calc-progress-bar" id="progressBar" style="width: 25%;"></div>
-            </div>
+     </span>
+     .
+     <br/>
+     Es rápido, fácil y 100% gratuito.
+    </p>
+   </div>
+   <!-- Wizard Container -->
+   <!-- Calculator Widget -->
+   <div class="ia-calc-wrapper" id="calculator-container">
+    <!-- Progress Bar -->
+    <div class="ia-calc-progress">
+     <div class="ia-calc-progress-bar" id="progressBar" style="width: 25%;">
+     </div>
+    </div>
+    <form id="indemnityForm">
+     <!-- STEP 1: Role -->
+     <div class="ia-step active" id="step1">
+      <h2 class="ia-step-title">
+       1. ¿Qué tipo de accidente has sufrido?
+      </h2>
+      <div class="ia-options-grid">
+       <label class="ia-option-card">
+        <input checked="" name="role" type="radio" value="conductornoculpa"/>
+        <span class="ia-option-text">
+         Conductor (No culpable)
+        </span>
+       </label>
+       <label class="ia-option-card">
+        <input name="role" type="radio" value="ocupante"/>
+        <span class="ia-option-text">
+         Ocupante / Pasajero
+        </span>
+       </label>
+       <label class="ia-option-card">
+        <input name="role" type="radio" value="peaton"/>
+        <span class="ia-option-text">
+         Peatón / Ciclista
+        </span>
+       </label>
+       <label class="ia-option-card">
+        <input name="role" type="radio" value="conductorculpa"/>
+        <span class="ia-option-text">
+         Conductor (Culpable)
+        </span>
+       </label>
+      </div>
+      <div class="ia-alert" id="culpaAlert" style="display:none;">
+       Si eres culpable exclusivo del accidente, en España no tienes derecho a indemnización civil.
+      </div>
+      <button class="ia-btn-next" onclick="nextStep(2)" type="button">
+       Siguiente
+      </button>
+     </div>
+     <!-- STEP 2: Medical Days -->
+     <div class="ia-step" id="step2">
+      <h2 class="ia-step-title">
+       2. Tiempo de recuperación
+      </h2>
+      <p class="ia-step-desc">
+       Indica el nº de días aproximado en cada situación.
+      </p>
+      <div class="ia-input-group">
+       <label>
+        Días en UCI (Muy Grave)
+       </label>
+       <input id="daysUCI" min="0" placeholder="0" type="number"/>
+      </div>
+      <div class="ia-input-group">
+       <label>
+        Días de Hospitalización (Grave)
+       </label>
+       <input id="daysHospital" min="0" placeholder="0" type="number"/>
+      </div>
+      <div class="ia-input-group">
+       <label>
+        Días de Baja Laboral / Impeditivos
+       </label>
+       <input id="daysImpeditivo" min="0" placeholder="Ej: 30" type="number"/>
+      </div>
+      <div class="ia-input-group">
+       <label>
+        Días de Rehabilitación (No Impeditivos)
+       </label>
+       <input id="daysNoImpeditivo" min="0" placeholder="Ej: 15" type="number"/>
+      </div>
+      <div class="ia-nav-buttons">
+       <button class="ia-btn-prev" onclick="prevStep(1)" type="button">
+        Atrás
+       </button>
+       <button class="ia-btn-next" onclick="nextStep(3)" type="button">
+        Siguiente
+       </button>
+      </div>
+     </div>
+     <!-- STEP 3: Sequelae -->
+     <div class="ia-step" id="step3">
+      <h2 class="ia-step-title">
+       3. Secuelas y Gravedad
+      </h2>
+      <div class="ia-options-list">
+       <label class="ia-option-row">
+        <input checked="" name="severity" type="radio" value="none"/>
+        <span class="ia-option-text">
+         Recuperación total (Sin secuelas)
+        </span>
+       </label>
+       <label class="ia-option-row">
+        <input name="severity" type="radio" value="light"/>
+        <span class="ia-option-text">
+         Dolor leve residual
+        </span>
+       </label>
+       <label class="ia-option-row">
+        <input name="severity" type="radio" value="moderate"/>
+        <span class="ia-option-text">
+         Dolor moderado / Limitación
+        </span>
+       </label>
+       <label class="ia-option-row">
+        <input name="severity" type="radio" value="severe"/>
+        <span class="ia-option-text">
+         Secuelas graves
+        </span>
+       </label>
+      </div>
+      <div class="ia-input-group" style="margin-top: 20px;">
+       <label>
+        Edad de la víctima
+       </label>
+       <input id="victimAge" max="110" min="0" placeholder="Ej: 35" type="number"/>
+      </div>
+      <div class="ia-input-group" style="margin-top: 20px;">
+       <label>
+        Provincia del accidente
+       </label>
+       <select class="w-full rounded-lg border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-text-dark dark:text-white focus:border-primary focus:ring-primary shadow-sm" id="victimProvince" required="" style="padding: 10px; border-radius: 8px; border: 1px solid #ccc; width: 100%;">
+        <option disabled="" selected="" value="">
+         Selecciona tu provincia...
+        </option>
+        <optgroup label="Norte">
+         <option value="alava">
+          Álava
+         </option>
+         <option value="asturias">
+          Asturias
+         </option>
+         <option value="barcelona">
+          Barcelona
+         </option>
+         <option value="burgos">
+          Burgos
+         </option>
+         <option value="cantabria">
+          Cantabria
+         </option>
+         <option value="girona">
+          Gerona
+         </option>
+         <option value="guipuzcoa">
+          Guipúzcoa
+         </option>
+         <option value="huesca">
+          Huesca
+         </option>
+         <option value="la-coruna">
+          La Coruña
+         </option>
+         <option value="la-rioja">
+          La Rioja
+         </option>
+         <option value="leon">
+          León
+         </option>
+         <option value="lleida">
+          Lérida
+         </option>
+         <option value="lugo">
+          Lugo
+         </option>
+         <option value="navarra">
+          Navarra
+         </option>
+         <option value="ourense">
+          Orense
+         </option>
+         <option value="palencia">
+          Palencia
+         </option>
+         <option value="pontevedra">
+          Pontevedra
+         </option>
+         <option value="salamanca">
+          Salamanca
+         </option>
+         <option value="segovia">
+          Segovia
+         </option>
+         <option value="soria">
+          Soria
+         </option>
+         <option value="tarragona">
+          Tarragona
+         </option>
+         <option value="teruel">
+          Teruel
+         </option>
+         <option value="valladolid">
+          Valladolid
+         </option>
+         <option value="vizcaya">
+          Vizcaya
+         </option>
+         <option value="zamora">
+          Zamora
+         </option>
+         <option value="zaragoza">
+          Zaragoza
+         </option>
+        </optgroup>
+        <optgroup label="Sur / Centro / Otros">
+         <option value="albacete">
+          Albacete
+         </option>
+         <option value="alicante">
+          Alicante
+         </option>
+         <option value="almeria">
+          Almería
+         </option>
+         <option value="avila">
+          Ávila
+         </option>
+         <option value="badajoz">
+          Badajoz
+         </option>
+         <option value="baleares">
+          Islas Baleares
+         </option>
+         <option value="caceres">
+          Cáceres
+         </option>
+         <option value="cadiz">
+          Cádiz
+         </option>
+         <option value="canarias">
+          Canarias
+         </option>
+         <option value="castellon">
+          Castellón
+         </option>
+         <option value="ciudad-real">
+          Ciudad Real
+         </option>
+         <option value="cordoba">
+          Córdoba
+         </option>
+         <option value="cuenca">
+          Cuenca
+         </option>
+         <option value="granada">
+          Granada
+         </option>
+         <option value="guadalajara">
+          Guadalajara
+         </option>
+         <option value="huelva">
+          Huelva
+         </option>
+         <option value="jaen">
+          Jaén
+         </option>
+         <option value="madrid">
+          Madrid
+         </option>
+         <option value="malaga">
+          Málaga
+         </option>
+         <option value="murcia">
+          Murcia
+         </option>
+         <option value="sevilla">
+          Sevilla
+         </option>
+         <option value="toledo">
+          Toledo
+         </option>
+         <option value="valencia">
+          Valencia
+         </option>
+         <option value="ceuta">
+          Ceuta
+         </option>
+         <option value="melilla">
+          Melilla
+         </option>
+        </optgroup>
+       </select>
+      </div>
+      <div class="ia-nav-buttons">
+       <button class="ia-btn-prev" onclick="prevStep(2)" type="button">
+        Atrás
+       </button>
+       <button class="ia-btn-next" onclick="calculateAndShow(4)" type="button">
+        Calcular
+                            Indemnización
+       </button>
+      </div>
+     </div>
+     <!-- STEP 4: Result -->
+     <div class="ia-step" id="step4">
+      <h2 class="ia-step-title">
+       Resultado Estimado
+      </h2>
+      <div class="ia-result-box">
+       <span class="ia-result-label">
+        Indemnización Estimada (Baremo 2026):
+       </span>
+       <span class="ia-result-amount" id="resultAmount">
+        Calculando...
+       </span>
+      </div>
+      <div class="ia-cta-box">
+       <a class="ia-btn-whatsapp" href="#" id="whatsappBtn" rel="noopener" target="_blank">
+        Recibir valoración oficial por WhatsApp
+       </a>
+       <div class="ia-or-divider">
+        O si lo prefieres
+       </div>
+       <a class="ia-btn-call" href="tel:34635243155">
+        Llamar ahora gratis (635 243 155)
+       </a>
+      </div>
+      <div style="margin-top: 24px; text-align: left; background-color: #f8fafc; border: 1px solid #e2e8f0; padding: 16px; border-radius: 12px; font-size: 12px; line-height: 1.6; color: #64748b;">
+       <p style="font-weight: bold; margin-bottom: 8px; color: #334155; display: flex; align-items: center; gap: 4px;">
+        ℹ️ Transparencia y Referencias Oficiales (E-E-A-T):
+       </p>
+       <ul style="margin: 0; padding-left: 18px; list-style-type: disc;">
+        <li>
+         Cálculos realizados en base a la
+         <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2015-10197" rel="noopener" style="text-decoration: underline; color: #3b82f6;" target="_blank">
+          Ley 35/2015 de reforma del sistema para la valoración de los daños causados a las personas en accidentes de circulación (BOE)
+         </a>
+         .
+        </li>
+        <li>
+         Tarifas diarias del Baremo actualizadas para 2026 conforme a la
+         <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2185" rel="noopener" style="text-decoration: underline; color: #3b82f6;" target="_blank">
+          Resolución de la Dirección General de Seguros y Fondos de Pensiones (DGSFP)
+         </a>
+         .
+        </li>
+        <li>
+         Información y criterios médicos orientativos en colaboración con la
+         <a href="https://www.unespa.es" rel="noopener" style="text-decoration: underline; color: #3b82f6;" target="_blank">
+          Asociación Empresarial del Seguro (UNESPA)
+         </a>
+         .
+        </li>
+       </ul>
+      </div>
+      <button class="ia-btn-reset" onclick="location.reload()" style="margin-top: 16px;" type="button">
+       Empezar de nuevo
+      </button>
+     </div>
+    </form>
+   </div>
+   <script>
+    /* --- CONFIGURATION --- */
+            // ⚠️ UPDATE THESE: WhatsApp Numbers for Lead Routing (Norte vs Sur)
+            const WA_PHONE_NORTE = "34635243155"; // Default/Norte
+            const WA_PHONE_SUR = "34635243155";   // Sur (Pendiente de definir, de momento el mismo)
 
-            <form id="indemnityForm">
-                <!-- STEP 1: Role -->
-                <div class="ia-step active" id="step1">
-                    <h2 class="ia-step-title">1. ¿Qué tipo de accidente has sufrido?</h2>
-                    <div class="ia-options-grid">
-                        <label class="ia-option-card">
-                            <input type="radio" name="role" value="conductornoculpa" checked>
-                            <span class="ia-option-text">Conductor (No culpable)</span>
-                        </label>
-                        <label class="ia-option-card">
-                            <input type="radio" name="role" value="ocupante">
-                            <span class="ia-option-text">Ocupante / Pasajero</span>
-                        </label>
-                        <label class="ia-option-card">
-                            <input type="radio" name="role" value="peaton">
-                            <span class="ia-option-text">Peatón / Ciclista</span>
-                        </label>
-                        <label class="ia-option-card">
-                            <input type="radio" name="role" value="conductorculpa">
-                            <span class="ia-option-text">Conductor (Culpable)</span>
-                        </label>
-                    </div>
-                    <div class="ia-alert" id="culpaAlert" style="display:none;">
-                        Si eres culpable exclusivo del accidente, en España no tienes derecho a indemnización civil.
-                    </div>
-                    <button type="button" class="ia-btn-next" onclick="nextStep(2)">Siguiente</button>
-                </div>
-
-                <!-- STEP 2: Medical Days -->
-                <div class="ia-step" id="step2">
-                    <h2 class="ia-step-title">2. Tiempo de recuperación</h2>
-                    <p class="ia-step-desc">Indica el nº de días aproximado en cada situación.</p>
-
-                    <div class="ia-input-group">
-                        <label>Días en UCI (Muy Grave)</label>
-                        <input type="number" id="daysUCI" min="0" placeholder="0">
-                    </div>
-                    <div class="ia-input-group">
-                        <label>Días de Hospitalización (Grave)</label>
-                        <input type="number" id="daysHospital" min="0" placeholder="0">
-                    </div>
-                    <div class="ia-input-group">
-                        <label>Días de Baja Laboral / Impeditivos</label>
-                        <input type="number" id="daysImpeditivo" min="0" placeholder="Ej: 30">
-                    </div>
-                    <div class="ia-input-group">
-                        <label>Días de Rehabilitación (No Impeditivos)</label>
-                        <input type="number" id="daysNoImpeditivo" min="0" placeholder="Ej: 15">
-                    </div>
-
-                    <div class="ia-nav-buttons">
-                        <button type="button" class="ia-btn-prev" onclick="prevStep(1)">Atrás</button>
-                        <button type="button" class="ia-btn-next" onclick="nextStep(3)">Siguiente</button>
-                    </div>
-                </div>
-
-                <!-- STEP 3: Sequelae -->
-                <div class="ia-step" id="step3">
-                    <h2 class="ia-step-title">3. Secuelas y Gravedad</h2>
-                    <div class="ia-options-list">
-                        <label class="ia-option-row">
-                            <input type="radio" name="severity" value="none" checked>
-                            <span class="ia-option-text">Recuperación total (Sin secuelas)</span>
-                        </label>
-                        <label class="ia-option-row">
-                            <input type="radio" name="severity" value="light">
-                            <span class="ia-option-text">Dolor leve residual</span>
-                        </label>
-                        <label class="ia-option-row">
-                            <input type="radio" name="severity" value="moderate">
-                            <span class="ia-option-text">Dolor moderado / Limitación</span>
-                        </label>
-                        <label class="ia-option-row">
-                            <input type="radio" name="severity" value="severe">
-                            <span class="ia-option-text">Secuelas graves</span>
-                        </label>
-                    </div>
-                    <div class="ia-input-group" style="margin-top: 20px;">
-                        <label>Edad de la víctima</label>
-                        <input type="number" id="victimAge" min="0" max="110" placeholder="Ej: 35">
-                    </div>
-
-                    <div class="ia-nav-buttons">
-                        <button type="button" class="ia-btn-prev" onclick="prevStep(2)">Atrás</button>
-                        <button type="button" class="ia-btn-next" onclick="calculateAndShow(4)">Calcular
-                            Indemnización</button>
-                    </div>
-                </div>
-
-                <!-- STEP 4: Result -->
-                <div class="ia-step" id="step4">
-                    <h2 class="ia-step-title">Resultado Estimado</h2>
-
-                    <div class="ia-result-box">
-                        <span class="ia-result-label">Indemnización Estimada (Baremo 2026):</span>
-                        <span class="ia-result-amount" id="resultAmount">Calculando...</span>
-                    </div>
-
-                    <div class="ia-cta-box">
-                        <a href="#" id="whatsappBtn" class="ia-btn-whatsapp" target="_blank" rel="noopener">
-                            Recibir valoración oficial por WhatsApp
-                        </a>
-
-                        <div class="ia-or-divider">O si lo prefieres</div>
-
-                        <a href="tel:34635243155" class="ia-btn-call">
-                            Llamar ahora gratis (635 243 155)
-                        </a>
-                    </div>
-
-                    <button type="button" class="ia-btn-reset" onclick="location.reload()">Empezar de nuevo</button>
-                </div>
-            </form>
-        </div>
-
-        <script>
-            /* --- CONFIGURATION --- */
-            // ⚠️ UPDATE THIS: WhatsApp Number (Format: CountryCode + Number, e.g., 34600123456)
-            const WA_PHONE = "34635243155";
-
-            // Baremo Rates 2026 (Projected CPI)
+            // Baremo Rates 2026 (Official, updated via Resolution of February 3, 2026)
             const RATES = {
-                uci: 123.55,
-                hospital: 92.66,
-                impeditivo: 64.25,
-                noImpeditivo: 37.06
+                uci: 130.69,
+                hospital: 98.02,
+                impeditivo: 67.96,     // Moderado (baja laboral)
+                noImpeditivo: 39.20    // Básico (rehabilitación)
             };
 
             // Sequelae Estimates (Statistical avg for lead generation)
@@ -298,6 +527,23 @@
                 moderate: 8000,
                 severe: 25000
             };
+
+            const SUR_PROVINCES = [
+                // Andalucía
+                "almeria", "cadiz", "cordoba", "granada", "huelva", "jaen", "malaga", "sevilla", "jerez-de-la-frontera", "marbella", "dos-hermanas",
+                // Castilla-La Mancha
+                "albacete", "ciudad-real", "cuenca", "guadalajara", "toledo",
+                // Extremadura
+                "badajoz", "caceres",
+                // Murcia
+                "murcia", "cartagena",
+                // Comunidad Valenciana
+                "alicante", "castellon", "valencia", "elche",
+                // Canarias
+                "las-palmas", "santa-cruz-de-tenerife",
+                // Ceuta y Melilla
+                "ceuta", "melilla"
+            ];
 
             let currentStep = 1;
 
@@ -328,6 +574,13 @@
             }
 
             function calculateAndShow(step) {
+                // Validation: Ensure province is selected
+                const province = document.getElementById('victimProvince').value;
+                if (!province) {
+                    alert("Por favor, selecciona tu provincia para calcular la indemnización.");
+                    return;
+                }
+
                 // 1. Gather Data
                 const dUCI = parseInt(document.getElementById('daysUCI').value) || 0;
                 const dHosp = parseInt(document.getElementById('daysHospital').value) || 0;
@@ -353,138 +606,160 @@
                 // 4. Update UI
                 document.getElementById('resultAmount').innerText = `${formatter.format(minVal)} - ${formatter.format(maxVal)}`;
 
-                // 5. Generate Lead Link
+                // 5. Lead Routing (Norte vs Sur)
+                const region = SUR_PROVINCES.includes(province) ? "sur" : "norte";
+                const targetPhone = region === "norte" ? WA_PHONE_NORTE : WA_PHONE_SUR;
+
+                // 6. Generate Lead Link
                 const waText = `Hola Infoaccidentes. He usado vuestra calculadora.\n` +
                     `• Estimación: ${formatter.format(minVal)} - ${formatter.format(maxVal)}\n` +
                     `• Días Baja: ${dImp}\n` +
                     `• Días Rehab: ${dNoImp}\n` +
                     `• Secuelas: ${severity}\n` +
+                    `• Provincia: ${province.toUpperCase()}\n` +
                     `Necesito valoración gratuita.`;
 
-                document.getElementById('whatsappBtn').href = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(waText)}`;
+                const waBtn = document.getElementById('whatsappBtn');
+                waBtn.href = `https://wa.me/${targetPhone}?text=${encodeURIComponent(waText)}`;
+
+                // 7. GTM dataLayer Event Push for Server-Side tracking
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    'event': 'calc_complete',
+                    'calc_estimated_range': `${formatter.format(minVal)} - ${formatter.format(maxVal)}`,
+                    'calc_days_uci': dUCI,
+                    'calc_days_hospital': dHosp,
+                    'calc_days_baja': dImp,
+                    'calc_days_rehab': dNoImp,
+                    'calc_severity': severity,
+                    'calc_victim_age': age,
+                    'calc_province': province,
+                    'calc_whatsapp_route': region
+                });
+
+                // Attach click listener for GTM WhatsApp click event
+                waBtn.onclick = function() {
+                    window.dataLayer.push({
+                        'event': 'lead_whatsapp',
+                        'lead_source': 'calculator_result',
+                        'lead_whatsapp_route': region,
+                        'lead_province': province
+                    });
+                };
 
                 nextStep(step);
             }
-        </script>
-    </main>
-    <footer class="bg-background-dark text-white border-t border-white/10 pt-16 pb-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-                <!-- Col 1: Brand -->
-                <div class="flex flex-col gap-6">
-                    <a class="block" href="../index.html">
-                        <img alt="InfoAccidentes"
-                            class="h-10 w-auto brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
-                            src="https://infoaccidentes.com/wp-content/uploads/2021/02/infoaccidentes_marca-300x111.webp" />
-                    </a>
-                    <p class="text-sm text-gray-200 leading-relaxed">
-                        Plataforma líder en la defensa de víctimas de tráfico. Conectamos personas con soluciones
+   </script>
+  </main>
+  <footer class="bg-background-dark text-white border-t border-white/10 pt-16 pb-8">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+     <!-- Col 1: Brand -->
+     <div class="flex flex-col gap-6">
+      <a class="block" href="../index.html">
+       <img alt="InfoAccidentes" class="h-10 w-auto brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" src="https://infoaccidentes.com/wp-content/uploads/2021/02/infoaccidentes_marca-300x111.webp"/>
+      </a>
+      <p class="text-sm text-gray-200 leading-relaxed">
+       Plataforma líder en la defensa de víctimas de tráfico. Conectamos personas con soluciones
                         legales y médicas de primer nivel.
-                    </p>
-                </div>
-                <!-- Col 2: Servicios -->
-                <div>
-                    <h4 class="font-bold text-lg mb-6 text-white">
-                        Servicios
-                    </h4>
-                    <ul class="space-y-4 text-sm text-gray-200">
-                        <li>
-                            <a class="hover:text-blue-400 transition-colors" href="../abogados-trafico/index.html">
-                                Abogados
+      </p>
+     </div>
+     <!-- Col 2: Servicios -->
+     <div>
+      <h4 class="font-bold text-lg mb-6 text-white">
+       Servicios
+      </h4>
+      <ul class="space-y-4 text-sm text-gray-200">
+       <li>
+        <a class="hover:text-blue-400 transition-colors" href="../abogados-trafico/index.html">
+         Abogados
                                 Especialistas
-                            </a>
-                        </li>
-                        <li>
-                            <a class="hover:text-blue-400 transition-colors"
-                                href="../clinicas-accidentes-trafico/index.html">
-                                Clínicas
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-blue-400 transition-colors" href="../clinicas-accidentes-trafico/index.html">
+         Clínicas
                                 Rehabilitación
-                            </a>
-                        </li>
-                        <li>
-                            <a class="hover:text-blue-400 transition-colors"
-                                href="../calculadora-indemnizacion/index.html">
-                                Calculadora
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-blue-400 transition-colors" href="../calculadora-indemnizacion/index.html">
+         Calculadora
                                 Indemnización
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Col 3: Información -->
-                <div>
-                    <h4 class="font-bold text-lg mb-6 text-white">
-                        Información
-                    </h4>
-                    <ul class="space-y-4 text-sm text-gray-200">
-                        <li>
-                            <a class="hover:text-blue-400 transition-colors" href="../indemnizacion/index.html">
-                                Indemnizaciones y
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- Col 3: Información -->
+     <div>
+      <h4 class="font-bold text-lg mb-6 text-white">
+       Información
+      </h4>
+      <ul class="space-y-4 text-sm text-gray-200">
+       <li>
+        <a class="hover:text-blue-400 transition-colors" href="../indemnizacion/index.html">
+         Indemnizaciones y
                                 Lesiones
-                            </a>
-                        </li>
-                        <li>
-                            <a class="hover:text-blue-400 transition-colors" href="../reclamar-accidente/index.html">
-                                Tipos de
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-blue-400 transition-colors" href="../reclamar-accidente/index.html">
+         Tipos de
                                 Accidentes
-                            </a>
-                        </li>
-                        <li>
-                            <a class="hover:text-blue-400 transition-colors" href="../guia/index.html">
-                                Guías de Reclamación
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Col 4: Contacto -->
-                <div>
-                    <h4 class="font-bold text-lg mb-6 text-white">
-                        Contacto
-                    </h4>
-                    <ul class="space-y-4 text-sm text-gray-200">
-                        <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-blue-400">
-                                mail
-                            </span>
-                            <a class="hover:text-white transition-colors" href="mailto:info@infoaccidentes.com"
-                                rel="noopener noreferrer" target="_blank">
-                                info@infoaccidentes.com
-                            </a>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-blue-400">
-                                chat
-                            </span>
-                            <a class="hover:text-white transition-colors"
-                                href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0"
-                                rel="noopener noreferrer" target="_blank">
-                                WhatsApp
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-blue-400 transition-colors" href="../guia/index.html">
+         Guías de Reclamación
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- Col 4: Contacto -->
+     <div>
+      <h4 class="font-bold text-lg mb-6 text-white">
+       Contacto
+      </h4>
+      <ul class="space-y-4 text-sm text-gray-200">
+       <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-blue-400">
+         mail
+        </span>
+        <a class="hover:text-white transition-colors" href="mailto:info@infoaccidentes.com" rel="noopener noreferrer" target="_blank">
+         info@infoaccidentes.com
+        </a>
+       </li>
+       <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-blue-400">
+         chat
+        </span>
+        <a class="hover:text-white transition-colors" href="https://api.whatsapp.com/send/?phone=34635243155&amp;text=Hola%2CNecesito+hacer+una+consulta&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+         WhatsApp
                                 24h
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Subfooter -->
-            <div
-                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300">
-                <div>
-                    © 2026 InfoAccidentes. Todos los derechos reservados.
-                </div>
-                <div class="flex gap-6">
-                    <a class="hover:text-white transition-colors" href="../aviso-legal/">
-                        Aviso Legal
-                    </a>
-                    <a class="hover:text-white transition-colors" href="../politica-de-privacidad/">
-                        Política de
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <!-- Subfooter -->
+    <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300">
+     <div>
+      © 2026 InfoAccidentes. Todos los derechos reservados.
+     </div>
+     <div class="flex gap-6">
+      <a class="hover:text-white transition-colors" href="../aviso-legal/">
+       Aviso Legal
+      </a>
+      <a class="hover:text-white transition-colors" href="../politica-de-privacidad/">
+       Política de
                         Privacidad
-                    </a>
-                    <a class="hover:text-white transition-colors" href="../politica-de-cookies/">
-                        Cookies
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
-
+      </a>
+      <a class="hover:text-white transition-colors" href="../politica-de-cookies/">
+       Cookies
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+ </body>
 </html>
