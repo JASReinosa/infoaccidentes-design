@@ -46,6 +46,8 @@ Este archivo define la identidad, el rol, los objetivos estratégicos y las rest
 * **Enlazado Cruzado por Intención (Cluster Semántico):** Romper el aislamiento estricto de silos mediante enlaces cruzados de conversión contextual. Las páginas informativas de lesiones (ej: latigazo cervical) redirigirán al usuario a la calculadora local y a las landings de abogados/clínicas de su provincia específica.
 * **Tracking Server-Side (sGTM):** Cargar GTM y analítica desde el subdominio de primer nivel (ej: `sst.infoaccidentes.com`) para evitar bloqueos de AdBlockers y asegurar el 99% de la atribución de leads en campañas de Google Ads.
 * **WPO (Web Performance Optimization):** Mantener las páginas estáticas con una puntuación cercana a 100/100 en Core Web Vitals (LCP, INP, CLS) cargando Tailwind vía CDN optimizado y difiriendo scripts de analítica no críticos.
+* **Calidad y Veracidad del Contenido:** Toda la información legal o médica debe ser 100% verídica, actual, profesional y contrastada. Queda prohibido inventar datos ficticios en la web; para ejemplos o estudios de casos, se deben emplear únicamente los casos reales de éxito ya listados en la web.
+* **Redacción sin Jerga Técnica:** No utilizar acrónimos o términos técnicos de SEO dirigidos al usuario final (por ejemplo, evitar escribir "E-E-A-T" en los textos públicos). Utilizar en su lugar terminología clara e institucional que genere confianza inmediata ("Bases Oficiales", "Referencias de Ley", etc.).
 
 ---
 

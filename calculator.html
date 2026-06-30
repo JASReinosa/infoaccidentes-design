@@ -474,25 +474,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
       <div style="margin-top: 24px; text-align: left; background-color: #f8fafc; border: 1px solid #e2e8f0; padding: 16px; border-radius: 12px; font-size: 12px; line-height: 1.6; color: #64748b;">
        <p style="font-weight: bold; margin-bottom: 8px; color: #334155; display: flex; align-items: center; gap: 4px;">
-        ℹ️ Transparencia y Referencias Oficiales (E-E-A-T):
+        ℹ️ Bases y Referencias Oficiales:
        </p>
        <ul style="margin: 0; padding-left: 18px; list-style-type: disc;">
         <li>
          Cálculos realizados en base a la
          <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2015-10197" rel="noopener" style="text-decoration: underline; color: #3b82f6;" target="_blank">
-          Ley 35/2015 de reforma del sistema para la valoración de los daños causados a las personas en accidentes de circulación (BOE)
+          Ley 35/2015 de valoración de daños personales en accidentes de tráfico (BOE)
          </a>
          .
         </li>
         <li>
-         Tarifas diarias del Baremo actualizadas para 2026 conforme a la
+         Tarifas del Baremo actualizadas para 2026 conforme a la
          <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2185" rel="noopener" style="text-decoration: underline; color: #3b82f6;" target="_blank">
           Resolución de la Dirección General de Seguros y Fondos de Pensiones (DGSFP)
          </a>
          .
         </li>
         <li>
-         Información y criterios médicos orientativos en colaboración con la
+         Criterios médicos orientativos en concordancia con el convenio de asistencia sanitaria de la
          <a href="https://www.unespa.es" rel="noopener" style="text-decoration: underline; color: #3b82f6;" target="_blank">
           Asociación Empresarial del Seguro (UNESPA)
          </a>
@@ -621,6 +621,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                 const waBtn = document.getElementById('whatsappBtn');
                 waBtn.href = `https://wa.me/${targetPhone}?text=${encodeURIComponent(waText)}`;
+                waBtn.setAttribute('target', '_blank');
+                waBtn.setAttribute('rel', 'noopener');
 
                 // 7. GTM dataLayer Event Push for Server-Side tracking
                 window.dataLayer = window.dataLayer || [];
