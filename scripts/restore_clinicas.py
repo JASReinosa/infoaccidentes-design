@@ -10,6 +10,81 @@ CSV_FILE = "NUEVO-contenido_migracion_limpio_v2-html nuevo de las urls viejas - 
 TEMPLATE_FILE = "templates/clinicas_provincia.html"
 OUTPUT_DIR = "clinicas-accidentes-trafico" # Target directory
 
+CITY_MAP = {
+    "a-coruna": "A Coruña",
+    "alava": "Álava",
+    "albacete": "Albacete",
+    "alicante": "Alicante",
+    "almeria": "Almería",
+    "asturias": "Asturias",
+    "avila": "Ávila",
+    "badajoz": "Badajoz",
+    "barcelona": "Barcelona",
+    "burgos": "Burgos",
+    "caceres": "Cáceres",
+    "cadiz": "Cádiz",
+    "cantabria": "Cantabria",
+    "castellon": "Castellón",
+    "ceuta": "Ceuta",
+    "ciudad-real": "Ciudad Real",
+    "cordoba": "Córdoba",
+    "cuenca": "Cuenca",
+    "girona": "Girona",
+    "granada": "Granada",
+    "guadalajara": "Guadalajara",
+    "guipuzcoa": "Gipuzkoa",
+    "huelva": "Huelva",
+    "huesca": "Huesca",
+    "islas-baleares": "Islas Baleares",
+    "jaen": "Jaén",
+    "la-rioja": "La Rioja",
+    "las-palmas": "Las Palmas",
+    "leon": "León",
+    "lleida": "Lleida",
+    "lugo": "Lugo",
+    "madrid": "Madrid",
+    "malaga": "Málaga",
+    "melilla": "Melilla",
+    "murcia": "Murcia",
+    "navarra": "Navarra",
+    "ourense": "Ourense",
+    "palencia": "Palencia",
+    "pontevedra": "Pontevedra",
+    "salamanca": "Salamanca",
+    "santa-cruz-de-tenerife": "Santa Cruz de Tenerife",
+    "segovia": "Segovia",
+    "sevilla": "Sevilla",
+    "soria": "Soria",
+    "tarragona": "Tarragona",
+    "teruel": "Teruel",
+    "toledo": "Toledo",
+    "valencia": "Valencia",
+    "valladolid": "Valladolid",
+    "vizcaya": "Bizkaia",
+    "zamora": "Zamora",
+    "zaragoza": "Zaragoza",
+    "vigo": "Vigo",
+    "gijon": "Gijón",
+    "l-hospitalet-de-lobregat": "L'Hospitalet de Llobregat",
+    "vitoria": "Vitoria-Gasteiz",
+    "elche": "Elche / Elx",
+    "oviedo": "Oviedo",
+    "badalona": "Badalona",
+    "cartagena": "Cartagena",
+    "terrassa": "Terrassa",
+    "jerez-de-la-frontera": "Jerez de la Frontera",
+    "sabadell": "Sabadell",
+    "mostoles": "Móstoles",
+    "alcala-de-henares": "Alcalá de Henares",
+    "fuenlabrada": "Fuenlabrada",
+    "leganes": "Leganés",
+    "getafe": "Getafe",
+    "alcorcon": "Alcorcón",
+    "marbella": "Marbella",
+    "dos-hermanas": "Dos Hermanas",
+    "torrejon-de-ardoz": "Torrejón de Ardoz"
+}
+
 def restore_clinicas():
     # 1. Load Template
     try:
@@ -74,7 +149,7 @@ def restore_clinicas():
         parts = path_suffix.split("/")
         if len(parts) >= 2 and parts[-2] != "clinicas-accidentes-trafico":
              city_slug = parts[-2]
-             city_name = city_slug.replace("-", " ").title()
+             city_name = CITY_MAP.get(city_slug, city_slug.replace("-", " ").title())
         else:
             # Fallback: Regex "en [City]"
             match = re.search(r"en\s+(.*?)$", h1_text, re.IGNORECASE)
@@ -227,8 +302,35 @@ def restore_clinicas():
                 
         # 6. Save
         os.makedirs(os.path.dirname(full_output_path), exist_ok=True)
+        page_html = str(template_soup.prettify())
+        
+        # Apply corrections for coofficial city names
+        corrections = {
+            "La Coruña": "A Coruña",
+            "La Coruna": "A Coruña",
+            "la Coruña": "a Coruña",
+            "LA CORUÑA": "A CORUÑA",
+            "Orense": "Ourense",
+            "ORENSE": "OURENSE",
+            "Gerona": "Girona",
+            "GERONA": "GIRONA",
+            "Lérida": "Lleida",
+            "LÉRIDA": "LLEIDA",
+            "Lerida": "Lleida",
+            "Vizcaya": "Bizkaia",
+            "VIZCAYA": "BIZKAIA",
+            "Guipúzcoa": "Gipuzkoa",
+            "Guipuzcoa": "Gipuzkoa",
+            "GUIPÚZCOA": "GIPUZKOA",
+            "GUIPUZCOA": "GIPUZKOA",
+            "Alava": "Álava",
+            "ALAVA": "ÁLAVA"
+        }
+        for old_val, new_val in corrections.items():
+            page_html = page_html.replace(old_val, new_val)
+            
         with open(full_output_path, "w", encoding="utf-8") as out_f:
-            out_f.write(str(template_soup.prettify()))
+            out_f.write(page_html)
         
         print(f"Restored: {full_output_path}")
 
