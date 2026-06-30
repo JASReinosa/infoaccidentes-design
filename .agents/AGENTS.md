@@ -56,3 +56,23 @@ Este archivo define la identidad, el rol, los objetivos estratégicos y las rest
 * **Arquitectura Estática:** Al migrar a HTML/CSS/JS estático puro, eliminamos bases de datos y scripts de servidor activos (PHP), erradicando el 99% de los vectores de ataque comunes en CMS (WordPress).
 * **Mitigación del Historial de Ataques:** Responder con errores **410 Gone** o **404 Not Found** inmediatamente desde el CDN/servidor a cualquier intento de acceso al antiguo subdirectorio `/debate/` y URLs basura asociadas para forzar su desindexación rápida en Google.
 * **Seguridad en Alojamiento:** Priorizar servidores con protección DDoS robusta, cortafuegos de aplicación web (WAF) y políticas estrictas de cabeceras de seguridad (CSP, HSTS) en el despliegue (ej. Cloudflare o Firebase Hosting).
+
+---
+
+## 7. Estándares de Cabecera (SEO, GEO y UX Nivel 1 Mundial)
+Para mantener una tasa de conversión superior y un rastreo óptimo, cualquier cabecera (Header) del proyecto debe cumplir con los siguientes requisitos:
+
+### A. Capa de Optimización SEO y Rastreo
+* **Semántica HTML5 Pura:** Contenedor estructurado obligatoriamente con la etiqueta `<header>`.
+* **Identidad de Marca Rastreable:** Logotipo en formato WebP optimizado o SVG, con dimensiones explícitas (`width` y `height` para evitar CLS), atributo `alt` claro ("Logo InfoAccidentes") y enlace hacia la raíz del dominio `https://infoaccidentes.com/`.
+* **Rendimiento Instantáneo (FCP < 1s):** Evitar scripts pesados de sliders o menús complejos en el renderizado inicial de la cabecera. Precargar fuentes críticas y diferir cualquier JavaScript no esencial.
+
+### B. Capa de Enfoque Geográfico (GEO)
+* **Breadcrumbs Estructurados:** En subpáginas locales (silos geográficos), la cabecera o subcabecera debe renderizar breadcrumbs jerárquicos (ej: *Inicio / Abogados / Sevilla*) con microdatos Schema.org (`BreadcrumbList`) inyectados en el HTML.
+* **Enrutamiento Local Automático:** Los enlaces de WhatsApp del header deben enrutar dinámicamente al lead al teléfono correcto de su zona (Norte/Sur) basándose en la geolocalización o página local visitada.
+
+### C. Experiencia de Usuario y Conversión (UX/CRO)
+* **Navegación Limpia y Directa:** Enlaces del menú limitados a las áreas de negocio principales: *Abogados*, *Clínicas*, *Calculadora*, *Lesiones*, *Guías*.
+* **CTA Principal de Alto Impacto:** Botón de acción destacado en el lateral derecho superior (en escritorio) y en el desplegable de móvil (ej. "Consulta Gratuita por WhatsApp") con una zona de pulsación mínima de `48x48px` (estándar WCAG).
+* **Sticky Header Inteligente:** La cabecera debe ser fija (`sticky top-0`) o reaparecer suavemente al hacer scroll hacia arriba para garantizar que el usuario pueda convertir o volver al inicio en cualquier momento de la lectura.
+
