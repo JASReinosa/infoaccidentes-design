@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 # Constants from previous scripts
 CSV_FILE = "NUEVO-contenido_migracion_limpio_v2-html nuevo de las urls viejas - Nuevas URLs y Contenido HTML.csv"
-TEMPLATE_FILE = "abogados_provincia.html"
+TEMPLATE_FILE = "templates/abogados_provincia.html"
 OUTPUT_DIR = "abogados-trafico" # Target directory pattern usually matched CSV URLs
 
 def restore_pages():
@@ -103,10 +103,30 @@ def restore_pages():
         # 4. Prepare New Page from Template
         template_soup = BeautifulSoup(template_html, "html.parser")
         
-        # 4a. Update Title/Meta
-        if template_soup.title: template_soup.title.string = title_text
+        # 4a. Update Title/Meta, Language and SEO tags
+        if template_soup.html:
+            template_soup.html['lang'] = 'es-ES'
+            
+        if template_soup.title:
+            template_soup.title.string = title_text
+            
         t_meta = template_soup.find("meta", attrs={"name": "description"})
-        if t_meta: t_meta["content"] = meta_desc_content
+        if t_meta:
+            t_meta["content"] = meta_desc_content
+            
+        # Dynamic Canonical and alternate hreflang targeting Spain only (no LATAM)
+        canonical_url = f"https://infoaccidentes.com/{path_suffix.replace('index.html', '')}"
+        
+        # Remove any existing canonical/hreflang alternate tags to avoid duplicates
+        for existing_link in template_soup.find_all("link", rel=["canonical", "alternate"]):
+            existing_link.decompose()
+            
+        canonical_link = template_soup.new_tag("link", rel="canonical", href=canonical_url)
+        hreflang_link = template_soup.new_tag("link", rel="alternate", hreflang="es-es", href=canonical_url)
+        
+        if template_soup.head:
+            template_soup.head.append(canonical_link)
+            template_soup.head.append(hreflang_link)
         
         # 4b. Localize Template (City Name & Attributes)
         target_replacements = {
