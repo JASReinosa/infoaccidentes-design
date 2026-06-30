@@ -46,3 +46,10 @@ Este archivo define la identidad, el rol, los objetivos estratégicos y las rest
 * **Enlazado Cruzado por Intención (Cluster Semántico):** Romper el aislamiento estricto de silos mediante enlaces cruzados de conversión contextual. Las páginas informativas de lesiones (ej: latigazo cervical) redirigirán al usuario a la calculadora local y a las landings de abogados/clínicas de su provincia específica.
 * **Tracking Server-Side (sGTM):** Cargar GTM y analítica desde el subdominio de primer nivel (ej: `sst.infoaccidentes.com`) para evitar bloqueos de AdBlockers y asegurar el 99% de la atribución de leads en campañas de Google Ads.
 * **WPO (Web Performance Optimization):** Mantener las páginas estáticas con una puntuación cercana a 100/100 en Core Web Vitals (LCP, INP, CLS) cargando Tailwind vía CDN optimizado y difiriendo scripts de analítica no críticos.
+
+---
+
+## 6. Seguridad y Blindaje del Sitio (Anti-Hackeo)
+* **Arquitectura Estática:** Al migrar a HTML/CSS/JS estático puro, eliminamos bases de datos y scripts de servidor activos (PHP), erradicando el 99% de los vectores de ataque comunes en CMS (WordPress).
+* **Mitigación del Historial de Ataques:** Responder con errores **410 Gone** o **404 Not Found** inmediatamente desde el CDN/servidor a cualquier intento de acceso al antiguo subdirectorio `/debate/` y URLs basura asociadas para forzar su desindexación rápida en Google.
+* **Seguridad en Alojamiento:** Priorizar servidores con protección DDoS robusta, cortafuegos de aplicación web (WAF) y políticas estrictas de cabeceras de seguridad (CSP, HSTS) en el despliegue (ej. Cloudflare o Firebase Hosting).
