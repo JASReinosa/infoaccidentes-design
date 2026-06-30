@@ -861,7 +861,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 // Validation: Ensure province is selected
                 const province = document.getElementById('victimProvince').value;
                 if (!province) {
-                    alert("Por favor, selecciona tu provincia para calcular la indemnización.");
+                    showCustomAlert("Por favor, selecciona tu provincia para calcular la indemnización.");
                     return;
                 }
 
@@ -938,6 +938,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 };
 
                 nextStep(step);
+            }
+
+            function showCustomAlert(message) {
+                const modal = document.getElementById('customAlertModal');
+                const msgEl = document.getElementById('customAlertMessage');
+                msgEl.textContent = message;
+                
+                modal.classList.remove('hidden');
+                setTimeout(() => {
+                    modal.classList.remove('opacity-0', 'pointer-events-none');
+                    modal.classList.add('opacity-100');
+                    modal.querySelector('.transform').classList.remove('scale-95');
+                    modal.querySelector('.transform').classList.add('scale-100');
+                }, 10);
+            }
+
+            function closeCustomAlert() {
+                const modal = document.getElementById('customAlertModal');
+                modal.classList.remove('opacity-100');
+                modal.classList.add('opacity-0', 'pointer-events-none');
+                modal.querySelector('.transform').classList.remove('scale-100');
+                modal.querySelector('.transform').classList.add('scale-95');
+                
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                }, 300);
             }
    </script>
   </main>
@@ -1051,5 +1077,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
    </div>
   </footer>
+
+   <!-- Custom Alert Modal -->
+   <div id="customAlertModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 hidden">
+     <div class="bg-white dark:bg-slate-950 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-800/80 max-w-sm w-full p-6 text-center transform scale-95 transition-transform duration-300">
+       <div class="w-12 h-12 bg-amber-50 dark:bg-amber-950/40 rounded-full flex items-center justify-center mx-auto mb-4 border border-amber-200 dark:border-amber-900/60">
+         <span class="material-symbols-outlined text-amber-500 text-2xl font-bold">warning</span>
+       </div>
+       <h3 class="text-lg font-bold text-slate-950 dark:text-white mb-2">InfoAccidentes</h3>
+       <p class="text-sm text-slate-600 dark:text-slate-400 mb-6" id="customAlertMessage">Por favor, selecciona tu provincia para calcular la indemnización.</p>
+       <button onclick="closeCustomAlert()" class="w-full py-3 bg-primary hover:bg-primary-dark text-white rounded-xl font-semibold shadow-md transition-colors">
+         Aceptar
+       </button>
+     </div>
+   </div>
  </body>
 </html>
