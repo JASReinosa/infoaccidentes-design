@@ -48,6 +48,7 @@ Este archivo define la identidad, el rol, los objetivos estratégicos y las rest
 * **WPO (Web Performance Optimization):** Mantener las páginas estáticas con una puntuación cercana a 100/100 en Core Web Vitals (LCP, INP, CLS) cargando Tailwind vía CDN optimizado y difiriendo scripts de analítica no críticos.
 * **Calidad y Veracidad del Contenido:** Toda la información legal o médica debe ser 100% verídica, actual, profesional y contrastada. Queda prohibido inventar datos ficticios en la web; para ejemplos o estudios de casos, se deben emplear únicamente los casos reales de éxito ya listados en la web.
 * **Redacción sin Jerga Técnica:** No utilizar acrónimos o términos técnicos de SEO dirigidos al usuario final (por ejemplo, evitar escribir "E-E-A-T" en los textos públicos). Utilizar en su lugar terminología clara e institucional que genere confianza inmediata ("Bases Oficiales", "Referencias de Ley", etc.).
+* **Diseño de Alertas y Modales (Evitar alert nativo):** Queda estrictamente prohibido el uso de ventanas de alerta nativas del navegador (`alert()`, `confirm()`, `prompt()`) para validaciones o mensajes al usuario, ya que degradan la experiencia de usuario (UX) y muestran el dominio del servidor de forma antiestética. En su lugar, se deben maquetar diálogos o modales interactivos personalizados utilizando Tailwind, integrando la marca "InfoAccidentes" y ofreciendo una transición visual pulida.
 
 ---
 
